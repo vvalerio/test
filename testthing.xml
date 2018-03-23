@@ -13,7 +13,7 @@ xmlns:adms="http://www.w3.org/ns/adms#"
 
 	<!-- EPOS Person -->
 <eposap:Person>
-		<vcard:fn>Valerio, ¥çßñ</vcard:fn><!-- Last Name, Given Name -->
+		<vcard:fn>Valeri¥</vcard:fn><!-- Last Name, Given Name -->
 		<vcard:hasAddress><!-- Postal Address -->
 			<vcard:Address>
 				<vcard:street-address>bla bla</vcard:street-address>
@@ -46,10 +46,10 @@ xmlns:adms="http://www.w3.org/ns/adms#"
 				<vcard:country-name>FRANCE</vcard:country-name>
 			</vcard:Address>
 		</vcard:hasAddress>
-		<vcard:hasEmail>g.delcampo@opgc.univ-bpclermont.fr</vcard:hasEmail><!-- Email -->
-		<vcard:hasURL>http://opgc.fr</vcard:hasURL><!-- Website -->
+		<vcard:hasEmail>¥</vcard:hasEmail><!-- Email -->
+		<vcard:hasURL>¥</vcard:hasURL><!-- Website -->
 		<vcard:hasLogo>http://wwwobs.univ-bpclermont.fr/opgc/images/opgc_350t.gif</vcard:hasLogo><!-- Logo -->
-		<dct:identifier>PIC:916450860</dct:identifier><!-- Unique Identifier -->
+		<dct:identifier>PIC:916¥0860</dct:identifier><!-- Unique Identifier -->
 		<eposap:scientificContact>http://orcid.org/0000-0002-4518-3328</eposap:scientificContact><!-- Scientific
 			Contact -->
 		<dct:spatial><!-- Spatial Coordinates -->
