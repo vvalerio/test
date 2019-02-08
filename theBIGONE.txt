@@ -1,10 +1,5 @@
-https://github.com/epos-eu/EPOS-DCAT-AP/raw/EPOS-DCAT-AP-shapes/examples/WP08/WP08-BGR.ttl
-https://github.com/epos-eu/EPOS-DCAT-AP/raw/EPOS-DCAT-AP-shapes/examples/WP08/WP08-ESM-flatfile-2018.ttl
-https://github.com/epos-eu/EPOS-DCAT-AP/raw/EPOS-DCAT-AP-shapes/examples/WP08/WP08-ESM-shakemap.ttl
-https://github.com/epos-eu/EPOS-DCAT-AP/raw/EPOS-DCAT-AP-shapes/examples/WP08/WP08-INGV_Dataselect_station_ws_last.ttl
-https://github.com/epos-eu/EPOS-DCAT-AP/raw/EPOS-DCAT-AP-shapes/examples/WP08/WP08-ODC.ttl
-https://github.com/epos-eu/EPOS-DCAT-AP/raw/EPOS-DCAT-AP-shapes/examples/WP08/WP8-GFZ-20180911.ttl
-https://github.com/epos-eu/EPOS-DCAT-AP/raw/EPOS-DCAT-AP-shapes/examples/WP08/WP08-NOA.ttl
-https://github.com/epos-eu/EPOS-DCAT-AP/raw/EPOS-DCAT-AP-shapes/examples/WP08/WP8-LMU-20180914.ttl
-https://github.com/epos-eu/EPOS-DCAT-AP/raw/EPOS-DCAT-AP-shapes/examples/WP08/WP8-NIEP-20180913.ttl
-https://github.com/epos-eu/EPOS-DCAT-AP/raw/EPOS-DCAT-AP-shapes/examples/WP08/WP8-RESIF-20180913.ttl
+https://github.com/epos-eu/EPOS-DCAT-AP/raw/EPOS-DCAT-AP-shapes/examples/WP11/INGV_WP11_031.ttl
+https://github.com/epos-eu/EPOS-DCAT-AP/raw/EPOS-DCAT-AP-shapes/examples/WP11/rdfturtle_catalogueeruptions.ttl
+https://github.com/epos-eu/EPOS-DCAT-AP/raw/EPOS-DCAT-AP-shapes/examples/WP11/WP11_IPGP_DDSS031_volcanoreport.ttl
+https://github.com/epos-eu/EPOS-DCAT-AP/raw/EPOS-DCAT-AP-shapes/examples/WP11/OPGC_WP11-DDSS-051_lava_map.ttl
+https://github.com/epos-eu/EPOS-DCAT-AP/raw/EPOS-DCAT-AP-shapes/examples/WP11/WP11_IPGP_DDSS001-002.ttl
