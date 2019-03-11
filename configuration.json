@@ -1,0 +1,29 @@
+{
+  "name": " visu-station06",
+  "plugin-location" : "http://github.com/reponame/visu-station06",
+  "version": "1.0.0",
+  "author": {
+    "name": "patkftgs.ac.uk",
+    "contact": "email@email.com"
+  },
+  "execution": {
+    "invoker-type": " JAVA_REFLECTION",
+    "target-detail" : "java_plugin_dir; plugin-wp10-station-0.0.1.jar; main.class;"
+  },
+  "transformations": [{
+      "request": {
+        "type": "FDSNStationXML",
+        "content-type" : "application/xml",
+        "schema-location-type": "url",
+        "schema-location": "http://schemalocation.com/root_payload_schema_in.json",
+        "schema-name": "root_payload_schema_in.json"
+      },
+      "response": {
+        "content-type" : "application/epos.geo+json",
+        "schema-location-type": "path",
+        "schema-location": "/schemas/root_payload_schema_out.json",
+        "schema-name": "root_payload_schema_out.json"
+      }
+    }
+  ]
+}
