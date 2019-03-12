@@ -1,14 +1,14 @@
 {
   "name": "MQManager-1.5.2",
   "plugin-location" : "https://github.com/vvalerio/MQManager/blob/master/MQManager/MQManager/1.5.2/MQManager-1.5.2.jar",
-  "version": "1.0.0",
+  "version": "1.5.2",
   "author": {
-    "name": "patkftgs.ac.uk",
-    "contact": "email@email.com"
+    "name": "valerio.vinciarelli",
+    "contact": "valerio.vinciarelli@ingv.it"
   },
   "execution": {
     "invoker-type": "JAVA_REFLECTION",
-    "target-detail" : "java_plugin_dir; plugin-wp10-station-0.0.1.jar; main.class;"
+    "target-detail" : "java_plugin_dir; MQManager-1.5.2.jar; Main.class;"
   },
   "transformations": [{
       "request": {
