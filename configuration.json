@@ -1,6 +1,6 @@
 {
   "name": "MQManager-1.5.2",
-  "plugin-location" : "https://github.com/vvalerio/MQManager/blob/master/MQManager/MQManager/1.5.2/MQManager-1.5.2.jar",
+  "plugin-location" : "https://github.com/vvalerio/MQManager/blob/master/MQManager/MQManager/1.5.2/MQManager-1.5.2.jar?raw=true",
   "version": "1.5.2",
   "author": {
     "name": "valerio.vinciarelli",
