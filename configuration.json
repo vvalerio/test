@@ -1,6 +1,6 @@
 {
-  "name": "visu-station06",
-  "plugin-location" : "http://github.com/reponame/visu-station06",
+  "name": "MQManager-1.5.2",
+  "plugin-location" : "https://github.com/vvalerio/MQManager/blob/master/MQManager/MQManager/1.5.2/MQManager-1.5.2.jar",
   "version": "1.0.0",
   "author": {
     "name": "patkftgs.ac.uk",
@@ -15,14 +15,14 @@
         "type": "FDSNStationXML",
         "content-type" : "application/xml",
         "schema-location-type": "url",
-        "schema-location": "http://schemalocation.com/root_payload_schema_in.json",
-        "schema-name": "root_payload_schema_in.json"
+        "schema-location": "https://www.fdsn.org/xml/station/fdsn-station-1.0.xsd",
+        "schema-name": "fdsn-station-1.0.xsd"
       },
       "response": {
         "content-type" : "application/epos.geo+json",
-        "schema-location-type": "path",
-        "schema-location": "/schemas/root_payload_schema_out.json",
-        "schema-name": "root_payload_schema_out.json"
+        "schema-location-type": "url",
+        "schema-location": "https://github.com/geojson/schema/blob/master/package.json",
+        "schema-name": "package.json"
       }
     }
   ]
