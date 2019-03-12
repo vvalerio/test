@@ -15,7 +15,7 @@
         "type": "FDSNStationXML",
         "content-type" : "application/xml",
         "schema-location-type": "url",
-        "schema-location": "https://www.fdsn.org/xml/station/fdsn-station-1.0.xsd",
+        "schema-location": "https://raw.githubusercontent.com/FDSN/StationXML/master/fdsn-station.xsd",
         "schema-name": "fdsn-station-1.0.xsd"
       },
       "response": {
