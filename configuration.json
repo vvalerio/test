@@ -7,7 +7,7 @@
     "contact": "email@email.com"
   },
   "execution": {
-    "invoker-type": " JAVA_REFLECTION",
+    "invoker-type": "JAVA_REFLECTION",
     "target-detail" : "java_plugin_dir; plugin-wp10-station-0.0.1.jar; main.class;"
   },
   "transformations": [{
