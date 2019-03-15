@@ -36,7 +36,7 @@
 			"schema": {
 				"name": "wp10-station.json",
 				"location-type": "url",
-				"location": "http://schemalocation.com/incoming"
+				"location": "https://raw.githubusercontent.com/FDSN/StationXML/master/fdsn-station.xsd"
 			}
 		},
 		"response": {
@@ -44,7 +44,7 @@
 			"schema": {
 				"name": "geojson.json",
 				"location-type": "url",
-				"location": "http://schemalocation.com/outgoing"
+				"location": "https://raw.githubusercontent.com/FDSN/StationXML/master/fdsn-station.xsd"
 			}
 		}
 	}]
