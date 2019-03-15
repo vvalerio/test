@@ -1,0 +1,51 @@
+{
+  "id":"872384",
+	"name": "station-default",
+  "pluginLocation":"https://github.com/vvalerio/test/blob/master/configuration.json"
+	"version": "1.0.0",
+	"author": {
+		"name": "patkftgs.ac.uk",
+		"contact": "email@email.com"
+	},
+	"execution": {
+		"invoker-type": "Java_Reflection",
+		"target-detail": "java_plugins_dir;plugin-station-default-0.0.1.jar;org.epos_ip.converter.plugin.visualisestation.VisualiseStationCallablePlugin"
+	},
+	"conversions": [{
+		"request": {
+			"type": "tcs/station/fdsn",				
+			"content-type": "application/xml",			
+			"schema": {								
+				"name": "fsdn-station-restricted-1.0.xsd",		
+				"location-type": "path",						
+				"location": "/schemas/request"
+			}
+		},
+		"response": {
+			"content-type": "application/epos.geo+json",			
+			"schema": {													
+				"name": "geojson.json",
+				"location-type": "path",
+				"location": "/schemas/response"
+			}
+		}
+	},{
+		"request" : {
+			"type": "tcs/station/wp10",
+			"content-type": "application/xml",
+			"schema": {
+				"name": "wp10-station.json",
+				"location-type": "url",
+				"location": "http://schemalocation.com/incoming"
+			}
+		},
+		"response": {
+			"content-type": "application/epos.geo+json",
+			"schema": {
+				"name": "geojson.json",
+				"location-type": "url",
+				"location": "http://schemalocation.com/outgoing"
+			}
+		}
+	}]
+}
