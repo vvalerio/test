@@ -1,7 +1,7 @@
 {
   "id":"872384",
 	"name": "station-default",
-  "pluginLocation":"https://github.com/vvalerio/test/blob/master/configuration.json"
+        "pluginLocation":"https://github.com/vvalerio/test/blob/master/configuration.json",
 	"version": "1.0.0",
 	"author": {
 		"name": "patkftgs.ac.uk",
