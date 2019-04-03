@@ -16,17 +16,17 @@
 			"type": "tcs/station/fdsn",				
 			"content-type": "application/xml",			
 			"schema": {								
-				"name": "fsdn-station-restricted-1.0.xsd",		
+				"name": "NodeService-0.0.3-SNAPSHOT-classes.jar",		
 				"location-type": "path",						
-				"location": "/schemas/request"
+				"location": "/MQManager/0.0.3-SNAPSHOT"
 			}
 		},
 		"response": {
 			"content-type": "application/epos.geo+json",			
 			"schema": {													
-				"name": "geojson.json",
+				"name": "NodeService-0.0.3-SNAPSHOT-classes.jar",
 				"location-type": "path",
-				"location": "/schemas/response"
+				"location": "/MQManager/0.0.3-SNAPSHOT"
 			}
 		}
 	},{
