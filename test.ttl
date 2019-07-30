@@ -237,7 +237,7 @@
 	schema:datePublished "2017-04-01Z"^^xsd:dateTime;
 	schema:dateModified "2017-04-01Z"^^xsd:dateTime;
 	dct:spatial [ a dct:Location; 
-		locn:geometry "POLYGON(180.0 -90.0,-180.0 -90.0,-180.0 90.0,180.0 90.0,180.0 -90.0)"^^gsp:wktLiteral; 
+		locn:geometry "POLYGON((180.0 -90.0,-180.0 -90.0,-180.0 90.0,180.0 90.0,180.0 -90.0))"^^gsp:wktLiteral; 
 	]; 
 	hydra:supportedOperation <http://esm.mi.ingv.it/esmws/shakemap/1/query/operation>;
 	schema:keywords "Seismic Hazard","INGV","ESM","Event","ShakeMap","ShakeMapXML","Strong-Motion";
