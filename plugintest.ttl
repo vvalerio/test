@@ -42,7 +42,7 @@
 <http://orcid.org/0000-0001-5805-9337/developerContact> a schema:ContactPoint ;
 	schema:email "valerio.vinciarelli@ingv.it";
 	schema:availableLanguage "en" ;
-	schema:contactType "developerContact";
+	schema:contactType "manager";
 .
 
 <https://www.epos-eu.org/epos-dcat-ap/ICS/SoftwareSourceCode/Plugin/CERIF2JSON> a schema:SoftwareSourceCode;
