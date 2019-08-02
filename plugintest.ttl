@@ -51,13 +51,13 @@
   schema:name "Fake fake fake" ;
   schema:contactPoint <http://orcid.org/0000-0001-5805-9337/developerContact> ;
 
-    dct:relation <https://www.epos-eu.org/epos-dcat-ap/Seismology/WebService/AHEAD/restful/fdsnws-event/Operation> ;
-    dct:relation <https://www.epos-eu.org/epos-dcat-ap/Seismology/WebService/AHEAD/restful/macroseismic/Operation> ;
+  dct:relation <https://www.epos-eu.org/epos-dcat-ap/Seismology/WebService/AHEAD/restful/fdsnws-event/Operation> ;
+  dct:relation <https://www.epos-eu.org/epos-dcat-ap/Seismology/WebService/AHEAD/restful/macroseismic/Operation> ;
 
 .
 
-<https://www.epos-eu.org/epos-dcat-ap/Seismology/WebService/AHEAD/restful/fdsnws-event/Operation> a WebService ;
+<https://www.epos-eu.org/epos-dcat-ap/Seismology/WebService/AHEAD/restful/fdsnws-event/Operation> a epos:WebService ;
 .
-<https://www.epos-eu.org/epos-dcat-ap/Seismology/WebService/AHEAD/restful/macroseismic/Operation> ;
+<https://www.epos-eu.org/epos-dcat-ap/Seismology/WebService/AHEAD/restful/macroseismic/Operation> a epos:WebService ;
 .
 
