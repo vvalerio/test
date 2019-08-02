@@ -42,10 +42,10 @@
 <http://orcid.org/0000-0001-5805-9337/developerContact> a schema:ContactPoint ;
 	schema:email "valerio.vinciarelli@ingv.it";
 	schema:availableLanguage "en" ;
-	schema:contactType "manager";
+	schema:contactType "developerContact";
 .
 
-<https://www.epos-eu.org/epos-dcat-ap/ICS/SoftwareSourceCode/Plugin/CERIF2JSON> a schema:SoftwareSourceCode;
+<https://www.epos-eu.org/epos-dcat-ap/ICS/SoftwareSourceCode/Plugin/mapperPlugin> a schema:SoftwareSourceCode;
 
   schema:identifier "https://www.epos-eu.org/epos-dcat-ap/ICS/SoftwareSourceCode/Plugin/mapperPlugin" ;
   schema:name "Plugin for the conversion from TCS to GEOJSON payload" ;
@@ -72,7 +72,7 @@
 
 <https://www.epos-eu.org/epos-dcat-ap/ICS/SoftwareApplication/Plugin/FAKE> a schema:SoftwareApplication;
 
-  schema:identifier "https://www.epos-eu.org/epos-dcat-ap/ICS/SoftwareApplication/Plugin/CERIF2JSON_DDSS" ;
+  schema:identifier "https://www.epos-eu.org/epos-dcat-ap/ICS/SoftwareApplication/Plugin/FAKE" ;
 
   ################################################
   #                    TO BE ADDED
@@ -80,19 +80,6 @@
 
   schema:softwareRequirements "" ;
   schema:installUrl "" ;
-
-  schema:potentialAction [ a schema:ControlAction ;
-      #Description of INPUT
-      schema:object [ a schema:CreativeWork ;
-        schema:encodingFormat "application/*" ;
-        dct:conformsTo "file://cerifPlugin/schemas/fake.json" ;
-      ] ;
-      #Description of OUTPUT
-      schema:result [ a schema:CreativeWork ;
-        schema:encodingFormat "application/epos.geo+json" ;
-        dct:conformsTo "file://cerifPlugin/schemas/fake.json" ;
-      ]
-    ] ;
 
     dct:relation <https://www.epos-eu.org/epos-dcat-ap/Seismology/WebService/AHEAD/restful/fdsnws-event/Operation> ;
     dct:relation <https://www.epos-eu.org/epos-dcat-ap/Seismology/WebService/AHEAD/restful/macroseismic/Operation> ;
