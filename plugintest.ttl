@@ -1,0 +1,178 @@
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix epos: <https://www.epos-eu.org/epos-dcat-ap#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix hydra: <http://www.w3.org/ns/hydra/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix cnt: <http://www.w3.org/2011/content#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix http: <http://www.w3.org/2006/http#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix gsp: <http://www.opengis.net/ont/geosparql#> .
+
+#PLUGIN AUTHOR
+<https://orcid.org/0000-0001-5805-9337> a schema:Person ;
+    schema:identifier [ a schema:PropertyValue ;
+      schema:propertyID  "orcid" ;
+      schema:value   "0000-0001-5805-9337" ;
+    ];
+	  schema:familyName "Vinciarelli" ;
+	  schema:givenName "Valerio" ;
+    schema:address [ a schema:PostalAddress ;
+	 	    schema:streetAddress "Via di vigna murata, 605" ;
+		    schema:addressLocality "Rome" ;
+		    schema:postalCode "00143" ;
+		    schema:addressCountry "Italy" ;
+	  ];
+    schema:email "valerio.vinciarelli@ingv.it" ;
+    schema:telephone "+XXXXXXXXX" ;
+    schema:url  "http://orcid.org/0000-0001-5805-9337"^^xsd:anyURI ;
+	  schema:qualifications "IT" ;
+	  schema:affiliation <PIC:999472675> ;
+    schema:contactPoint <http://orcid.org/0000-0001-7750-7254/developerContact> ;
+.
+
+# DEVELOPER CONTACT
+<http://orcid.org/0000-0001-5805-9337/developerContact> a schema:ContactPoint ;
+	schema:email "valerio.vinciarelli@ingv.it";
+	schema:availableLanguage "en" ;
+	schema:contactType "developerContact";
+.
+
+<https://www.epos-eu.org/epos-dcat-ap/ICS/SoftwareSourceCode/Plugin/CERIF2JSON> a schema:SoftwareSourceCode;
+
+  schema:identifier "https://www.epos-eu.org/epos-dcat-ap/ICS/SoftwareSourceCode/Plugin/mapperPlugin" ;
+  schema:name "Plugin for the conversion from TCS to GEOJSON payload" ;
+  schema:description "Plugin for the conversion from TCS to GEOJSON payload" ;
+  schema:softwareVersion "0.0.1";
+  # This property contains contact information that can be used for sending comments about the software.
+  schema:contactPoint <http://orcid.org/0000-0001-5805-9337/developerContact> ;
+  # Link to the repository where the code is located (gitlab, github).
+  schema:codeRepository "https://github.com/vvalerio/link-no-plugin.git"^^xsd:anyURI ;
+  # This property refers to the license under which the software is made available.
+  schema:license "https://github.com/vvalerio/cerifPlugin/blob/master/LICENSE"^^xsd:anyURI ;
+  # This property refers to the web page URL which describes the software.
+  schema:mainEntityOfPage "https://github.com/vvalerio/link-no-plugin/blob/master/README.md"^^xsd:anyURI ;
+  schema:programmingLanguage "Java" ;
+
+
+  ## INVOKER-TYPE;LANGUAGE VERSION;CLASSPATH;JARNAME;CLASS
+  schema:runtimePlatform "java-1.10" ;
+
+  #CONVERSION 1
+  schema:targetProduct <https://www.epos-eu.org/epos-dcat-ap/ICS/SoftwareApplication/Plugin/FAKE> ;
+
+.
+
+<https://www.epos-eu.org/epos-dcat-ap/ICS/SoftwareApplication/Plugin/FAKE> a schema:SoftwareApplication;
+
+  schema:identifier "https://www.epos-eu.org/epos-dcat-ap/ICS/SoftwareApplication/Plugin/CERIF2JSON_DDSS" ;
+
+  ################################################
+  #                    TO BE ADDED
+  ################################################
+
+  schema:softwareRequirements "" ;
+  schema:installUrl "" ;
+
+  schema:potentialAction [ a schema:ControlAction ;
+      #Description of INPUT
+      schema:object [ a schema:CreativeWork ;
+        schema:encodingFormat "application/*" ;
+        dct:conformsTo "file://cerifPlugin/schemas/fake.json" ;
+      ] ;
+      #Description of OUTPUT
+      schema:result [ a schema:CreativeWork ;
+        schema:encodingFormat "application/epos.geo+json" ;
+        dct:conformsTo "file://cerifPlugin/schemas/fake.json" ;
+      ]
+    ] ;
+
+    dct:relation <https://www.epos-eu.org/epos-dcat-ap/Seismology/WebService/AHEAD/restful/fdsnws-event/Operation>
+    dct:relation <https://www.epos-eu.org/epos-dcat-ap/Seismology/WebService/AHEAD/restful/macroseismic/Operation>
+    dct:relation <https://www.epos-eu.org/epos-dcat-ap/Seismology/Dataset/001/EMSC/operation>
+    dct:relation <https://www.epos-eu.org/epos-dcat-ap/NearFaultObservatory/CRL/event/Operation/001>
+    dct:relation <https://www.epos-eu.org/epos-dcat-ap/NearFaultObservatory/irpinia/event/Operation/001>
+    dct:relation <https://www.epos-eu.org/epos-dcat-ap/NearFaultObservatory/KOERI/Event/WebService/001/Operation/001>
+    dct:relation <https://www.epos-eu.org/epos-dcat-ap/NearFaultObservatory/TABOO/Event/WebService/001/Operation/001>
+    dct:relation <https://www.epos-eu.org/epos-dcat-ap/NearFaultObservatory/TABOO/HistEQ/WebService/001/Operation/001>
+    dct:relation <https://www.epos-eu.org/epos-dcat-ap/NearFaultObservatory/NIEP/Event/WebService/001/Operation/001>
+    dct:relation <https://www.epos-eu.org/epos-dcat-ap/Seismology/WebService/002/Operation/002/BGR>
+    dct:relation <https://www.epos-eu.org/epos-dcat-ap/Seismology/WebService/002/Operation/002/INGV>
+    dct:relation <https://www.epos-eu.org/epos-dcat-ap/Seismology/WebService/002/Operation/002/NOA>
+    dct:relation <https://www.epos-eu.org/epos-dcat-ap/Seismology/WebService/002/Operation/002/ODC>
+    dct:relation <https://www.epos-eu.org/epos-dcat-ap/Seismology/WebService/002/Operation/002/GFZ>
+    dct:relation <https://www.epos-eu.org/epos-dcat-ap/Seismology/WebService/002/Operation/002/LMU>
+    dct:relation <https://www.epos-eu.org/epos-dcat-ap/Seismology/WebService/002/Operation/002/NIEP>
+    dct:relation <https://www.epos-eu.org/epos-dcat-ap/Seismology/WebService/002/Operation/002/RESIF>
+    dct:relation <https://www.epos-eu.org/epos-dcat-ap/NearFaultObservatory/CRL/WebService/002/Operation/002/RESIF>
+    dct:relation <https://www.epos-eu.org/epos-dcat-ap/NearFaultObservatory/CRL/WebService/002/Operation/002/NOA>
+    dct:relation <https://www.epos-eu.org/epos-dcat-ap/NearFaultObservatory/irpinia/station/Operation/001>
+    dct:relation <https://www.epos-eu.org/epos-dcat-ap/NearFaultObservatory/KOERI/SEISMIC_STATION/WebService/001/Operation/001>
+    dct:relation <eida-sc3.infp.ro/fdsnws/station/1/query/operation>
+    dct:relation <https://www.epos-eu.org/epos-dcat-ap/NearFaultObservatory/TABOO/SEISMIC_STATION/WebService/001/Operation/001>
+    dct:relation <anthropogenic_hazards/webservice/is-epos_platform/episodes>
+    dct:relation <anthropogenic_hazards/webservice/is-epos_platform/episodes/CZORSZTYN>
+    dct:relation <anthropogenic_hazards/webservice/is-epos_platform/episode-elements/CZORSZTYN>
+    dct:relation <anthropogenic_hazards/webservice/is-epos_platform/episodes/GS>
+    dct:relation <anthropogenic_hazards/webservice/is-epos_platform/episode-elements/GS>
+    dct:relation <anthropogenic_hazards/webservice/is-epos_platform/episodes/LGCD>
+    dct:relation <anthropogenic_hazards/webservice/is-epos_platform/episode-elements/LGCD>
+    dct:relation <anthropogenic_hazards/webservice/is-epos_platform/episodes/SONG_TRANH>
+    dct:relation <anthropogenic_hazards/webservice/is-epos_platform/episode-elements/SONG_TRANH>
+    dct:relation <anthropogenic_hazards/webservice/is-epos_platform/episodes/USCB>
+    dct:relation <anthropogenic_hazards/webservice/is-epos_platform/episode-elements/USCB>
+    dct:relation <anthropogenic_hazards/webservice/is-epos_platform/episodes/BOBREK>
+    dct:relation <anthropogenic_hazards/webservice/is-epos_platform/episode-elements/BOBREK>
+    dct:relation <anthropogenic_hazards/webservice/is-epos_platform/episodes/PYHASALMI_MINE>
+    dct:relation <anthropogenic_hazards/webservice/is-epos_platform/episode-elements/PYHASALMI_MINE>
+    dct:relation <anthropogenic_hazards/webservice/is-epos_platform/episodes/LGF>
+    dct:relation <anthropogenic_hazards/webservice/is-epos_platform/episode-elements/LGF>
+    dct:relation <anthropogenic_hazards/webservice/is-epos_platform/episodes/MONTEYNARD>
+    dct:relation <anthropogenic_hazards/webservice/is-epos_platform/episode-elements/MONTEYNARD>
+    dct:relation <anthropogenic_hazards/webservice/is-epos_platform/episodes/SSFS1993>
+    dct:relation <anthropogenic_hazards/webservice/is-epos_platform/episode-elements/SSFS1993>
+    dct:relation <anthropogenic_hazards/webservice/is-epos_platform/episode-elements/SSFS2000>
+    dct:relation <anthropogenic_hazards/webservice/is-epos_platform/episode-elements/SSFS2003>
+    dct:relation <anthropogenic_hazards/webservice/is-epos_platform/episodes/GISOS-CERVILLE>
+    dct:relation <anthropogenic_hazards/webservice/is-epos_platform/episode-elements/GISOS-CERVILLE>
+    dct:relation <anthropogenic_hazards/webservice/is-epos_platform/episodes/STARFISH>
+    dct:relation <anthropogenic_hazards/webservice/is-epos_platform/episode-elements/STARFISH>
+    dct:relation <anthropogenic_hazards/webservice/is-epos_platform/episodes/THE_GEYSERS_Prati_9_and_Prati_29_cluster>
+    dct:relation <anthropogenic_hazards/webservice/is-epos_platform/episode-elements/THE_GEYSERS_Prati_9_and_Prati_29_cluster>
+    dct:relation <anthropogenic_hazards/webservice/is-epos_platform/episodes/THE_GEYSERS>
+    dct:relation <anthropogenic_hazards/webservice/is-epos_platform/episode-elements/THE_GEYSERS>
+    dct:relation <anthropogenic_hazards/webservice/is-epos_platform/episodes/VDF>
+    dct:relation <anthropogenic_hazards/webservice/is-epos_platform/episode-elements/VDF>
+    dct:relation <anthropogenic_hazards/webservice/is-epos_platform/episodes/VD>
+    dct:relation <anthropogenic_hazards/webservice/is-epos_platform/episode-elements/VD>
+    dct:relation <anthropogenic_hazards/webservice/is-epos_platform/episodes/PREESE_HALL>
+    dct:relation <anthropogenic_hazards/webservice/is-epos_platform/episode-elements/PREESE_HALL>
+    dct:relation <anthropogenic_hazards/webservice/is-epos_platform/episode-elements/THORESBY_COLLIERY>
+    dct:relation <anthropogenic_hazards/webservice/is-epos_platform/episode-elements/ASFORDBY>
+    dct:relation <anthropogenic_hazards/webservice/is-epos_platform/episode-elements/NORTHWICH>
+    dct:relation <anthropogenic_hazards/webservice/is-epos_platform/episodes/OK>
+    dct:relation <anthropogenic_hazards/webservice/is-epos_platform/episode-elements/OK>
+    dct:relation <anthropogenic_hazards/webservice/is-epos_platform/episode-elements/PREESALL_MINE>
+    dct:relation <anthropogenic_hazards/webservice/is-epos_platform/episodes/GRONINGEN_FIELD>
+    dct:relation <anthropogenic_hazards/webservice/is-epos_platform/episode-elements/GRONINGEN_FIELD>
+    dct:relation <anthropogenic_hazards/webservice/is-epos_platform/episode-elements/LAI_CHAU>
+    dct:relation <anthropogenic_hazards/webservice/is-epos_platform/episodes/LUBOCINO>
+    dct:relation <anthropogenic_hazards/webservice/is-epos_platform/episode-elements/LUBOCINO>
+    dct:relation <anthropogenic_hazards/webservice/is-epos_platform/episodes/WYSIN>
+    dct:relation <anthropogenic_hazards/webservice/is-epos_platform/episode-elements/WYSIN>
+    dct:relation <anthropogenic_hazards/webservice/is-epos_platform/episodes/CARBFIX>
+    dct:relation <anthropogenic_hazards/webservice/is-epos_platform/episode-elements/CARBFIX>
+    dct:relation <anthropogenic_hazards/webservice/is-epos_platform/episodes/SG>
+    dct:relation <anthropogenic_hazards/webservice/is-epos_platform/episode-elements/SG>
+    dct:relation <anthropogenic_hazards/webservice/is-epos_platform/episode-elements/VOUGLANS>
+    dct:relation <anthropogenic_hazards/webservice/is-epos_platform/episode-elements/GAZLI>
+    dct:relation <anthropogenic_hazards/webservice/is-epos_platform/episode-elements/BOGDANKA>
+
+.
