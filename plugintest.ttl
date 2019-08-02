@@ -78,8 +78,8 @@
   #                    TO BE ADDED
   ################################################
 
-  schema:softwareRequirements "" ;
-  schema:installUrl "" ;
+  #schema:softwareRequirements "" ;
+  #schema:installUrl "" ;
 
     dct:relation <https://www.epos-eu.org/epos-dcat-ap/Seismology/WebService/AHEAD/restful/fdsnws-event/Operation> ;
     dct:relation <https://www.epos-eu.org/epos-dcat-ap/Seismology/WebService/AHEAD/restful/macroseismic/Operation> ;
