@@ -54,11 +54,11 @@
   # This property contains contact information that can be used for sending comments about the software.
   schema:contactPoint <http://orcid.org/0000-0001-5805-9337/developerContact> ;
   # Link to the repository where the code is located (gitlab, github).
-  schema:codeRepository "https://github.com/vvalerio/link-no-plugin.git"^^xsd:anyURI ;
+  #schema:codeRepository "https://github.com/vvalerio/link-no-plugin.git"^^xsd:anyURI ;
   # This property refers to the license under which the software is made available.
   schema:license "https://github.com/vvalerio/cerifPlugin/blob/master/LICENSE"^^xsd:anyURI ;
   # This property refers to the web page URL which describes the software.
-  schema:mainEntityOfPage "https://github.com/vvalerio/link-no-plugin/blob/master/README.md"^^xsd:anyURI ;
+  #schema:mainEntityOfPage "https://github.com/vvalerio/link-no-plugin/blob/master/README.md"^^xsd:anyURI ;
   schema:programmingLanguage "Java" ;
 
 
@@ -73,6 +73,8 @@
 <https://www.epos-eu.org/epos-dcat-ap/ICS/SoftwareApplication/Plugin/FAKE> a schema:SoftwareApplication;
 
   schema:identifier "https://www.epos-eu.org/epos-dcat-ap/ICS/SoftwareApplication/Plugin/FAKE" ;
+  schema:name "Fake fake fake" ;
+  schema:contactPoint <http://orcid.org/0000-0001-5805-9337/developerContact> ;
 
   ################################################
   #                    TO BE ADDED
