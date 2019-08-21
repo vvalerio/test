@@ -45,10 +45,10 @@
 	schema:contactType "manager";
 .
 
-<https://www.epos-eu.org/epos-dcat-ap/ICS/SoftwareApplication/Plugin/FAKE> a schema:SoftwareApplication;
+<https://www.epos-eu.org/epos-dcat-ap/ICS/SoftwareApplication/Plugin/FAKE2> a schema:SoftwareApplication;
 
-  schema:identifier "https://www.epos-eu.org/epos-dcat-ap/ICS/SoftwareApplication/Plugin/FAKE" ;
-  schema:name "Fake fake fake" ;
+  schema:identifier "https://www.epos-eu.org/epos-dcat-ap/ICS/SoftwareApplication/Plugin/FAKE2" ;
+  schema:name "Fake fake fake 2" ;
   schema:contactPoint <http://orcid.org/0000-0001-5805-9337/developerContact> ;
 
   dct:relation <https://www.epos-eu.org/epos-dcat-ap/Seismology/WebService/AHEAD/restful/fdsnws-event/Operation> ;
