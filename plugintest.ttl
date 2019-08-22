@@ -1,27 +1,64 @@
-@prefix adms:<http://www.w3.org/ns/adms#> .
-@prefix rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix epos:<https://www.epos-eu.org/epos-dcat-ap#> .
-@prefix dc:<http://purl.org/dc/elements/1.1/> .
-@prefix dct:<http://purl.org/dc/terms/> .
-@prefix vcard:<http://www.w3.org/2006/vcard/ns#> .
-@prefix hydra:<http://www.w3.org/ns/hydra/core#> .
-@prefix xsd:<http://www.w3.org/2001/XMLSchema#> .
-@prefix schema:<http://schema.org/> .
-@prefix dcat:<http://www.w3.org/ns/dcat#> .
-@prefix cnt:<http://www.w3.org/2011/content#> .
-@prefix locn:<http://www.w3.org/ns/locn#> .
-@prefix skos:<http://www.w3.org/2004/02/skos/core#> .
-@prefix rdfs:<http://www.w3.org/2000/01/rdf-schema#> .
-@prefix http:<http://www.w3.org/2006/http#> .
-@prefix owl:<http://www.w3.org/2002/07/owl#> .
-@prefix gsp:<http://www.opengis.net/ont/geosparql#> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix epos: <https://www.epos-eu.org/epos-dcat-ap#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix hydra: <http://www.w3.org/ns/hydra/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix cnt: <http://www.w3.org/2011/content#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix http: <http://www.w3.org/2006/http#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix gsp: <http://www.opengis.net/ont/geosparql#> .
 
+#PLUGIN AUTHOR
+<https://orcid.org/0000-0001-5805-9337> a schema:Person ;
+    schema:identifier [ a schema:PropertyValue ;
+      schema:propertyID  "orcid" ;
+      schema:value   "0000-0001-5805-9337" ;
+    ];
+	  schema:familyName "Vinciarelli" ;
+	  schema:givenName "Valerio" ;
+    schema:address [ a schema:PostalAddress ;
+	 	    schema:streetAddress "Via di vigna murata, 605" ;
+		    schema:addressLocality "Rome" ;
+		    schema:postalCode "00143" ;
+		    schema:addressCountry "Italy" ;
+	  ];
+    schema:email "valerio.vinciarelli@ingv.it" ;
+    schema:telephone "+XXXXXXXXX" ;
+    schema:url  "http://orcid.org/0000-0001-5805-9337"^^xsd:anyURI ;
+	  schema:qualifications "IT" ;
+	  schema:affiliation <PIC:999472675> ;
+    schema:contactPoint <http://orcid.org/0000-0001-7750-7254/developerContact> ;
+.
 
+# DEVELOPER CONTACT
+<http://orcid.org/0000-0001-5805-9337/developerContact> a schema:ContactPoint ;
+	schema:email "valerio.vinciarelli@ingv.it";
+	schema:availableLanguage "en" ;
+	schema:contactType "developerContact";
+.
 
-<https://www.epos-eu.org/epos-dcat-ap/ICS/SoftwareApplication/Plugin/FAKE2> a schema:SoftwareApplication;
+<https://www.epos-eu.org/epos-dcat-ap/ICS/SoftwareSourceCode/Plugin/TCS> a schema:SoftwareSourceCode;
 
-  schema:identifier "https://www.epos-eu.org/epos-dcat-ap/ICS/SoftwareApplication/Plugin/FAKE2" ;
-  schema:name "Fake fake fake 2" ;
+  schema:identifier "https://www.epos-eu.org/epos-dcat-ap/ICS/SoftwareSourceCode/Plugin/TCS" ;
+  schema:name "Plugin for the conversion from TCS to JSON payload" ;
+  schema:description "Plugin for the conversion from TCS to JSON payload" ;
+
+  #CONVERSION 1
+  schema:targetProduct <https://www.epos-eu.org/epos-dcat-ap/ICS/SoftwareApplication/Plugin/TR1> ;
+
+.
+
+<https://www.epos-eu.org/epos-dcat-ap/ICS/SoftwareApplication/Plugin/TR1> a schema:SoftwareApplication;
+
+  schema:identifier "https://www.epos-eu.org/epos-dcat-ap/ICS/SoftwareApplication/Plugin/CERIF2JSON_DDSS" ;
 
   dct:relation <https://www.epos-eu.org/epos-dcat-ap/Seismology/WebService/AHEAD/restful/fdsnws-event/Operation> ;
   dct:relation <https://www.epos-eu.org/epos-dcat-ap/Seismology/WebService/AHEAD/restful/macroseismic/Operation> ;
@@ -34,5 +71,5 @@
   dct:relation <https://catalog.terradue.com/gep-epos/SatelliteObservations/WebService/DEM_RADAR_GEOMETRY/Operation/Search> ;
   dct:relation <https://catalog.terradue.com/gep-epos/SatelliteObservations/WebService/LOOKUP_TABLE_RADAR2GROUD_COORDINATES/Operation/Search> ;
   dct:relation <GlassFramework/webresources/stations/v2/station/bbox/operation> ;
-
+  
 .
