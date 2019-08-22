@@ -1460,17 +1460,6 @@
 	  hydra:entrypoint "https://www.emidius.eu/AHEAD/services/"^^xsd:anyURI;
 .
 
-<https://www.epos-eu.org/epos-dcat-ap/ICS/SoftwareSourceCode/Plugin/TCS> a schema:SoftwareSourceCode;
-
-  schema:identifier "https://www.epos-eu.org/epos-dcat-ap/ICS/SoftwareSourceCode/Plugin/TCS" ;
-  schema:name "Plugin for the conversion from TCS to JSON payload" ;
-  schema:description "Plugin for the conversion from TCS to JSON payload" ;
-
-  #CONVERSION 1
-  schema:targetProduct <https://www.epos-eu.org/epos-dcat-ap/ICS/SoftwareApplication/Plugin/TR1> ;
-
-.
-
 <https://www.epos-eu.org/epos-dcat-ap/ICS/SoftwareApplication/Plugin/TR1> a schema:SoftwareApplication;
 
   schema:identifier "https://www.epos-eu.org/epos-dcat-ap/ICS/SoftwareApplication/Plugin/TR1" ;
