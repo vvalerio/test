@@ -29,7 +29,7 @@
 
 <https://www.epos-eu.org/epos-dcat-ap/ICS/SoftwareApplication/Plugin/TR1> a schema:SoftwareApplication;
 
-  schema:identifier "https://www.epos-eu.org/epos-dcat-ap/ICS/SoftwareApplication/Plugin/CERIF2JSON_DDSS" ;
+  schema:identifier "https://www.epos-eu.org/epos-dcat-ap/ICS/SoftwareApplication/Plugin/TR1" ;
 
   dct:relation <https://www.epos-eu.org/epos-dcat-ap/Seismology/WebService/AHEAD/restful/fdsnws-event/Operation> ;
   dct:relation <https://www.epos-eu.org/epos-dcat-ap/Seismology/WebService/AHEAD/restful/macroseismic/Operation> ;
