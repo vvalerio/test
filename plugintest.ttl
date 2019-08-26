@@ -35,14 +35,14 @@
     schema:url  "http://orcid.org/0000-0001-5805-9337"^^xsd:anyURI ;
 	  schema:qualifications "IT" ;
 	  schema:affiliation <PIC:999472675> ;
-    schema:contactPoint <http://orcid.org/0000-0001-7750-7254/developerContact> ;
+    schema:contactPoint <http://orcid.org/0000-0001-5805-9337/scientificContact> ;
 .
 
 # DEVELOPER CONTACT
-<http://orcid.org/0000-0001-5805-9337/developerContact> a schema:ContactPoint ;
+<http://orcid.org/0000-0001-5805-9337/scientificContact> a schema:ContactPoint ;
 	schema:email "valerio.vinciarelli@ingv.it";
 	schema:availableLanguage "en" ;
-	schema:contactType "developerContact";
+	schema:contactType "scientificContact";
 .
 
 <https://www.epos-eu.org/epos-dcat-ap/ICS/SoftwareSourceCode/Plugin/TCS> a schema:SoftwareSourceCode;
