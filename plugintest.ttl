@@ -16,35 +16,6 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix gsp: <http://www.opengis.net/ont/geosparql#> .
 
-#PLUGIN AUTHOR
-<https://orcid.org/0000-0001-5805-9337> a schema:Person ;
-    schema:identifier [ a schema:PropertyValue ;
-      schema:propertyID  "orcid" ;
-      schema:value   "0000-0001-5805-9337" ;
-    ];
-	  schema:familyName "Vinciarelli" ;
-	  schema:givenName "Valerio" ;
-    schema:address [ a schema:PostalAddress ;
-	 	    schema:streetAddress "Via di vigna murata, 605" ;
-		    schema:addressLocality "Rome" ;
-		    schema:postalCode "00143" ;
-		    schema:addressCountry "Italy" ;
-	  ];
-    schema:email "valerio.vinciarelli@ingv.it" ;
-    schema:telephone "+XXXXXXXXX" ;
-    schema:url  "http://orcid.org/0000-0001-5805-9337"^^xsd:anyURI ;
-	  schema:qualifications "IT" ;
-	  schema:affiliation <PIC:999472675> ;
-    schema:contactPoint <http://orcid.org/0000-0001-5805-9337/scientificContact> ;
-.
-
-# DEVELOPER CONTACT
-<http://orcid.org/0000-0001-5805-9337/scientificContact> a schema:ContactPoint ;
-	schema:email "valerio.vinciarelli@ingv.it";
-	schema:availableLanguage "en" ;
-	schema:contactType "scientificContact";
-.
-
 <https://www.epos-eu.org/epos-dcat-ap/ICS/SoftwareSourceCode/Plugin/TCS> a schema:SoftwareSourceCode;
 
   schema:identifier "https://www.epos-eu.org/epos-dcat-ap/ICS/SoftwareSourceCode/Plugin/TCS" ;
