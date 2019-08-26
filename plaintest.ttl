@@ -30,6 +30,9 @@
 <https://www.epos-eu.org/epos-dcat-ap/ICS/SoftwareApplication/Plugin/TR1> a schema:SoftwareApplication ;
 
   schema:identifier "https://www.epos-eu.org/epos-dcat-ap/ICS/SoftwareApplication/Plugin/TR1" ;
+  schema:name "Plugin for the conversion from TCS to JSON payload" ;
+  schema:description "Plugin for the conversion from TCS to JSON payload" ;
+
 
   dct:relation <anthropogenic_hazards/webservice/is-epos_platform/episodes>;
   dct:relation <anthropogenic_hazards/webservice/is-epos_platform/apps>;
