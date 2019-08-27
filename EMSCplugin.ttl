@@ -17,15 +17,15 @@
 @prefix gsp: <http://www.opengis.net/ont/geosparql#> .
 
 
-<https://www.epos-eu.org/epos-dcat-ap/ICS/SoftwareApplication/Plugin/TR1> a schema:SoftwareApplication ;
+<https://www.epos-eu.org/epos-dcat-ap/ICS/SoftwareApplication/Plugin/TR2> a schema:SoftwareApplication ;
 
-  schema:identifier "https://www.epos-eu.org/epos-dcat-ap/ICS/SoftwareApplication/Plugin/TR1" ;
-  schema:name "TCS Episodes Plugin Mapper" ;
+  schema:identifier "https://www.epos-eu.org/epos-dcat-ap/ICS/SoftwareApplication/Plugin/TR2" ;
+  schema:name "TCS EMSC Plugin Mapper" ;
   schema:description "Plugin episodes for the conversion from TCS to JSON payload based on OLD Mapper" ;
 
 #EPISODES
-  dct:relation <https://www.epos-eu.org/epos-dcat-ap/Seismology/Dataset/003/EMSC/operation>
-  dct:relation <https://www.epos-eu.org/epos-dcat-ap/Seismology/Dataset/001/EMSC/operation>
+  dct:relation <https://www.epos-eu.org/epos-dcat-ap/Seismology/Dataset/003/EMSC/operation> ;
+  dct:relation <https://www.epos-eu.org/epos-dcat-ap/Seismology/Dataset/001/EMSC/operation> ;
 .
 
 
