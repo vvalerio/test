@@ -22,7 +22,6 @@
   schema:identifier "https://www.epos-eu.org/epos-dcat-ap/ICS/SoftwareApplication/Plugin/TR1" ;
   schema:name "TCS Episodes Plugin Mapper" ;
   schema:description "Plugin episodes for the conversion from TCS to JSON payload based on OLD Mapper" ;
-ì
 
 #EPISODES
   dct:relation <anthropogenic_hazards/webservice/is-epos_platform/episodes> ;
