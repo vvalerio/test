@@ -20,10 +20,17 @@
 <https://www.epos-eu.org/epos-dcat-ap/ICS/SoftwareApplication/Plugin/TR1> a schema:SoftwareApplication ;
 
   schema:identifier "https://www.epos-eu.org/epos-dcat-ap/ICS/SoftwareApplication/Plugin/TR1" ;
-  schema:name "Plugin for the conversion from TCS to JSON payload" ;
-  schema:description "Plugin for the conversion from TCS to JSON payload" ;
+  schema:name "TCS Internal Plugin Mapper" ;
+  schema:description "Plugin for the conversion from TCS to JSON payload based on OLD Mapper" ;
 
 
+#STATIONS
+
+#EVENTS
+
+#SATELLITE
+
+#EPISODES
   dct:relation <anthropogenic_hazards/webservice/is-epos_platform/episodes> ;
   dct:relation <anthropogenic_hazards/webservice/is-epos_platform/apps> ;
   dct:relation <anthropogenic_hazards/webservice/is-epos_platform/episode-elements/CZORSZTYN> ;
@@ -64,6 +71,15 @@
 
 .
 
+
+
+#STATIONS
+
+#EVENTS
+
+#SATELLITE
+
+#EPISODES
 <anthropogenic_hazards/webservice/is-epos_platform/episodes> a hydra:Operation ;	
 .	
 
