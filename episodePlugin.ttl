@@ -25,7 +25,6 @@
 
 #EPISODES
   dct:relation <anthropogenic_hazards/webservice/is-epos_platform/episodes> ;
-  dct:relation <anthropogenic_hazards/webservice/is-epos_platform/apps> ;
   dct:relation <anthropogenic_hazards/webservice/is-epos_platform/episode-elements/CZORSZTYN> ;
   dct:relation <anthropogenic_hazards/webservice/is-epos_platform/episode-elements/GS> ;
   dct:relation <anthropogenic_hazards/webservice/is-epos_platform/episode-elements/LGCD> ;
