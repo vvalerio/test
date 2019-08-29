@@ -32,5 +32,6 @@
 
 #WP11
 <opgc.fr/vobs/gazvolc/WP11/DDSS-036/data-catalog> a hydra:Operation ;	
+.
 <hotvolc.opgc.fr/data-search/WP11/DDSS-049> a hydra:Operation ;
 .	
