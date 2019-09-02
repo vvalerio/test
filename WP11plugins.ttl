@@ -26,7 +26,7 @@
 #EPISODES
   dct:relation <opgc.fr/vobs/gazvolc/WP11/DDSS-036/data-catalog> ;
   dct:relation <hotvolc.opgc.fr/data-search/WP11/DDSS-049> ;
-
+  dct:relation <opgc.fr/vobs/oi2/WP11/DDSS-050/data-catalog> ;
 .
 
 
@@ -34,4 +34,6 @@
 <opgc.fr/vobs/gazvolc/WP11/DDSS-036/data-catalog> a hydra:Operation ;	
 .
 <hotvolc.opgc.fr/data-search/WP11/DDSS-049> a hydra:Operation ;
+.	
+<opgc.fr/vobs/oi2/WP11/DDSS-050/data-catalog> a hydra:Operation ;
 .	
