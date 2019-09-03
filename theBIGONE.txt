@@ -1,5 +1,0 @@
-https://github.com/epos-eu/EPOS-DCAT-AP/raw/EPOS-DCAT-AP-shapes/examples/WP11/INGV_WP11_031.ttl
-https://github.com/epos-eu/EPOS-DCAT-AP/raw/EPOS-DCAT-AP-shapes/examples/WP11/rdfturtle_catalogueeruptions.ttl
-https://github.com/epos-eu/EPOS-DCAT-AP/raw/EPOS-DCAT-AP-shapes/examples/WP11/WP11_IPGP_DDSS031_volcanoreport.ttl
-https://github.com/epos-eu/EPOS-DCAT-AP/raw/EPOS-DCAT-AP-shapes/examples/WP11/OPGC_WP11-DDSS-051_lava_map.ttl
-https://github.com/epos-eu/EPOS-DCAT-AP/raw/EPOS-DCAT-AP-shapes/examples/WP11/WP11_IPGP_DDSS001-002.ttl
