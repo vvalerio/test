@@ -20,8 +20,8 @@
 <https://www.epos-eu.org/epos-dcat-ap/ICS/SoftwareApplication/Plugin/TR1> a schema:SoftwareApplication ;
 
   schema:identifier "https://www.epos-eu.org/epos-dcat-ap/ICS/SoftwareApplication/Plugin/TR1" ;
-  schema:name "TCS Episodes Plugin Mapper" ;
-  schema:description "Plugin episodes for the conversion from TCS to JSON payload based on OLD Mapper" ;
+  schema:name "TCS WP14 Plugin Mapper" ;
+  schema:description "Plugin WP14 for the conversion from TCS to JSON payload based on OLD Mapper" ;
 
 #EPISODES
   dct:relation <anthropogenic_hazards/webservice/is-epos_platform/episodes> ;
@@ -65,113 +65,113 @@
 
 
 #EPISODES
-<anthropogenic_hazards/webservice/is-epos_platform/episodes> a hydra:Operation ;	
-.	
+<anthropogenic_hazards/webservice/is-epos_platform/episodes> a hydra:Operation ;
+.
 
-<anthropogenic_hazards/webservice/is-epos_platform/apps> a hydra:Operation ;	
-.	
+<anthropogenic_hazards/webservice/is-epos_platform/apps> a hydra:Operation ;
+.
 
-<anthropogenic_hazards/webservice/is-epos_platform/episode-elements/CZORSZTYN> a hydra:Operation ;	
-.	
+<anthropogenic_hazards/webservice/is-epos_platform/episode-elements/CZORSZTYN> a hydra:Operation ;
+.
 
-<anthropogenic_hazards/webservice/is-epos_platform/episode-elements/GS> a hydra:Operation ;	
-.	
+<anthropogenic_hazards/webservice/is-epos_platform/episode-elements/GS> a hydra:Operation ;
+.
 
-<anthropogenic_hazards/webservice/is-epos_platform/episode-elements/LGCD> a hydra:Operation ;	
-.	
+<anthropogenic_hazards/webservice/is-epos_platform/episode-elements/LGCD> a hydra:Operation ;
+.
 
-<anthropogenic_hazards/webservice/is-epos_platform/episode-elements/SONG_TRANH> a hydra:Operation ;	
-.	
+<anthropogenic_hazards/webservice/is-epos_platform/episode-elements/SONG_TRANH> a hydra:Operation ;
+.
 
-<anthropogenic_hazards/webservice/is-epos_platform/episode-elements/USCB> a hydra:Operation ;	
-.	
+<anthropogenic_hazards/webservice/is-epos_platform/episode-elements/USCB> a hydra:Operation ;
+.
 
-<anthropogenic_hazards/webservice/is-epos_platform/episode-elements/BOBREK> a hydra:Operation ;	
-.	
+<anthropogenic_hazards/webservice/is-epos_platform/episode-elements/BOBREK> a hydra:Operation ;
+.
 
-<anthropogenic_hazards/webservice/is-epos_platform/episode-elements/PYHASALMI_MINE> a hydra:Operation ;	
-.	
+<anthropogenic_hazards/webservice/is-epos_platform/episode-elements/PYHASALMI_MINE> a hydra:Operation ;
+.
 
-<anthropogenic_hazards/webservice/is-epos_platform/episode-elements/LGF> a hydra:Operation ;	
-.	
+<anthropogenic_hazards/webservice/is-epos_platform/episode-elements/LGF> a hydra:Operation ;
+.
 
-<anthropogenic_hazards/webservice/is-epos_platform/episode-elements/MONTEYNARD> a hydra:Operation ;	
-.	
+<anthropogenic_hazards/webservice/is-epos_platform/episode-elements/MONTEYNARD> a hydra:Operation ;
+.
 
-<anthropogenic_hazards/webservice/is-epos_platform/episode-elements/SSFS1993> a hydra:Operation ;	
-.	
+<anthropogenic_hazards/webservice/is-epos_platform/episode-elements/SSFS1993> a hydra:Operation ;
+.
 
-<anthropogenic_hazards/webservice/is-epos_platform/episode-elements/SSFS2000> a hydra:Operation ;	
-.	
+<anthropogenic_hazards/webservice/is-epos_platform/episode-elements/SSFS2000> a hydra:Operation ;
+.
 
-<anthropogenic_hazards/webservice/is-epos_platform/episode-elements/SSFS2003> a hydra:Operation ;	
-.	
+<anthropogenic_hazards/webservice/is-epos_platform/episode-elements/SSFS2003> a hydra:Operation ;
+.
 
-<anthropogenic_hazards/webservice/is-epos_platform/episode-elements/SSFS2004> a hydra:Operation ;	
-.	
+<anthropogenic_hazards/webservice/is-epos_platform/episode-elements/SSFS2004> a hydra:Operation ;
+.
 
-<anthropogenic_hazards/webservice/is-epos_platform/episode-elements/SSFS2005> a hydra:Operation ;	
-.	
+<anthropogenic_hazards/webservice/is-epos_platform/episode-elements/SSFS2005> a hydra:Operation ;
+.
 
-<anthropogenic_hazards/webservice/is-epos_platform/episode-elements/GISOS-CERVILLE> a hydra:Operation ;	
-.	
+<anthropogenic_hazards/webservice/is-epos_platform/episode-elements/GISOS-CERVILLE> a hydra:Operation ;
+.
 
-<anthropogenic_hazards/webservice/is-epos_platform/episode-elements/STARFISH> a hydra:Operation ;	
-.	
+<anthropogenic_hazards/webservice/is-epos_platform/episode-elements/STARFISH> a hydra:Operation ;
+.
 
-<anthropogenic_hazards/webservice/is-epos_platform/episode-elements/THE_GEYSERS_Prati_9_and_Prati_29_cluster> a hydra:Operation ;	
-.	
+<anthropogenic_hazards/webservice/is-epos_platform/episode-elements/THE_GEYSERS_Prati_9_and_Prati_29_cluster> a hydra:Operation ;
+.
 
-<anthropogenic_hazards/webservice/is-epos_platform/episode-elements/THE_GEYSERS> a hydra:Operation ;	
-.	
+<anthropogenic_hazards/webservice/is-epos_platform/episode-elements/THE_GEYSERS> a hydra:Operation ;
+.
 
-<anthropogenic_hazards/webservice/is-epos_platform/episode-elements/VDF> a hydra:Operation ;	
-.	
+<anthropogenic_hazards/webservice/is-epos_platform/episode-elements/VDF> a hydra:Operation ;
+.
 
-<anthropogenic_hazards/webservice/is-epos_platform/episode-elements/VD> a hydra:Operation ;	
-.	
+<anthropogenic_hazards/webservice/is-epos_platform/episode-elements/VD> a hydra:Operation ;
+.
 
-<anthropogenic_hazards/webservice/is-epos_platform/episode-elements/PREESE_HALL> a hydra:Operation ;	
-.	
+<anthropogenic_hazards/webservice/is-epos_platform/episode-elements/PREESE_HALL> a hydra:Operation ;
+.
 
-<anthropogenic_hazards/webservice/is-epos_platform/episode-elements/THORESBY_COLLIERY> a hydra:Operation ;	
-.	
+<anthropogenic_hazards/webservice/is-epos_platform/episode-elements/THORESBY_COLLIERY> a hydra:Operation ;
+.
 
-<anthropogenic_hazards/webservice/is-epos_platform/episode-elements/ASFORDBY> a hydra:Operation ;	
-.	
+<anthropogenic_hazards/webservice/is-epos_platform/episode-elements/ASFORDBY> a hydra:Operation ;
+.
 
-<anthropogenic_hazards/webservice/is-epos_platform/episode-elements/NORTHWICH> a hydra:Operation ;	
-.	
+<anthropogenic_hazards/webservice/is-epos_platform/episode-elements/NORTHWICH> a hydra:Operation ;
+.
 
-<anthropogenic_hazards/webservice/is-epos_platform/episode-elements/OK> a hydra:Operation ;	
-.	
+<anthropogenic_hazards/webservice/is-epos_platform/episode-elements/OK> a hydra:Operation ;
+.
 
-<anthropogenic_hazards/webservice/is-epos_platform/episode-elements/PREESALL_MINE> a hydra:Operation ;	
-.	
+<anthropogenic_hazards/webservice/is-epos_platform/episode-elements/PREESALL_MINE> a hydra:Operation ;
+.
 
-<anthropogenic_hazards/webservice/is-epos_platform/episode-elements/GRONINGEN_FIELD> a hydra:Operation ;	
-.	
+<anthropogenic_hazards/webservice/is-epos_platform/episode-elements/GRONINGEN_FIELD> a hydra:Operation ;
+.
 
-<anthropogenic_hazards/webservice/is-epos_platform/episode-elements/LAI_CHAU> a hydra:Operation ;	
-.	
+<anthropogenic_hazards/webservice/is-epos_platform/episode-elements/LAI_CHAU> a hydra:Operation ;
+.
 
-<anthropogenic_hazards/webservice/is-epos_platform/episode-elements/LUBOCINO> a hydra:Operation ;	
-.	
+<anthropogenic_hazards/webservice/is-epos_platform/episode-elements/LUBOCINO> a hydra:Operation ;
+.
 
-<anthropogenic_hazards/webservice/is-epos_platform/episode-elements/WYSIN> a hydra:Operation ;	
-.	
+<anthropogenic_hazards/webservice/is-epos_platform/episode-elements/WYSIN> a hydra:Operation ;
+.
 
-<anthropogenic_hazards/webservice/is-epos_platform/episode-elements/CARBFIX> a hydra:Operation ;	
-.	
+<anthropogenic_hazards/webservice/is-epos_platform/episode-elements/CARBFIX> a hydra:Operation ;
+.
 
-<anthropogenic_hazards/webservice/is-epos_platform/episode-elements/SG> a hydra:Operation ;	
-.	
+<anthropogenic_hazards/webservice/is-epos_platform/episode-elements/SG> a hydra:Operation ;
+.
 
-<anthropogenic_hazards/webservice/is-epos_platform/episode-elements/VOUGLANS> a hydra:Operation ;	
-.	
+<anthropogenic_hazards/webservice/is-epos_platform/episode-elements/VOUGLANS> a hydra:Operation ;
+.
 
-<anthropogenic_hazards/webservice/is-epos_platform/episode-elements/GAZLI> a hydra:Operation ;	
-.	
+<anthropogenic_hazards/webservice/is-epos_platform/episode-elements/GAZLI> a hydra:Operation ;
+.
 
-<anthropogenic_hazards/webservice/is-epos_platform/episode-elements/BOGDANKA> a hydra:Operation ;	
-.	
+<anthropogenic_hazards/webservice/is-epos_platform/episode-elements/BOGDANKA> a hydra:Operation ;
+.

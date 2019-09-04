@@ -20,20 +20,48 @@
 <https://www.epos-eu.org/epos-dcat-ap/ICS/SoftwareApplication/Plugin/TR3> a schema:SoftwareApplication ;
 
   schema:identifier "https://www.epos-eu.org/epos-dcat-ap/ICS/SoftwareApplication/Plugin/TR3" ;
-  schema:name "TCS Wp11 Plugin Mapper" ;
-  schema:description "Plugin Wp11 for the conversion from TCS to JSON payload based on OLD Mapper" ;
+  schema:name "TCS WP11 Plugin Mapper" ;
+  schema:description "Plugin WP11 for the conversion from TCS to JSON payload based on OLD Mapper" ;
 
-#EPISODES
   dct:relation <opgc.fr/vobs/gazvolc/WP11/DDSS-036/data-catalog> ;
+  dct:relation <hotvolc.opgc.fr/data-search/WP11/DDSS-047> ;
   dct:relation <hotvolc.opgc.fr/data-search/WP11/DDSS-049> ;
+  dct:relation <opgc.fr/vobs/voldorad/WP11/DDSS-024/data-catalog> ;
+  dct:relation <opgc.fr/vobs/dynvolc/WP11/DDSS-036/data-catalog> ;
+  dct:relation <opgc.fr/vobs/dynvolc/WP11/DDSS-026/rocks-collection> ;
   dct:relation <opgc.fr/vobs/oi2/WP11/DDSS-050/data-catalog> ;
+  dct:relation <opgc.fr/vobs/oi2/WP11/DDSS-051/lava-map> ;
+  dct:relation <opgc.fr/vobs/voldorad/WP11/DDSS-053/spectra> ;
+  dct:relation <https://www.epos-eu.org/epos-dcat-ap/Seismology/WebService/002/Operation/002/IGME> ;
+  dct:relation <https://www.epos-eu.org/epos-dcat-ap/volcano-observations/WebService/DDSS001-2/Operation/station/RESIF> ;
+  dct:relation <https://www.epos-eu.org/epos-dcat-ap/volcano-observations/WebService/DDSS005/Operation/station/IPGP> ;
+  dct:relation <https://www.epos-eu.org/epos-dcat-ap/volcano-observations/WebService/DDSS005/Operation/station/IPGP> ;
 .
 
 
-#WP11
-<opgc.fr/vobs/gazvolc/WP11/DDSS-036/data-catalog> a hydra:Operation ;	
+<opgc.fr/vobs/gazvolc/WP11/DDSS-036/data-catalog> a hydra:Operation ;
+.
+<hotvolc.opgc.fr/data-search/WP11/DDSS-047> a hydra:Operation ;
 .
 <hotvolc.opgc.fr/data-search/WP11/DDSS-049> a hydra:Operation ;
-.	
+.
+<opgc.fr/vobs/voldorad/WP11/DDSS-024/data-catalog> a hydra:Operation ;
+.
+<opgc.fr/vobs/dynvolc/WP11/DDSS-036/data-catalog> a hydra:Operation ;
+.
+<opgc.fr/vobs/dynvolc/WP11/DDSS-026/rocks-collection> a hydra:Operation ;
+.
 <opgc.fr/vobs/oi2/WP11/DDSS-050/data-catalog> a hydra:Operation ;
-.	
+.
+<opgc.fr/vobs/oi2/WP11/DDSS-051/lava-map> a hydra:Operation ;
+.
+<opgc.fr/vobs/voldorad/WP11/DDSS-053/spectra> a hydra:Operation ;
+.
+<https://www.epos-eu.org/epos-dcat-ap/Seismology/WebService/002/Operation/002/IGME> a hydra:Operation ;
+.
+<https://www.epos-eu.org/epos-dcat-ap/volcano-observations/WebService/DDSS001-2/Operation/station/RESIF> a hydra:Operation ;
+.
+<https://www.epos-eu.org/epos-dcat-ap/volcano-observations/WebService/DDSS005/Operation/station/IPGP> a hydra:Operation ;
+.
+<https://www.epos-eu.org/epos-dcat-ap/volcano-observations/WebService/DDSS005/Operation/station/IPGP> a hydra:Operation ;
+.

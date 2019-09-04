@@ -20,8 +20,8 @@
 <https://www.epos-eu.org/epos-dcat-ap/ICS/SoftwareApplication/Plugin/TR4> a schema:SoftwareApplication ;
 
   schema:identifier "https://www.epos-eu.org/epos-dcat-ap/ICS/SoftwareApplication/Plugin/TR4" ;
-  schema:name "TCS Wp12 Plugin Mapper" ;
-  schema:description "Plugin Wp12 for the conversion from TCS to JSON payload based on OLD Mapper" ;
+  schema:name "TCS WP12 Plugin Mapper" ;
+  schema:description "Plugin WP12 for the conversion from TCS to JSON payload based on OLD Mapper" ;
 
 #EPISODES
   dct:relation <https://catalog.terradue.com/gep-epos/SatelliteObservations/WebService/WRAPPED_INTERFEROGRAM/Operation/Search> ;
