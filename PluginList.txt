@@ -1,0 +1,6 @@
+https://raw.githubusercontent.com/vvalerio/test/develop/WP08Plugin.ttl
+https://raw.githubusercontent.com/vvalerio/test/develop/WP09Plugin.ttl
+https://raw.githubusercontent.com/vvalerio/test/develop/WP10Plugin.ttl
+https://raw.githubusercontent.com/vvalerio/test/develop/WP11plugin.ttl
+https://raw.githubusercontent.com/vvalerio/test/develop/WP12Plugin.ttl
+https://raw.githubusercontent.com/vvalerio/test/develop/WP14Plugin.ttl
