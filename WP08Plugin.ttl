@@ -20,18 +20,47 @@
 <https://www.epos-eu.org/epos-dcat-ap/ICS/SoftwareApplication/Plugin/TR2> a schema:SoftwareApplication ;
 
   schema:identifier "https://www.epos-eu.org/epos-dcat-ap/ICS/SoftwareApplication/Plugin/TR2" ;
-  schema:name "TCS EMSC Plugin Mapper" ;
-  schema:description "Plugin episodes for the conversion from TCS to JSON payload based on OLD Mapper" ;
+  schema:name "TCS WP08 Plugin Mapper" ;
+  schema:description "Plugin WP08 for the conversion from TCS to JSON payload based on OLD Mapper" ;
 
 #EPISODES
   dct:relation <https://www.epos-eu.org/epos-dcat-ap/Seismology/Dataset/003/EMSC/operation> ;
+  dct:relation <https://www.epos-eu.org/epos-dcat-ap/Seismology/WebService/AHEAD/restful/fdsnws-event/Operation> ;
+  dct:relation <https://www.epos-eu.org/epos-dcat-ap/Seismology/WebService/AHEAD/restful/macroseismic/Operation> ;
+  dct:relation <https://www.epos-eu.org/epos-dcat-ap/Seismology/WebService/002/Operation/002/BGR> ;
+  dct:relation <https://www.epos-eu.org/epos-dcat-ap/Seismology/WebService/002/Operation/002/INGV> ;
+  dct:relation <https://www.epos-eu.org/epos-dcat-ap/Seismology/WebService/002/Operation/002/NOA> ;
+  dct:relation <https://www.epos-eu.org/epos-dcat-ap/Seismology/WebService/002/Operation/002/ODC> ;
   dct:relation <https://www.epos-eu.org/epos-dcat-ap/Seismology/Dataset/001/EMSC/operation> ;
+  dct:relation <https://www.epos-eu.org/epos-dcat-ap/Seismology/WebService/002/Operation/002/GFZ> ;
+  dct:relation <https://www.epos-eu.org/epos-dcat-ap/Seismology/WebService/002/Operation/002/LMU> ;
+  dct:relation <https://www.epos-eu.org/epos-dcat-ap/Seismology/WebService/002/Operation/002/NIEP> ;
+  dct:relation <https://www.epos-eu.org/epos-dcat-ap/Seismology/WebService/002/Operation/002/RESIF> ;
 .
 
 
 #EVENTS
-<https://www.epos-eu.org/epos-dcat-ap/Seismology/Dataset/003/EMSC/operation> a hydra:Operation ;	
-.	
-
-<https://www.epos-eu.org/epos-dcat-ap/Seismology/Dataset/001/EMSC/operation> a hydra:Operation ;	
-.	
+<https://www.epos-eu.org/epos-dcat-ap/Seismology/Dataset/003/EMSC/operation> a hydra:Operation ;
+.
+<https://www.epos-eu.org/epos-dcat-ap/Seismology/WebService/AHEAD/restful/fdsnws-event/Operation> a hydra:Operation ;
+.
+<https://www.epos-eu.org/epos-dcat-ap/Seismology/WebService/AHEAD/restful/macroseismic/Operation> a hydra:Operation ;
+.
+<https://www.epos-eu.org/epos-dcat-ap/Seismology/WebService/002/Operation/002/BGR> a hydra:Operation ;
+.
+<https://www.epos-eu.org/epos-dcat-ap/Seismology/WebService/002/Operation/002/INGV> a hydra:Operation ;
+.
+<https://www.epos-eu.org/epos-dcat-ap/Seismology/WebService/002/Operation/002/NOA> a hydra:Operation ;
+.
+<https://www.epos-eu.org/epos-dcat-ap/Seismology/WebService/002/Operation/002/ODC> a hydra:Operation ;
+.
+<https://www.epos-eu.org/epos-dcat-ap/Seismology/Dataset/001/EMSC/operation> a hydra:Operation ;
+.
+<https://www.epos-eu.org/epos-dcat-ap/Seismology/WebService/002/Operation/002/GFZ> a hydra:Operation ;
+.
+<https://www.epos-eu.org/epos-dcat-ap/Seismology/WebService/002/Operation/002/LMU> a hydra:Operation ;
+.
+<https://www.epos-eu.org/epos-dcat-ap/Seismology/WebService/002/Operation/002/NIEP> a hydra:Operation ;
+.
+<https://www.epos-eu.org/epos-dcat-ap/Seismology/WebService/002/Operation/002/RESIF> a hydra:Operation ;
+.
