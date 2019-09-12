@@ -25,9 +25,25 @@
 
 #EPISODES
   dct:relation <https://www.epos-eu.org/epos-dcat-ap/GeoElectroMagnetism/WP13-DDSS-001/INTERMAGNET/Stations/Operation> ;
+  dct:relation <https://www.epos-eu.org/epos-dcat-ap/GeoElectroMagnetism/WP13-DDSS-001/WDC/Stations/Operation> ;
+  dct:relation <https://www.epos-eu.org/epos-dcat-ap/GeoElectroMagnetism/WP13-DDSS-002/IMAGE/Stations/Operation> ;
+  dct:relation <https://www.epos-eu.org/epos-dcat-ap/GeoElectroMagnetism/WP13-DDSS-008/IMAGE_EJI/Stations/Operation> ;
+  dct:relation <https://www.epos-eu.org/epos-dcat-ap/GeoElectroMagnetism/WP13-DDSS-009/IMAGE_Substorm/Stations/Operation> ;
 .
 
 
 #EVENTS
 <https://www.epos-eu.org/epos-dcat-ap/GeoElectroMagnetism/WP13-DDSS-001/INTERMAGNET/Stations/Operation> a hydra:Operation ;
+.
+
+<https://www.epos-eu.org/epos-dcat-ap/GeoElectroMagnetism/WP13-DDSS-001/WDC/Stations/Operation> a hydra:Operation ;
+.
+
+<https://www.epos-eu.org/epos-dcat-ap/GeoElectroMagnetism/WP13-DDSS-002/IMAGE/Stations/Operation> a hydra:Operation ;
+.
+
+<https://www.epos-eu.org/epos-dcat-ap/GeoElectroMagnetism/WP13-DDSS-008/IMAGE_EJI/Stations/Operation> a hydra:Operation ;
+.
+
+<https://www.epos-eu.org/epos-dcat-ap/GeoElectroMagnetism/WP13-DDSS-009/IMAGE_Substorm/Stations/Operation> a hydra:Operation ;
 .
