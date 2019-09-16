@@ -31,7 +31,6 @@
   dct:relation <https://www.epos-eu.org/epos-dcat-ap/NearFaultObservatory/irpinia/station/Operation/001> ;
   dct:relation <https://www.epos-eu.org/epos-dcat-ap/NearFaultObservatory/KOERI/SEISMIC_STATION/WebService/001/Operation/001> ;
   dct:relation <https://www.epos-eu.org/epos-dcat-ap/NearFaultObservatory/KOERI/Event/WebService/001/Operation/001> ;
-  dct:relation <eida-sc3.infp.ro/fdsnws/station/1/query/operation> ;
   dct:relation <https://www.epos-eu.org/epos-dcat-ap/NearFaultObservatory/NIEP/Event/WebService/001/Operation/001> ;
   dct:relation <https://www.epos-eu.org/epos-dcat-ap/NearFaultObservatory/TABOO/SEISMIC_STATION/WebService/001/Operation/001> ;
   dct:relation <https://www.epos-eu.org/epos-dcat-ap/NearFaultObservatory/TABOO/Event/WebService/001/Operation/001> ;
@@ -56,8 +55,6 @@
 <https://www.epos-eu.org/epos-dcat-ap/NearFaultObservatory/KOERI/SEISMIC_STATION/WebService/001/Operation/001> a hydra:Operation ;
 .
 <https://www.epos-eu.org/epos-dcat-ap/NearFaultObservatory/KOERI/Event/WebService/001/Operation/001> a hydra:Operation ;
-.
-<eida-sc3.infp.ro/fdsnws/station/1/query/operation> a hydra:Operation ;
 .
 <https://www.epos-eu.org/epos-dcat-ap/NearFaultObservatory/NIEP/Event/WebService/001/Operation/001> a hydra:Operation ;
 .
