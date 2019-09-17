@@ -1,0 +1,45 @@
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix epos: <https://www.epos-eu.org/epos-dcat-ap#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix hydra: <http://www.w3.org/ns/hydra/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix cnt: <http://www.w3.org/2011/content#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix http: <http://www.w3.org/2006/http#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix gsp: <http://www.opengis.net/ont/geosparql#> .
+
+
+<https://www.epos-eu.org/epos-dcat-ap/ICS/SoftwareApplication/Plugin/TR3> a schema:SoftwareApplication ;
+
+  schema:identifier "https://www.epos-eu.org/epos-dcat-ap/ICS/SoftwareApplication/Plugin/TR3" ;
+  schema:name "TCS WP11 Plugin Mapper" ;
+  schema:description "Plugin WP11 for the conversion from TCS to JSON payload based on OLD Mapper" ;
+
+  dct:relation <www.epos-eu.org/epos-dcat-ap/Volcano_observations/Dataset/065/Operation/065> ;
+  dct:relation <www.epos-eu.org/epos-dcat-ap/Volcano_observations/Dataset/058/Operation/058> ;
+  dct:relation <www.epos-eu.org/epos-dcat-ap/Volcano_observations/Dataset/022/Operation/022> ;
+  dct:relation <www.epos-eu.org/epos-dcat-ap/VolcanoObservations/Dataset/032/Operation/032> ;
+  dct:relation <https://www.epos-eu.org/epos-dcat-ap/VolcanoObservations/Dataset/031/Vona/operation> ;
+  dct:relation <www.epos-eu.org/epos-dcat-ap/VolcanoObservations/Dataset/067/operation> ;
+.
+
+<www.epos-eu.org/epos-dcat-ap/Volcano_observations/Dataset/065/Operation/065> a hydra:Operation ;
+.
+<www.epos-eu.org/epos-dcat-ap/Volcano_observations/Dataset/058/Operation/058> a hydra:Operation ;
+.
+<www.epos-eu.org/epos-dcat-ap/Volcano_observations/Dataset/022/Operation/022> a hydra:Operation ;
+.
+<www.epos-eu.org/epos-dcat-ap/VolcanoObservations/Dataset/032/Operation/032> a hydra:Operation ;
+.
+<https://www.epos-eu.org/epos-dcat-ap/VolcanoObservations/Dataset/031/Vona/operation> a hydra:Operation ;
+.
+<www.epos-eu.org/epos-dcat-ap/VolcanoObservations/Dataset/067/operation> a hydra:Operation ;
+.
