@@ -36,6 +36,7 @@
   dct:relation <https://www.epos-eu.org/epos-dcat-ap/volcano-observations/WebService/DDSS001-2/Operation/station/RESIF> ;
   dct:relation <https://www.epos-eu.org/epos-dcat-ap/volcano-observations/WebService/DDSS005/Operation/station/IPGP> ;
   dct:relation <https://www.epos-eu.org/epos-dcat-ap/volcano-observations/WebService/DDSS005/Operation/station/IPGP> ;
+  dct:relation <https://www.epos-eu.org/epos-dcat-ap/volcano-observations/WebService/DDSS006/Operation/station/IPGP> ;
 .
 
 
@@ -64,4 +65,6 @@
 <https://www.epos-eu.org/epos-dcat-ap/volcano-observations/WebService/DDSS005/Operation/station/IPGP> a hydra:Operation ;
 .
 <https://www.epos-eu.org/epos-dcat-ap/volcano-observations/WebService/DDSS005/Operation/station/IPGP> a hydra:Operation ;
+.
+<https://www.epos-eu.org/epos-dcat-ap/volcano-observations/WebService/DDSS006/Operation/station/IPGP> a hydra:Operation ;
 .
