@@ -26,7 +26,7 @@
   #dct:relation <https://www.epos-eu.org/epos-dcat-ap/Seismology/Dataset/003/EMSC/operation> ;
   dct:relation <https://www.epos-eu.org/epos-dcat-ap/NearFaultObservatory/CRL/WebService/002/Operation/002/RESIF> ;
   dct:relation <https://www.epos-eu.org/epos-dcat-ap/NearFaultObservatory/CRL/WebService/002/Operation/002/NOA> ;
-  dct:relation <https://www.epos-eu.org/epos-dcat-ap/NearFaultObservatory/CRL/event/Operation/001> ;
+  dct:relation <https://www.epos-eu.org/epos-dcat-ap/NearFaultObservatory/CRL/event/Webservice/001/Operation/001> ;
   dct:relation <https://www.epos-eu.org/epos-dcat-ap/NearFaultObservatory/irpinia/event/Operation/001> ;
   dct:relation <https://www.epos-eu.org/epos-dcat-ap/NearFaultObservatory/irpinia/station/Operation/001> ;
   dct:relation <https://www.epos-eu.org/epos-dcat-ap/NearFaultObservatory/KOERI/SEISMIC_STATION/WebService/001/Operation/001> ;
@@ -60,7 +60,7 @@
 .
 <https://www.epos-eu.org/epos-dcat-ap/NearFaultObservatory/CRL/WebService/002/Operation/002/NOA> a hydra:Operation ;
 .
-<https://www.epos-eu.org/epos-dcat-ap/NearFaultObservatory/CRL/event/Operation/001> a hydra:Operation ;
+<https://www.epos-eu.org/epos-dcat-ap/NearFaultObservatory/CRL/event/Webservice/001/Operation/001> a hydra:Operation ;
 .
 <https://www.epos-eu.org/epos-dcat-ap/NearFaultObservatory/irpinia/event/Operation/001> a hydra:Operation ;
 .
