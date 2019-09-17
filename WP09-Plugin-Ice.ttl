@@ -29,6 +29,7 @@
   dct:relation <www.epos-eu.org/epos-dcat-ap/VolcanoObservations/Dataset/032/Operation/032> ;
   dct:relation <https://www.epos-eu.org/epos-dcat-ap/VolcanoObservations/Dataset/031/Vona/operation> ;
   dct:relation <www.epos-eu.org/epos-dcat-ap/VolcanoObservations/Dataset/067/operation> ;
+  dct:relation <www.epos-eu.org/epos-dcat-ap/Volcano_observations/Dataset/023/Operation/023> ;
 .
 
 <www.epos-eu.org/epos-dcat-ap/Volcano_observations/Dataset/065/Operation/065> a hydra:Operation ;
@@ -42,4 +43,6 @@
 <https://www.epos-eu.org/epos-dcat-ap/VolcanoObservations/Dataset/031/Vona/operation> a hydra:Operation ;
 .
 <www.epos-eu.org/epos-dcat-ap/VolcanoObservations/Dataset/067/operation> a hydra:Operation ;
+.
+<www.epos-eu.org/epos-dcat-ap/Volcano_observations/Dataset/023/Operation/023> a hydra:Operation;
 .
