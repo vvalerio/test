@@ -39,8 +39,9 @@
   dct:relation <https://www.epos-eu.org/epos-dcat-ap/NearFaultObservatory/NIEP/HistEQ/WebService/001/Operation/001> ;
   dct:relation <https://www.epos-eu.org/epos-dcat-ap/NearFaultObservatory/NIEP/SEISMIC_STATION/WebService/001/Operation/001>;
   dct:relation <https://www.epos-eu.org/epos-dcat-ap/NearFaultObservatory/NIEP/Event/WebService/001/Operation/001> ;
-  dct:relation <https://www.epos-eu.org/epos-dcat-ap/NearFaultObservatory/TABOO/RADON_STATIONS/WebService/001/Operation/001>;
-  dct:relation <https://www.epos-eu.org/epos-dcat-ap/NearFaultObservatory/TABOO/CO2_STATIONS/WebService/001/Operation/001>;
+  dct:relation <https://www.epos-eu.org/epos-dcat-ap/NearFaultObservatory/TABOO/RADON_STATIONS/WebService/001/Operation/001> ;
+  dct:relation <https://www.epos-eu.org/epos-dcat-ap/NearFaultObservatory/TABOO/CO2_STATIONS/WebService/001/Operation/001> ;
+  dct:relation <https://www.epos-eu.org/epos-dcat-ap/NearFaultObservatory/CRL/HistEQ/WebService/001/Operation/001> ;
 .
 
 
@@ -80,4 +81,6 @@
 <https://www.epos-eu.org/epos-dcat-ap/NearFaultObservatory/irpinia/HistEQ/WebService/001/Operation/001> a hydra:Operation ;
 .
 <https://www.epos-eu.org/epos-dcat-ap/NearFaultObservatory/NIEP/HistEQ/WebService/001/Operation/001> a hydra:Operation ;
+.
+<https://www.epos-eu.org/epos-dcat-ap/NearFaultObservatory/CRL/HistEQ/WebService/001/Operation/001> a hydra:Operation ;
 .
