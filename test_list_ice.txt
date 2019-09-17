@@ -1,0 +1,7 @@
+https://raw.githubusercontent.com/epos-eu/EPOS-DCAT-AP/EPOS-DCAT-AP-shapes/examples/WP11/rdfturtle_dispersion.ttl
+https://raw.githubusercontent.com/epos-eu/EPOS-DCAT-AP/EPOS-DCAT-AP-shapes/examples/WP11/rdfturtle_hazardmaps_only_warning.ttl
+https://raw.githubusercontent.com/epos-eu/EPOS-DCAT-AP/EPOS-DCAT-AP-shapes/examples/WP11/IMO_WP11-DDSS-022_radar.ttl
+https://raw.githubusercontent.com/epos-eu/EPOS-DCAT-AP/EPOS-DCAT-AP-shapes/examples/WP11/WP11_aviation_color_code_DDSS032.ttl
+https://raw.githubusercontent.com/epos-eu/EPOS-DCAT-AP/EPOS-DCAT-AP-shapes/examples/WP11/WP11_vona_DDSS031.ttl
+https://raw.githubusercontent.com/epos-eu/EPOS-DCAT-AP/EPOS-DCAT-AP-shapes/examples/WP11/WP11_GNSS_stations_corrected_DDSS067.ttl
+https://raw.githubusercontent.com/vvalerio/test/develop/WP09-Plugin-Ice.ttl
