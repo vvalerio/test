@@ -36,6 +36,7 @@
   dct:relation <https://www.epos-eu.org/epos-dcat-ap/Seismology/WebService/002/Operation/002/LMU> ;
   dct:relation <https://www.epos-eu.org/epos-dcat-ap/Seismology/WebService/002/Operation/002/NIEP> ;
   dct:relation <https://www.epos-eu.org/epos-dcat-ap/Seismology/WebService/002/Operation/002/RESIF> ;
+  dct:relation <https://www.epos-eu.org/epos-dcat-ap/Seismology/WebService/AHEAD/OGC/WFS/events/Operation>;
 .
 
 
@@ -63,4 +64,6 @@
 <https://www.epos-eu.org/epos-dcat-ap/Seismology/WebService/002/Operation/002/NIEP> a hydra:Operation ;
 .
 <https://www.epos-eu.org/epos-dcat-ap/Seismology/WebService/002/Operation/002/RESIF> a hydra:Operation ;
+.
+<https://www.epos-eu.org/epos-dcat-ap/Seismology/WebService/AHEAD/OGC/WFS/events/Operation> a hydra:Operation ;
 .
