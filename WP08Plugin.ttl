@@ -37,6 +37,8 @@
   dct:relation <https://www.epos-eu.org/epos-dcat-ap/Seismology/WebService/002/Operation/002/NIEP> ;
   dct:relation <https://www.epos-eu.org/epos-dcat-ap/Seismology/WebService/002/Operation/002/RESIF> ;
   dct:relation <https://www.epos-eu.org/epos-dcat-ap/Seismology/WebService/AHEAD/OGC/WFS/events/Operation>;
+  dct:relation <Seismology/EDSF/WFS-CrustalFaults>;
+  dct:relation <Seismology/EDSF/WFS-Subductions>;
 .
 
 
@@ -66,4 +68,8 @@
 <https://www.epos-eu.org/epos-dcat-ap/Seismology/WebService/002/Operation/002/RESIF> a hydra:Operation ;
 .
 <https://www.epos-eu.org/epos-dcat-ap/Seismology/WebService/AHEAD/OGC/WFS/events/Operation> a hydra:Operation ;
+.
+<Seismology/EDSF/WFS-CrustalFaults> a hydra:Operation ;
+.
+<Seismology/EDSF/WFS-Subductions> a hydra:Operation ;
 .
