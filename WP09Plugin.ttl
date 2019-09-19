@@ -44,6 +44,9 @@
   dct:relation <https://www.epos-eu.org/epos-dcat-ap/NearFaultObservatory/CRL/HistEQ/WebService/001/Operation/001> ;
   dct:relation <https://radon.infp.ro/epos-dcat-ap/NearFaultObjservatory/NIEP/RADON_STATIONS/Webservice/001/Operation/001> ;
   dct:relation <https://www.epos-eu.org/epos-dcat-ap/NearFaultObservatory/CRL/geophysics/WebService/002/Operation/002/RESIF> ;
+  dct:relation <https://www.epos-eu.org/epos-dcat-ap/NearFaultObservatory/KOERI/HistEQ/WebService/001/Operation/001>;
+  dct:relation <https://www.epos-eu.org/epos-dcat-ap/NearFaultObservatory/SED/HistEQ/WebService/001/Operation/001>;
+  dct:relation <https://www.epos-eu.org/epos-dcat-ap/NearFaultObservatory/IMO/HistEQ/WebService/001/Operation/001>;
 .
 
 
@@ -89,4 +92,10 @@
 <https://radon.infp.ro/epos-dcat-ap/NearFaultObjservatory/NIEP/RADON_STATIONS/Webservice/001/Operation/001> a hydra:Operation ;
 .
 <https://www.epos-eu.org/epos-dcat-ap/NearFaultObservatory/CRL/geophysics/WebService/002/Operation/002/RESIF> a hydra:Operation ;
+.
+<https://www.epos-eu.org/epos-dcat-ap/NearFaultObservatory/KOERI/HistEQ/WebService/001/Operation/001> a hydra:Operation ;
+.
+<https://www.epos-eu.org/epos-dcat-ap/NearFaultObservatory/SED/HistEQ/WebService/001/Operation/001> a hydra:Operation ;
+.
+<https://www.epos-eu.org/epos-dcat-ap/NearFaultObservatory/IMO/HistEQ/WebService/001/Operation/001> a hydra:Operation ;
 .
