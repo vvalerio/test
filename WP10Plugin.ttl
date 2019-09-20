@@ -25,6 +25,7 @@
 
   #dct:relation <https://www.epos-eu.org/epos-dcat-ap/Seismology/Dataset/003/EMSC/operation> ;
   dct:relation <GlassFramework/webresources/stations/v2/station/bbox/operation> ;
+  dct:relation <GlassFramework/webresources/stations/v2/station/bbox/operation/002>;
 
 
 .
@@ -33,4 +34,6 @@
 #<https://www.epos-eu.org/epos-dcat-ap/Seismology/Dataset/003/EMSC/operation> a hydra:Operation ;
 #.
 <GlassFramework/webresources/stations/v2/station/bbox/operation> a hydra:Operation ;
+.
+<GlassFramework/webresources/stations/v2/station/bbox/operation/002> a hydra:Operation ;
 .
