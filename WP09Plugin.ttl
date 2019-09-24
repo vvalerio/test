@@ -47,12 +47,14 @@
   dct:relation <https://www.epos-eu.org/epos-dcat-ap/NearFaultObservatory/KOERI/HistEQ/WebService/001/Operation/001>;
   dct:relation <https://www.epos-eu.org/epos-dcat-ap/NearFaultObservatory/SED/HistEQ/WebService/001/Operation/001>;
   dct:relation <https://www.epos-eu.org/epos-dcat-ap/NearFaultObservatory/IMO/HistEQ/WebService/001/Operation/001>;
+  dct:relation <https://www.epos-eu.org/epos-dcat-ap/NearFaultObservatory/NIEP/INFRASOUND_STATION/WebService/001/Operation/001>;
 .
 
 
 #<https://www.epos-eu.org/epos-dcat-ap/Seismology/Dataset/003/EMSC/operation> a hydra:Operation ;
 #.
-
+<https://www.epos-eu.org/epos-dcat-ap/NearFaultObservatory/NIEP/INFRASOUND_STATION/WebService/001/Operation/001> a hydra:Operation ;
+.
 <https://www.epos-eu.org/epos-dcat-ap/NearFaultObservatory/TABOO/RADON_STATIONS/WebService/001/Operation/001> a hydra:Operation ;
 .
 <https://www.epos-eu.org/epos-dcat-ap/NearFaultObservatory/TABOO/CO2_STATIONS/WebService/001/Operation/001> a hydra:Operation ;
