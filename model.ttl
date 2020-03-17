@@ -1788,3 +1788,49 @@ epos:SoftwareSourceCodeShape
       sh:class schema:SoftwareApplication ;
     ] ;
 .
+
+epos:ConceptSchemeShape
+  a sh:NodeShape ;
+  sh:targetClass skos:ConceptScheme ;
+  
+  sh:property [
+      sh:path dct:title ;
+      sh:datatype xsd:string;
+      sh:minCount 1 ;
+      sh:message "Title is recommended. Please fill in a value"@en  ;
+      sh:severity sh:Warning ;
+    ] ;
+    
+  sh:property [
+      sh:path dct:description ;
+      sh:datatype xsd:string;
+      sh:minCount 1 ;
+      sh:message "Description is recommended. Please fill in a value"@en  ;
+      sh:severity sh:Warning ;
+   ] ;
+    
+ 
+ .
+    
+epos:ConceptShape
+  a sh:NodeShape ;
+  sh:targetClass skos:Concept ;
+  
+    
+  sh:property [
+      sh:path skos:definition ;
+      sh:datatype xsd:string ;
+          
+    ] ;
+    
+  sh:property [
+      sh:path skos:prefLabel ;
+      sh:datatype xsd:string ;
+         
+    ] ;
+  sh:property [
+      sh:path skos:inScheme;
+      sh:class skos:ConceptScheme;
+      
+    ] ;
+  .
