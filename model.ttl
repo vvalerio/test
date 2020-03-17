@@ -1797,6 +1797,7 @@ epos:ConceptSchemeShape
       sh:path dct:title ;
       sh:datatype xsd:string;
       sh:minCount 1 ;
+      sh:maxCount 1 ;
       sh:message "Title is recommended. Please fill in a value"@en  ;
       sh:severity sh:Warning ;
     ] ;
@@ -1805,6 +1806,7 @@ epos:ConceptSchemeShape
       sh:path dct:description ;
       sh:datatype xsd:string;
       sh:minCount 1 ;
+      sh:maxCount 1 ;
       sh:message "Description is recommended. Please fill in a value"@en  ;
       sh:severity sh:Warning ;
    ] ;
@@ -1820,18 +1822,22 @@ epos:ConceptShape
   sh:property [
       sh:path skos:definition ;
       sh:datatype xsd:string ;
+      sh:maxCount 1 ;
+      sh:minCount 1 ;
           
     ] ;
     
   sh:property [
       sh:path skos:prefLabel ;
       sh:datatype xsd:string ;
-         
+      sh:maxCount 1 ;
+      sh:minCount 1 ;
     ] ;
   sh:property [
       sh:path skos:inScheme;
       sh:class skos:ConceptScheme;
-      
+      sh:maxCount 1 ;
+      sh:minCount 1 ;
     ] ;
   .
 
