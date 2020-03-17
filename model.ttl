@@ -1834,3 +1834,21 @@ epos:ConceptShape
       
     ] ;
   .
+
+epos:AdmsIdentifierShape
+  a sh:NodeShape ;
+  sh:targetClass adms:Identifier;
+  
+  sh:property [
+      sh:path adms:schemeAgency ;
+      sh:datatype xsd:string ;
+      sh:maxCount 1 ;   
+    ] ;
+    
+    sh:property [
+      sh:path skos:notation ;
+      sh:datatype xsd:string ;
+      sh:maxCount 1 ;
+    ] ;
+    
+  .
