@@ -389,7 +389,7 @@
   schema:programmingLanguage "Python";
 
   # This property refers to the web page URL which describes the software.
-  schema:mainEntityOfPage "web page URL which describes the software"^^xsd:anyURI ;
+  schema:mainEntityOfPage "http://google.com"^^xsd:anyURI ;
 
   schema:keywords "keyword1", "keyword2", "keyword3" ;
   dcat:theme <epos:SeismicWaveform> ;
