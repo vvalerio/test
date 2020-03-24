@@ -410,7 +410,7 @@
   schema:contactPoint  <http://orcid.org/0000-0002-6250-2474/contactPoint> ;
 
   # This property refers to the URL to download the software.
-  schema:downloadUrl "URL to download the software"^^xsd:anyURI ;
+  schema:downloadUrl "http://google.com"^^xsd:anyURI ;
 
   # This property refers to the licence under which the software is made available.
   schema:license "https://www.gnu.org/licenses/gpl.html"^^xsd:anyURI ;
