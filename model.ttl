@@ -1858,3 +1858,23 @@ epos:AdmsIdentifierShape
     ] ;
     
   .
+
+epos:PropertyValueShape
+  a sh:NodeShape ;
+  sh:targetClass schema:PropertyValue ;
+  ####
+  # properties
+  ####
+   sh:property [
+      sh:path schema:propertyID ;
+      sh:datatype xsd:string;
+      sh:maxCount 1 ;
+     sh:minCount 1 ;
+    ] ;
+   sh:property [
+      sh:path schema:value ;
+      sh:datatype xsd:string;
+      sh:maxCount 1 ;
+     sh:minCount 1 ;
+    ] ; 
+.
