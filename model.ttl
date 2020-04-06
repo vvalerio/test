@@ -21,6 +21,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
 @prefix http: <http://www.w3.org/2006/http#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
 
 <http://www.epos-eu.org/epos-dcat-ap>
   rdf:type owl:Ontology ;
