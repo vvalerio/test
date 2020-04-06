@@ -1878,3 +1878,122 @@ epos:PropertyValueShape
      sh:minCount 1 ;
     ] ; 
 .
+
+
+epos:QuantitativeValueShape
+  a sh:NodeShape ;
+  sh:targetClass schema:QuantitativeValue ;
+  ####
+  # properties
+  ####
+   sh:property [
+      sh:path schema:unitCode ;
+      sh:datatype xsd:string;
+      sh:maxCount 1 ;
+     sh:minCount 1 ;
+    ] ;
+   sh:property [
+      sh:path schema:value ;
+      sh:datatype xsd:double;
+      sh:maxCount 1 ;
+     sh:minCount 1 ;
+    ] ;
+.
+epos:LocationShape
+a sh:NodeShape ;
+sh:targetClass dct:Location ;
+####
+# properties
+####
+sh:property [
+   sh:path locn:geometry ;
+   sh:datatype xsd:string;
+   sh:minCount 1 ;
+ ] ;
+.
+
+epos:PostalAddressShape
+ a sh:NodeShape ;
+ sh:targetClass schema:PostalAddress;
+ ####
+ # properties
+ ####
+
+ sh:property [
+    sh:path schema:streetAddress ;
+    sh:datatype xsd:string;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+  ] ;
+  sh:property [
+     sh:path schema:addressLocality ;
+     sh:datatype xsd:string;
+     sh:minCount 1 ;
+     sh:maxCount 1 ;
+   ] ;
+   sh:property [
+      sh:path schema:postalCode ;
+      sh:datatype xsd:string;
+      sh:minCount 1 ;
+      sh:maxCount 1 ;
+    ] ;
+    sh:property [
+       sh:path schema:addressCountry ;
+       sh:datatype xsd:string;
+       sh:minCount 1 ;
+      sh:maxCount 1 ;
+     ] ;
+ .
+
+ epos:ApiDocumentationShape
+  a sh:NodeShape ;
+  sh:targetClass hydra:ApiDocumentation;
+  sh:property [
+     sh:path hydra:title ;
+     sh:datatype xsd:string;
+     sh:minCount 1 ;
+     sh:maxCount 1 ;
+   ] ;
+   sh:property [
+      sh:path hydra:description ;
+      sh:datatype xsd:string;
+      sh:minCount 1 ;
+     sh:maxCount 1 ;
+    ] ;
+    sh:property [
+       sh:path hydra:entrypoint ;
+       sh:datatype xsd:anyURI ;
+       sh:minCount 1 ;
+      sh:maxCount 1 ;
+     ] ;
+ .
+
+ epos:AddressShape
+  a sh:NodeShape ;
+  sh:targetClass vcard:Address;
+  sh:property [
+     sh:path vcard:country-name ;
+     sh:datatype xsd:string;
+     sh:minCount 1 ;
+     sh:maxCount 1 ;
+   ] ;
+   sh:property [
+      sh:path vcard:locality ;
+      sh:datatype xsd:string;
+      sh:minCount 1 ;
+      sh:maxCount 1 ;
+    ] ;
+    sh:property [
+       sh:path vcard:postal-code ;
+       sh:datatype xsd:string;
+       sh:minCount 1 ;
+       sh:maxCount 1 ;
+     ] ;
+     sh:property [
+        sh:path vcard:street-address ;
+        sh:datatype xsd:string;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+      ] ;
+
+.
