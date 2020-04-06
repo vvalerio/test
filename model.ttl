@@ -1842,7 +1842,7 @@ epos:ConceptShape
     ] ;
   .
 
-epos:AdmsIdentifierShape
+epos:IdentifierShape
   a sh:NodeShape ;
   sh:targetClass adms:Identifier;
   
