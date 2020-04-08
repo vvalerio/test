@@ -511,6 +511,7 @@ epos:OrganizationShape
     ] ;
   sh:property [
       sh:path schema:legalName;
+      sh:description "This property contains the official name of the Organization.";
       sh:datatype xsd:string;
       sh:minCount 1 ;
       sh:message "LegalName is recommended. Please fill in a value"@en ;
