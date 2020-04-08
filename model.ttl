@@ -202,15 +202,15 @@ epos:resolution
 ####
 # SHACL Shapes Graphs
 ####
-epos:DateOrDateTimeDataTypeShape
-  a sh:NodeShape ;
+epos:DateOrDateTimeDataType
+  a sh:PropertyShape ;
   sh:description "It checks that a datatype property receives a date or a dateTime literal"@en  ;
   sh:message "The values must be data typed as either xsd:date or xsd:dateTime"@en  ;
   sh:or ( [ sh:datatype xsd:date ; ]
              [ sh:datatype xsd:dateTime ; ] ) ;
 .
-epos:ContactPointTypeShape
-  a sh:NodeShape ;
+epos:ContactPointType
+  a sh:PropertyShape ;
   sh:description "A vcard:Kind or schema:ContactPoint"@en  ;
   sh:message "The values must be data either vcard:Kind or schema:ContactPoint"@en  ;
   sh:or ( [sh:class vcard:Kind ; ]
