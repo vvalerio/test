@@ -1,0 +1,856 @@
+@prefix adms: <http://www.w3.org/ns/adms#> .  
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .  
+@prefix epos: <https://www.epos-eu.org/epos-dcat-ap#> .  
+@prefix dc: <http://purl.org/dc/elements/1.1/> .  
+@prefix dct: <http://purl.org/dc/terms/> .  
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  
+@prefix hydra: <http://www.w3.org/ns/hydra/core#> .  
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .  
+@prefix schema: <http://schema.org/> .  
+@prefix dcat: <http://www.w3.org/ns/dcat#> .  
+@prefix cnt: <http://www.w3.org/2011/content#> .  
+@prefix locn: <http://www.w3.org/ns/locn#> .  
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .  
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .  
+@prefix http: <http://www.w3.org/2006/http#> .  
+@prefix owl: <http://www.w3.org/2002/07/owl#> .  
+@prefix gsp: <http://www.opengis.net/ont/geosparql#> .  
+    
+<http://orcid.org/0000-0001-8431-1030/legalContact> a schema:ContactPoint;
+        schema:email "xenpal@upatras.gr";
+	    schema:availableLanguage "en" ;
+	    schema:contactType "legalContact";
+.        
+<http://orcid.org/0000-0001-8431-1030/financialContact> a schema:ContactPoint;
+        schema:email "xenpal@upatras.gr";
+        schema:availableLanguage "en" ;
+        schema:contactType "financialContact";
+.        
+<http://orcid.org/0000-0001-8431-1030/scientificContact> a schema:ContactPoint;
+        schema:email "xenpal@upatras.gr";
+        schema:availableLanguage "en" ;
+        schema:contactType "scientificContact";
+.        
+<http://orcid.org/0000-0002-1302-2175/legalContact> a schema:ContactPoint;
+        schema:email "fardis@upatras.gr";
+	    schema:availableLanguage "en" ;
+	    schema:contactType "legalContact";
+.        
+<http://orcid.org/0000-0002-1302-2175/financialContact> a schema:ContactPoint;
+        schema:email "fardis@upatras.gr";
+        schema:availableLanguage "en" ;
+        schema:contactType "financialContact";
+.        
+<http://orcid.org/0000-0002-1302-2175/scientificContact> a schema:ContactPoint;
+        schema:email "fardis@upatras.gr";
+        schema:availableLanguage "en" ;
+        schema:contactType "scientificContact";
+.        
+<http://orcid.org/0000-0002-8616-334X/legalContact> a schema:ContactPoint;
+        schema:email "sbousias@upatras.gr";
+	    schema:availableLanguage "en" ;
+	    schema:contactType "legalContact";
+.        
+<http://orcid.org/0000-0002-8616-334X/financialContact> a schema:ContactPoint;
+        schema:email "sbousias@upatras.gr";
+        schema:availableLanguage "en" ;
+        schema:contactType "financialContact";
+.        
+<http://orcid.org/0000-0002-8616-334X/scientificContact> a schema:ContactPoint;
+        schema:email "sbousias@upatras.gr";
+        schema:availableLanguage "en" ;
+        schema:contactType "scientificContact";
+.        
+<http://orcid.org/0000-0003-0048-8344/legalContact> a schema:ContactPoint;
+        schema:email "ilstrepelias@upatras.gr";
+	    schema:availableLanguage "en" ;
+	    schema:contactType "legalContact";
+.        
+<http://orcid.org/0000-0003-0048-8344/financialContact> a schema:ContactPoint;
+        schema:email "ilstrepelias@upatras.gr";
+        schema:availableLanguage "en" ;
+        schema:contactType "financialContact";
+.        
+<http://orcid.org/0000-0003-0048-8344/scientificContact> a schema:ContactPoint;
+        schema:email "ilstrepelias@upatras.gr";
+        schema:availableLanguage "en" ;
+        schema:contactType "scientificContact";
+.        
+<http://orcid.org/0000-0001-8431-1030> a schema:Person;
+    	schema:identifier [ a schema:PropertyValue;
+    		schema:propertyID "orcid";
+    		schema:value "0000-0001-8431-1030";
+    	]; 
+    	schema:familyName "Palios";
+    	schema:givenName "Xenofon";
+    	schema:address [ a schema:PostalAddress ;
+	 	    schema:streetAddress "Department of Civil Engineering, University of Patras" ;
+		    schema:addressLocality "Rio Achaia" ;
+		    schema:postalCode "26500" ;
+		    schema:addressCountry "Greece" ;
+	    ];
+	    schema:email "xenpal@upatras.gr" ;
+	    schema:telephone "-" ;
+	    schema:url  "http://www.strulab.civil.upatras.gr/node/791"^^xsd:anyURI ;
+	    schema:qualifications "Local Coinvestigator" ;
+	    schema:affiliation <PIC:999894528> ;
+	    schema:contactPoint <http://orcid.org/0000-0001-8431-1030/legalContact> ;
+	    schema:contactPoint <http://orcid.org/0000-0001-8431-1030/scientificContact> ;
+	    schema:contactPoint <http://orcid.org/0000-0001-8431-1030/financialContact> ;
+.        
+<http://orcid.org/0000-0002-1302-2175> a schema:Person;
+    	schema:identifier [ a schema:PropertyValue;
+    		schema:propertyID "orcid";
+    		schema:value "0000-0002-1302-2175";
+    	]; 
+    	schema:familyName "Fardis";
+    	schema:givenName "Michael";
+    	schema:address [ a schema:PostalAddress ;
+	 	    schema:streetAddress "Department of Civil Engineering, University of Patras" ;
+		    schema:addressLocality "Rio Achaia" ;
+		    schema:postalCode "26500" ;
+		    schema:addressCountry "Greece" ;
+	    ];
+	    schema:email "fardis@upatras.gr" ;
+	    schema:telephone "+30 2610996508" ;
+	    schema:url  "http://www.civil.upatras.gr/el/Proswpiko/MelhDEP/?PageNo=3&EntityID=89d1a5b5-5531-45df-9cbd-9e1d53846d7d"^^xsd:anyURI ;
+	    schema:qualifications "Principal Investigator" ;
+	    schema:affiliation <PIC:999894528> ;
+	    schema:contactPoint <http://orcid.org/0000-0002-1302-2175/legalContact> ;
+	    schema:contactPoint <http://orcid.org/0000-0002-1302-2175/scientificContact> ;
+	    schema:contactPoint <http://orcid.org/0000-0002-1302-2175/financialContact> ;
+.        
+<http://orcid.org/0000-0002-8616-334X> a schema:Person;
+    	schema:identifier [ a schema:PropertyValue;
+    		schema:propertyID "orcid";
+    		schema:value "0000-0002-8616-334X";
+    	]; 
+    	schema:familyName "Bousias";
+    	schema:givenName "Stathis";
+    	schema:address [ a schema:PostalAddress ;
+	 	    schema:streetAddress "Department of Civil Engineering, University of Patras" ;
+		    schema:addressLocality "Rio Achaia" ;
+		    schema:postalCode "26500" ;
+		    schema:addressCountry "Greece" ;
+	    ];
+	    schema:email "sbousias@upatras.gr" ;
+	    schema:telephone "+30 2610996588" ;
+	    schema:url  "http://www.civil.upatras.gr/en/Proswpiko/MelhDEP/entry/BousiasStathis/?PageNo=0"^^xsd:anyURI ;
+	    schema:qualifications "Principal Investigator" ;
+	    schema:affiliation <PIC:999894528> ;
+	    schema:contactPoint <http://orcid.org/0000-0002-8616-334X/legalContact> ;
+	    schema:contactPoint <http://orcid.org/0000-0002-8616-334X/scientificContact> ;
+	    schema:contactPoint <http://orcid.org/0000-0002-8616-334X/financialContact> ;
+.        
+<http://orcid.org/0000-0003-0048-8344> a schema:Person;
+    	schema:identifier [ a schema:PropertyValue;
+    		schema:propertyID "orcid";
+    		schema:value "0000-0003-0048-8344";
+    	]; 
+    	schema:familyName "Strepelias";
+    	schema:givenName "Ilias";
+    	schema:address [ a schema:PostalAddress ;
+	 	    schema:streetAddress "Department of Civil Engineering, University of Patras" ;
+		    schema:addressLocality "Rio Achaia" ;
+		    schema:postalCode "26500" ;
+		    schema:addressCountry "Greece" ;
+	    ];
+	    schema:email "ilstrepelias@upatras.gr" ;
+	    schema:telephone "-" ;
+	    schema:url  "http://www.strulab.civil.upatras.gr/node/792"^^xsd:anyURI ;
+	    schema:qualifications "Local Coinvestigator" ;
+	    schema:affiliation <PIC:999894528> ;
+	    schema:contactPoint <http://orcid.org/0000-0003-0048-8344/legalContact> ;
+	    schema:contactPoint <http://orcid.org/0000-0003-0048-8344/scientificContact> ;
+	    schema:contactPoint <http://orcid.org/0000-0003-0048-8344/financialContact> ;
+.        
+<epos:SeismicEngineering> a skos:ConceptScheme;
+		dct:title "Seismic Engineering";
+		dct:description "It contains the projects of Seismic Engineering (SERIES).";
+.
+        
+<PIC:999894528> a schema:Organization;
+    	schema:identifier [ a schema:PropertyValue;
+    		schema:propertyID "PIC";
+    		schema:value 999894528;
+    	];
+    	schema:legalName "University of Patras";
+    	schema:address [ a schema:PostalAddress ;
+        	schema:streetAddress "University Campus" ;
+        	schema:addressLocality "Rio Achaia" ;
+        	schema:postalCode "26504" ;
+        	schema:addressCountry "Greece" ;
+	    ];
+    	schema:logo "https://www.upatras.gr/sites/www.upatras.gr/files/upatras_logo.jpg"^^xsd:anyURI ;
+    	schema:url "http:www.series.upatras.gr"^^xsd:anyURI;
+    	schema:email "rectorate@upatras.gr" ;
+    	schema:telephone "+30 2610996683" ;
+    	schema:contactPoint <http://orcid.org/0000-0002-8616-334X/legalContact> ;
+	    schema:contactPoint <http://orcid.org/0000-0002-8616-334X/scientificContact> ;
+	    schema:contactPoint <http://orcid.org/0000-0002-8616-334X/financialContact> ;
+.
+
+<epos:PseudodynamicTestson4-storeyNonductileFrameswithRCInfillingoftheBay> a skos:Concept;
+    	skos:inScheme <epos:SeismicEngineering>;
+    	skos:prefLabel "Pseudodynamic Tests on 4-storey Nonductile Frames with RC Infilling of the Bay";
+. 
+        
+<SERIES/dataset/project/33462> a dcat:Dataset;
+    	dct:title "Pseudodynamic Tests on 4-storey Nonductile Frames with RC Infilling of the Bay";
+    	dct:identifier "SERIES/dataset/project/33462";
+    	adms:identifier [ a adms:Identifier;
+    		adms:schemaAgency "DDSS-ID";
+    		skos:notation "WP17-DDSS-P0";
+    	]; 
+    	dct:description "Summary with the main focus on Retrofit technique Experimental technique Model Calibration";
+    	dct:created "2019-11-02T00:00:00Z"^^xsd:date;
+    	dct:temporal [ a dct:PeriodOfTime; 
+    		schema:startDate "2010-01-01T00:00:00Z"^^xsd:date;
+    	];
+    	dct:spatial [ a dct:Location;
+	        locn:geometry "POINT(21.7780958 38.2868967)"^^gsp:wktLiteral;
+];
+    	dcat:theme <epos:PseudodynamicTestson4-storeyNonductileFrameswithRCInfillingoftheBay>;
+    	dcat:keyword "KANEPE", "OASP";
+        dcat:contactPoint <http://orcid.org/0000-0002-8616-334X/scientificContact> ;
+    	dct:publisher <PIC:999894528>;
+    	dcat:distribution <SERIES/distribution/project/33462>;
+.
+                  
+<SERIES/distribution/project/33462> a dcat:Distribution;
+    dct:identifier "SERIES/distribution/project/33462";
+    dct:title "Pseudodynamic Tests on 4-storey Nonductile Frames with RC Infilling of the Bay project information";
+    dct:description "Enables to download information/report about the project";
+    dct:type "http://publications.europa.eu/resource/authority/distribution-type/WEB_SERVICE"^^xsd:anyURI;
+    dct:conformsTo <SERIES/webservice/series_epos_platform>;
+    dcat:accessURL <SERIES/webservice/series_epos_platform/project_reports/33462>;
+    dct:format "http://publications.europa.eu/resource/authority/file-type/XML"^^xsd:anyURI;
+.
+    
+<SERIES/webservice/series_epos_platform/project_reports/33462> a hydra:Operation;
+    hydra:method "GET"^^xsd:string;
+    hydra:returns "application/xml";
+    hydra:property[ a hydra:IriTemplate;
+        hydra:template "http://150.140.186.204:53361/TCS_Metadata_Retrieval_WS/WebService.asmx/project_reports?project_id={?project_id}"^^xsd:string;
+            hydra:mapping[ a hydra:IriTemplateMapping;
+                hydra:variable "project_id"^^xsd:string;
+                rdfs:range "xsd:string";
+                rdfs:label "Download metadata of project: Pseudodynamic Tests on 4-storey Nonductile Frames with RC Infilling of the Bay. ";
+            schema:defaultValue "33462";
+                http:paramValue "33462";
+                hydra:required "true"^^xsd:boolean;
+				];
+		] ; 
+.
+    
+<SERIES/dataset/specimen/1458463> a dcat:Dataset;
+        dct:title "KE_Retrofitted Building 1";
+        dct:identifier "SERIES/dataset/specimen/1458463";
+        adms:identifier [ a adms:Identifier;
+        	adms:schemaAgency "DDSS-ID";
+        	skos:notation "WP17-DDSS-S0";
+        ]; 
+        dct:description "Summary with the main focus on Retrofit technique Experimental technique Model Calibration";
+    	dct:created "2019-11-02T00:00:00Z"^^xsd:date;
+    	dct:temporal [ a dct:PeriodOfTime; 
+    		schema:startDate "2010-01-01T00:00:00Z"^^xsd:date;
+    	];
+    	dct:spatial [ a dct:Location;
+	        locn:geometry "POINT(21.7780958 38.2868967)"^^gsp:wktLiteral;
+];
+        dcat:theme <epos:PseudodynamicTestson4-storeyNonductileFrameswithRCInfillingoftheBay>;
+        dcat:keyword "KE_Retrofitted Building 1";
+        dcat:contactPoint <http://orcid.org/0000-0002-8616-334X/scientificContact> ;
+        dct:publisher <PIC:999894528>;
+        dcat:distribution <SERIES/distribution/specimen/1458463>;
+.
+                      
+<SERIES/distribution/specimen/1458463> a dcat:Distribution;
+    dct:identifier "SERIES/distribution/specimen/1458463";
+    dct:title "KE_Retrofitted Building 1 project information";
+    dct:description "Enables to download information/report about the specimen";
+    dct:type "http://publications.europa.eu/resource/authority/distribution-type/WEB_SERVICE"^^xsd:anyURI;
+    dct:conformsTo <SERIES/webservice/series_epos_platform>;
+    dcat:accessURL <SERIES/webservice/series_epos_platform/specimen_reports/1458463>;
+    dct:format "http://publications.europa.eu/resource/authority/file-type/XML"^^xsd:anyURI;
+.
+        
+<SERIES/webservice/series_epos_platform/specimen_reports/1458463> a hydra:Operation;
+    hydra:method "GET"^^xsd:string;
+    hydra:returns "application/xml";
+    hydra:property[ a hydra:IriTemplate;
+        hydra:template "http://150.140.186.204:53361/TCS_Metadata_Retrieval_WS/WebService.asmx/specimen_reports?specimen_id={?specimen_id}"^^xsd:string;
+            hydra:mapping[ a hydra:IriTemplateMapping;
+                hydra:variable "specimen_id"^^xsd:string;
+                rdfs:range "xsd:string";
+                rdfs:label "Download metadata of specimen: KE_Retrofitted Building 1. ";
+            schema:defaultValue "1458463";
+                http:paramValue "1458463";
+                hydra:required "true"^^xsd:boolean;
+                ];
+        ] ; 
+.
+    
+<SERIES/dataset/specimen/1458464> a dcat:Dataset;
+        dct:title "KE_Retrofitted Building 2";
+        dct:identifier "SERIES/dataset/specimen/1458464";
+        adms:identifier [ a adms:Identifier;
+        	adms:schemaAgency "DDSS-ID";
+        	skos:notation "WP17-DDSS-S1";
+        ]; 
+        dct:description "Summary with the main focus on Retrofit technique Experimental technique Model Calibration";
+    	dct:created "2019-11-02T00:00:00Z"^^xsd:date;
+    	dct:temporal [ a dct:PeriodOfTime; 
+    		schema:startDate "2010-01-01T00:00:00Z"^^xsd:date;
+    	];
+    	dct:spatial [ a dct:Location;
+	        locn:geometry "POINT(21.7780958 38.2868967)"^^gsp:wktLiteral;
+];
+        dcat:theme <epos:PseudodynamicTestson4-storeyNonductileFrameswithRCInfillingoftheBay>;
+        dcat:keyword "KE_Retrofitted Building 2";
+        dcat:contactPoint <http://orcid.org/0000-0002-8616-334X/scientificContact> ;
+        dct:publisher <PIC:999894528>;
+        dcat:distribution <SERIES/distribution/specimen/1458464>;
+.
+                      
+<SERIES/distribution/specimen/1458464> a dcat:Distribution;
+    dct:identifier "SERIES/distribution/specimen/1458464";
+    dct:title "KE_Retrofitted Building 2 project information";
+    dct:description "Enables to download information/report about the specimen";
+    dct:type "http://publications.europa.eu/resource/authority/distribution-type/WEB_SERVICE"^^xsd:anyURI;
+    dct:conformsTo <SERIES/webservice/series_epos_platform>;
+    dcat:accessURL <SERIES/webservice/series_epos_platform/specimen_reports/1458464>;
+    dct:format "http://publications.europa.eu/resource/authority/file-type/XML"^^xsd:anyURI;
+.
+        
+<SERIES/webservice/series_epos_platform/specimen_reports/1458464> a hydra:Operation;
+    hydra:method "GET"^^xsd:string;
+    hydra:returns "application/xml";
+    hydra:property[ a hydra:IriTemplate;
+        hydra:template "http://150.140.186.204:53361/TCS_Metadata_Retrieval_WS/WebService.asmx/specimen_reports?specimen_id={?specimen_id}"^^xsd:string;
+            hydra:mapping[ a hydra:IriTemplateMapping;
+                hydra:variable "specimen_id"^^xsd:string;
+                rdfs:range "xsd:string";
+                rdfs:label "Download metadata of specimen: KE_Retrofitted Building 2. ";
+            schema:defaultValue "1458464";
+                http:paramValue "1458464";
+                hydra:required "true"^^xsd:boolean;
+                ];
+        ] ; 
+.
+    
+<SERIES/dataset/specimen/1458465> a dcat:Dataset;
+        dct:title "KE_Retrofitted Building 3";
+        dct:identifier "SERIES/dataset/specimen/1458465";
+        adms:identifier [ a adms:Identifier;
+        	adms:schemaAgency "DDSS-ID";
+        	skos:notation "WP17-DDSS-S2";
+        ]; 
+        dct:description "Summary with the main focus on Retrofit technique Experimental technique Model Calibration";
+    	dct:created "2019-11-02T00:00:00Z"^^xsd:date;
+    	dct:temporal [ a dct:PeriodOfTime; 
+    		schema:startDate "2010-01-01T00:00:00Z"^^xsd:date;
+    	];
+    	dct:spatial [ a dct:Location;
+	        locn:geometry "POINT(21.7780958 38.2868967)"^^gsp:wktLiteral;
+];
+        dcat:theme <epos:PseudodynamicTestson4-storeyNonductileFrameswithRCInfillingoftheBay>;
+        dcat:keyword "KE_Retrofitted Building 3";
+        dcat:contactPoint <http://orcid.org/0000-0002-8616-334X/scientificContact> ;
+        dct:publisher <PIC:999894528>;
+        dcat:distribution <SERIES/distribution/specimen/1458465>;
+.
+                      
+<SERIES/distribution/specimen/1458465> a dcat:Distribution;
+    dct:identifier "SERIES/distribution/specimen/1458465";
+    dct:title "KE_Retrofitted Building 3 project information";
+    dct:description "Enables to download information/report about the specimen";
+    dct:type "http://publications.europa.eu/resource/authority/distribution-type/WEB_SERVICE"^^xsd:anyURI;
+    dct:conformsTo <SERIES/webservice/series_epos_platform>;
+    dcat:accessURL <SERIES/webservice/series_epos_platform/specimen_reports/1458465>;
+    dct:format "http://publications.europa.eu/resource/authority/file-type/XML"^^xsd:anyURI;
+.
+        
+<SERIES/webservice/series_epos_platform/specimen_reports/1458465> a hydra:Operation;
+    hydra:method "GET"^^xsd:string;
+    hydra:returns "application/xml";
+    hydra:property[ a hydra:IriTemplate;
+        hydra:template "http://150.140.186.204:53361/TCS_Metadata_Retrieval_WS/WebService.asmx/specimen_reports?specimen_id={?specimen_id}"^^xsd:string;
+            hydra:mapping[ a hydra:IriTemplateMapping;
+                hydra:variable "specimen_id"^^xsd:string;
+                rdfs:range "xsd:string";
+                rdfs:label "Download metadata of specimen: KE_Retrofitted Building 3. ";
+            schema:defaultValue "1458465";
+                http:paramValue "1458465";
+                hydra:required "true"^^xsd:boolean;
+                ];
+        ] ; 
+.
+    
+<epos:SeismicPerformanceAssessmentandRehabilitationofExistingBuildings> a skos:Concept;
+    	skos:inScheme <epos:SeismicEngineering>;
+    	skos:prefLabel "Seismic Performance Assessment and Rehabilitation of Existing Buildings";
+. 
+        
+<SERIES/dataset/project/33465> a dcat:Dataset;
+    	dct:title "Seismic Performance Assessment and Rehabilitation of Existing Buildings";
+    	dct:identifier "SERIES/dataset/project/33465";
+    	adms:identifier [ a adms:Identifier;
+    		adms:schemaAgency "DDSS-ID";
+    		skos:notation "WP17-DDSS-P1";
+    	]; 
+    	dct:description "Summary with the main focus on Retrofit technique";
+    	dct:created "2019-11-02T00:00:00Z"^^xsd:date;
+    	dct:temporal [ a dct:PeriodOfTime; 
+    		schema:startDate "2001-01-01T00:00:00Z"^^xsd:date;
+    	];
+    	dct:spatial [ a dct:Location;
+	        locn:geometry "POINT(21.7780958 38.2868967)"^^gsp:wktLiteral;
+];
+    	dcat:theme <epos:SeismicPerformanceAssessmentandRehabilitationofExistingBuildings>;
+    	dcat:keyword "SPEAR", "EU";
+        dcat:contactPoint <http://orcid.org/0000-0002-8616-334X/scientificContact> ;
+    	dct:publisher <PIC:999894528>;
+    	dcat:distribution <SERIES/distribution/project/33465>;
+.
+                  
+<SERIES/distribution/project/33465> a dcat:Distribution;
+    dct:identifier "SERIES/distribution/project/33465";
+    dct:title "Seismic Performance Assessment and Rehabilitation of Existing Buildings project information";
+    dct:description "Enables to download information/report about the project";
+    dct:type "http://publications.europa.eu/resource/authority/distribution-type/WEB_SERVICE"^^xsd:anyURI;
+    dct:conformsTo <SERIES/webservice/series_epos_platform>;
+    dcat:accessURL <SERIES/webservice/series_epos_platform/project_reports/33465>;
+    dct:format "http://publications.europa.eu/resource/authority/file-type/XML"^^xsd:anyURI;
+.
+    
+<SERIES/webservice/series_epos_platform/project_reports/33465> a hydra:Operation;
+    hydra:method "GET"^^xsd:string;
+    hydra:returns "application/xml";
+    hydra:property[ a hydra:IriTemplate;
+        hydra:template "http://150.140.186.204:53361/TCS_Metadata_Retrieval_WS/WebService.asmx/project_reports?project_id={?project_id}"^^xsd:string;
+            hydra:mapping[ a hydra:IriTemplateMapping;
+                hydra:variable "project_id"^^xsd:string;
+                rdfs:range "xsd:string";
+                rdfs:label "Download metadata of project: Seismic Performance Assessment and Rehabilitation of Existing Buildings. ";
+            schema:defaultValue "33465";
+                http:paramValue "33465";
+                hydra:required "true"^^xsd:boolean;
+				];
+		] ; 
+.
+    
+<SERIES/dataset/specimen/1459293> a dcat:Dataset;
+        dct:title "SR_Q_RC";
+        dct:identifier "SERIES/dataset/specimen/1459293";
+        adms:identifier [ a adms:Identifier;
+        	adms:schemaAgency "DDSS-ID";
+        	skos:notation "WP17-DDSS-S3";
+        ]; 
+        dct:description "Summary with the main focus on Retrofit technique";
+    	dct:created "2019-11-02T00:00:00Z"^^xsd:date;
+    	dct:temporal [ a dct:PeriodOfTime; 
+    		schema:startDate "2001-01-01T00:00:00Z"^^xsd:date;
+    	];
+    	dct:spatial [ a dct:Location;
+	        locn:geometry "POINT(21.7780958 38.2868967)"^^gsp:wktLiteral;
+];
+        dcat:theme <epos:SeismicPerformanceAssessmentandRehabilitationofExistingBuildings>;
+        dcat:keyword "SR_Q_RC";
+        dcat:contactPoint <http://orcid.org/0000-0002-8616-334X/scientificContact> ;
+        dct:publisher <PIC:999894528>;
+        dcat:distribution <SERIES/distribution/specimen/1459293>;
+.
+                      
+<SERIES/distribution/specimen/1459293> a dcat:Distribution;
+    dct:identifier "SERIES/distribution/specimen/1459293";
+    dct:title "SR_Q_RC project information";
+    dct:description "Enables to download information/report about the specimen";
+    dct:type "http://publications.europa.eu/resource/authority/distribution-type/WEB_SERVICE"^^xsd:anyURI;
+    dct:conformsTo <SERIES/webservice/series_epos_platform>;
+    dcat:accessURL <SERIES/webservice/series_epos_platform/specimen_reports/1459293>;
+    dct:format "http://publications.europa.eu/resource/authority/file-type/XML"^^xsd:anyURI;
+.
+        
+<SERIES/webservice/series_epos_platform/specimen_reports/1459293> a hydra:Operation;
+    hydra:method "GET"^^xsd:string;
+    hydra:returns "application/xml";
+    hydra:property[ a hydra:IriTemplate;
+        hydra:template "http://150.140.186.204:53361/TCS_Metadata_Retrieval_WS/WebService.asmx/specimen_reports?specimen_id={?specimen_id}"^^xsd:string;
+            hydra:mapping[ a hydra:IriTemplateMapping;
+                hydra:variable "specimen_id"^^xsd:string;
+                rdfs:range "xsd:string";
+                rdfs:label "Download metadata of specimen: SR_Q_RC. ";
+            schema:defaultValue "1459293";
+                http:paramValue "1459293";
+                hydra:required "true"^^xsd:boolean;
+                ];
+        ] ; 
+.
+    
+<SERIES/dataset/specimen/1459294> a dcat:Dataset;
+        dct:title "SR_Q_RCD";
+        dct:identifier "SERIES/dataset/specimen/1459294";
+        adms:identifier [ a adms:Identifier;
+        	adms:schemaAgency "DDSS-ID";
+        	skos:notation "WP17-DDSS-S4";
+        ]; 
+        dct:description "Summary with the main focus on Retrofit technique";
+    	dct:created "2019-11-02T00:00:00Z"^^xsd:date;
+    	dct:temporal [ a dct:PeriodOfTime; 
+    		schema:startDate "2001-01-01T00:00:00Z"^^xsd:date;
+    	];
+    	dct:spatial [ a dct:Location;
+	        locn:geometry "POINT(21.7780958 38.2868967)"^^gsp:wktLiteral;
+];
+        dcat:theme <epos:SeismicPerformanceAssessmentandRehabilitationofExistingBuildings>;
+        dcat:keyword "SR_Q_RCD";
+        dcat:contactPoint <http://orcid.org/0000-0002-8616-334X/scientificContact> ;
+        dct:publisher <PIC:999894528>;
+        dcat:distribution <SERIES/distribution/specimen/1459294>;
+.
+                      
+<SERIES/distribution/specimen/1459294> a dcat:Distribution;
+    dct:identifier "SERIES/distribution/specimen/1459294";
+    dct:title "SR_Q_RCD project information";
+    dct:description "Enables to download information/report about the specimen";
+    dct:type "http://publications.europa.eu/resource/authority/distribution-type/WEB_SERVICE"^^xsd:anyURI;
+    dct:conformsTo <SERIES/webservice/series_epos_platform>;
+    dcat:accessURL <SERIES/webservice/series_epos_platform/specimen_reports/1459294>;
+    dct:format "http://publications.europa.eu/resource/authority/file-type/XML"^^xsd:anyURI;
+.
+        
+<SERIES/webservice/series_epos_platform/specimen_reports/1459294> a hydra:Operation;
+    hydra:method "GET"^^xsd:string;
+    hydra:returns "application/xml";
+    hydra:property[ a hydra:IriTemplate;
+        hydra:template "http://150.140.186.204:53361/TCS_Metadata_Retrieval_WS/WebService.asmx/specimen_reports?specimen_id={?specimen_id}"^^xsd:string;
+            hydra:mapping[ a hydra:IriTemplateMapping;
+                hydra:variable "specimen_id"^^xsd:string;
+                rdfs:range "xsd:string";
+                rdfs:label "Download metadata of specimen: SR_Q_RCD. ";
+            schema:defaultValue "1459294";
+                http:paramValue "1459294";
+                hydra:required "true"^^xsd:boolean;
+                ];
+        ] ; 
+.
+    
+<SERIES/dataset/specimen/1459295> a dcat:Dataset;
+        dct:title "SR_Q_RCL1";
+        dct:identifier "SERIES/dataset/specimen/1459295";
+        adms:identifier [ a adms:Identifier;
+        	adms:schemaAgency "DDSS-ID";
+        	skos:notation "WP17-DDSS-S5";
+        ]; 
+        dct:description "Summary with the main focus on Retrofit technique";
+    	dct:created "2019-11-02T00:00:00Z"^^xsd:date;
+    	dct:temporal [ a dct:PeriodOfTime; 
+    		schema:startDate "2001-01-01T00:00:00Z"^^xsd:date;
+    	];
+    	dct:spatial [ a dct:Location;
+	        locn:geometry "POINT(21.7780958 38.2868967)"^^gsp:wktLiteral;
+];
+        dcat:theme <epos:SeismicPerformanceAssessmentandRehabilitationofExistingBuildings>;
+        dcat:keyword "SR_Q_RCL1";
+        dcat:contactPoint <http://orcid.org/0000-0002-8616-334X/scientificContact> ;
+        dct:publisher <PIC:999894528>;
+        dcat:distribution <SERIES/distribution/specimen/1459295>;
+.
+                      
+<SERIES/distribution/specimen/1459295> a dcat:Distribution;
+    dct:identifier "SERIES/distribution/specimen/1459295";
+    dct:title "SR_Q_RCL1 project information";
+    dct:description "Enables to download information/report about the specimen";
+    dct:type "http://publications.europa.eu/resource/authority/distribution-type/WEB_SERVICE"^^xsd:anyURI;
+    dct:conformsTo <SERIES/webservice/series_epos_platform>;
+    dcat:accessURL <SERIES/webservice/series_epos_platform/specimen_reports/1459295>;
+    dct:format "http://publications.europa.eu/resource/authority/file-type/XML"^^xsd:anyURI;
+.
+        
+<SERIES/webservice/series_epos_platform/specimen_reports/1459295> a hydra:Operation;
+    hydra:method "GET"^^xsd:string;
+    hydra:returns "application/xml";
+    hydra:property[ a hydra:IriTemplate;
+        hydra:template "http://150.140.186.204:53361/TCS_Metadata_Retrieval_WS/WebService.asmx/specimen_reports?specimen_id={?specimen_id}"^^xsd:string;
+            hydra:mapping[ a hydra:IriTemplateMapping;
+                hydra:variable "specimen_id"^^xsd:string;
+                rdfs:range "xsd:string";
+                rdfs:label "Download metadata of specimen: SR_Q_RCL1. ";
+            schema:defaultValue "1459295";
+                http:paramValue "1459295";
+                hydra:required "true"^^xsd:boolean;
+                ];
+        ] ; 
+.
+    
+<SERIES/dataset/specimen/1459296> a dcat:Dataset;
+        dct:title "SR_Q_RCL1pd";
+        dct:identifier "SERIES/dataset/specimen/1459296";
+        adms:identifier [ a adms:Identifier;
+        	adms:schemaAgency "DDSS-ID";
+        	skos:notation "WP17-DDSS-S6";
+        ]; 
+        dct:description "Summary with the main focus on Retrofit technique";
+    	dct:created "2019-11-02T00:00:00Z"^^xsd:date;
+    	dct:temporal [ a dct:PeriodOfTime; 
+    		schema:startDate "2001-01-01T00:00:00Z"^^xsd:date;
+    	];
+    	dct:spatial [ a dct:Location;
+	        locn:geometry "POINT(21.7780958 38.2868967)"^^gsp:wktLiteral;
+];
+        dcat:theme <epos:SeismicPerformanceAssessmentandRehabilitationofExistingBuildings>;
+        dcat:keyword "SR_Q_RCL1pd";
+        dcat:contactPoint <http://orcid.org/0000-0002-8616-334X/scientificContact> ;
+        dct:publisher <PIC:999894528>;
+        dcat:distribution <SERIES/distribution/specimen/1459296>;
+.
+                      
+<SERIES/distribution/specimen/1459296> a dcat:Distribution;
+    dct:identifier "SERIES/distribution/specimen/1459296";
+    dct:title "SR_Q_RCL1pd project information";
+    dct:description "Enables to download information/report about the specimen";
+    dct:type "http://publications.europa.eu/resource/authority/distribution-type/WEB_SERVICE"^^xsd:anyURI;
+    dct:conformsTo <SERIES/webservice/series_epos_platform>;
+    dcat:accessURL <SERIES/webservice/series_epos_platform/specimen_reports/1459296>;
+    dct:format "http://publications.europa.eu/resource/authority/file-type/XML"^^xsd:anyURI;
+.
+        
+<SERIES/webservice/series_epos_platform/specimen_reports/1459296> a hydra:Operation;
+    hydra:method "GET"^^xsd:string;
+    hydra:returns "application/xml";
+    hydra:property[ a hydra:IriTemplate;
+        hydra:template "http://150.140.186.204:53361/TCS_Metadata_Retrieval_WS/WebService.asmx/specimen_reports?specimen_id={?specimen_id}"^^xsd:string;
+            hydra:mapping[ a hydra:IriTemplateMapping;
+                hydra:variable "specimen_id"^^xsd:string;
+                rdfs:range "xsd:string";
+                rdfs:label "Download metadata of specimen: SR_Q_RCL1pd. ";
+            schema:defaultValue "1459296";
+                http:paramValue "1459296";
+                hydra:required "true"^^xsd:boolean;
+                ];
+        ] ; 
+.
+    
+<SERIES/dataset/specimen/1459297> a dcat:Dataset;
+        dct:title "SR_Q_RCL2";
+        dct:identifier "SERIES/dataset/specimen/1459297";
+        adms:identifier [ a adms:Identifier;
+        	adms:schemaAgency "DDSS-ID";
+        	skos:notation "WP17-DDSS-S7";
+        ]; 
+        dct:description "Summary with the main focus on Retrofit technique";
+    	dct:created "2019-11-02T00:00:00Z"^^xsd:date;
+    	dct:temporal [ a dct:PeriodOfTime; 
+    		schema:startDate "2001-01-01T00:00:00Z"^^xsd:date;
+    	];
+    	dct:spatial [ a dct:Location;
+	        locn:geometry "POINT(21.7780958 38.2868967)"^^gsp:wktLiteral;
+];
+        dcat:theme <epos:SeismicPerformanceAssessmentandRehabilitationofExistingBuildings>;
+        dcat:keyword "SR_Q_RCL2";
+        dcat:contactPoint <http://orcid.org/0000-0002-8616-334X/scientificContact> ;
+        dct:publisher <PIC:999894528>;
+        dcat:distribution <SERIES/distribution/specimen/1459297>;
+.
+                      
+<SERIES/distribution/specimen/1459297> a dcat:Distribution;
+    dct:identifier "SERIES/distribution/specimen/1459297";
+    dct:title "SR_Q_RCL2 project information";
+    dct:description "Enables to download information/report about the specimen";
+    dct:type "http://publications.europa.eu/resource/authority/distribution-type/WEB_SERVICE"^^xsd:anyURI;
+    dct:conformsTo <SERIES/webservice/series_epos_platform>;
+    dcat:accessURL <SERIES/webservice/series_epos_platform/specimen_reports/1459297>;
+    dct:format "http://publications.europa.eu/resource/authority/file-type/XML"^^xsd:anyURI;
+.
+        
+<SERIES/webservice/series_epos_platform/specimen_reports/1459297> a hydra:Operation;
+    hydra:method "GET"^^xsd:string;
+    hydra:returns "application/xml";
+    hydra:property[ a hydra:IriTemplate;
+        hydra:template "http://150.140.186.204:53361/TCS_Metadata_Retrieval_WS/WebService.asmx/specimen_reports?specimen_id={?specimen_id}"^^xsd:string;
+            hydra:mapping[ a hydra:IriTemplateMapping;
+                hydra:variable "specimen_id"^^xsd:string;
+                rdfs:range "xsd:string";
+                rdfs:label "Download metadata of specimen: SR_Q_RCL2. ";
+            schema:defaultValue "1459297";
+                http:paramValue "1459297";
+                hydra:required "true"^^xsd:boolean;
+                ];
+        ] ; 
+.
+    
+<SERIES/dataset/specimen/1459298> a dcat:Dataset;
+        dct:title "SR_Q_RCL2pd";
+        dct:identifier "SERIES/dataset/specimen/1459298";
+        adms:identifier [ a adms:Identifier;
+        	adms:schemaAgency "DDSS-ID";
+        	skos:notation "WP17-DDSS-S8";
+        ]; 
+        dct:description "Summary with the main focus on Retrofit technique";
+    	dct:created "2019-11-02T00:00:00Z"^^xsd:date;
+    	dct:temporal [ a dct:PeriodOfTime; 
+    		schema:startDate "2001-01-01T00:00:00Z"^^xsd:date;
+    	];
+    	dct:spatial [ a dct:Location;
+	        locn:geometry "POINT(21.7780958 38.2868967)"^^gsp:wktLiteral;
+];
+        dcat:theme <epos:SeismicPerformanceAssessmentandRehabilitationofExistingBuildings>;
+        dcat:keyword "SR_Q_RCL2pd";
+        dcat:contactPoint <http://orcid.org/0000-0002-8616-334X/scientificContact> ;
+        dct:publisher <PIC:999894528>;
+        dcat:distribution <SERIES/distribution/specimen/1459298>;
+.
+                      
+<SERIES/distribution/specimen/1459298> a dcat:Distribution;
+    dct:identifier "SERIES/distribution/specimen/1459298";
+    dct:title "SR_Q_RCL2pd project information";
+    dct:description "Enables to download information/report about the specimen";
+    dct:type "http://publications.europa.eu/resource/authority/distribution-type/WEB_SERVICE"^^xsd:anyURI;
+    dct:conformsTo <SERIES/webservice/series_epos_platform>;
+    dcat:accessURL <SERIES/webservice/series_epos_platform/specimen_reports/1459298>;
+    dct:format "http://publications.europa.eu/resource/authority/file-type/XML"^^xsd:anyURI;
+.
+        
+<SERIES/webservice/series_epos_platform/specimen_reports/1459298> a hydra:Operation;
+    hydra:method "GET"^^xsd:string;
+    hydra:returns "application/xml";
+    hydra:property[ a hydra:IriTemplate;
+        hydra:template "http://150.140.186.204:53361/TCS_Metadata_Retrieval_WS/WebService.asmx/specimen_reports?specimen_id={?specimen_id}"^^xsd:string;
+            hydra:mapping[ a hydra:IriTemplateMapping;
+                hydra:variable "specimen_id"^^xsd:string;
+                rdfs:range "xsd:string";
+                rdfs:label "Download metadata of specimen: SR_Q_RCL2pd. ";
+            schema:defaultValue "1459298";
+                http:paramValue "1459298";
+                hydra:required "true"^^xsd:boolean;
+                ];
+        ] ; 
+.
+    
+<SERIES/dataset/specimen/1459299> a dcat:Dataset;
+        dct:title "SR_Q_RCM";
+        dct:identifier "SERIES/dataset/specimen/1459299";
+        adms:identifier [ a adms:Identifier;
+        	adms:schemaAgency "DDSS-ID";
+        	skos:notation "WP17-DDSS-S9";
+        ]; 
+        dct:description "Summary with the main focus on Retrofit technique";
+    	dct:created "2019-11-02T00:00:00Z"^^xsd:date;
+    	dct:temporal [ a dct:PeriodOfTime; 
+    		schema:startDate "2001-01-01T00:00:00Z"^^xsd:date;
+    	];
+    	dct:spatial [ a dct:Location;
+	        locn:geometry "POINT(21.7780958 38.2868967)"^^gsp:wktLiteral;
+];
+        dcat:theme <epos:SeismicPerformanceAssessmentandRehabilitationofExistingBuildings>;
+        dcat:keyword "SR_Q_RCM";
+        dcat:contactPoint <http://orcid.org/0000-0002-8616-334X/scientificContact> ;
+        dct:publisher <PIC:999894528>;
+        dcat:distribution <SERIES/distribution/specimen/1459299>;
+.
+                      
+<SERIES/distribution/specimen/1459299> a dcat:Distribution;
+    dct:identifier "SERIES/distribution/specimen/1459299";
+    dct:title "SR_Q_RCM project information";
+    dct:description "Enables to download information/report about the specimen";
+    dct:type "http://publications.europa.eu/resource/authority/distribution-type/WEB_SERVICE"^^xsd:anyURI;
+    dct:conformsTo <SERIES/webservice/series_epos_platform>;
+    dcat:accessURL <SERIES/webservice/series_epos_platform/specimen_reports/1459299>;
+    dct:format "http://publications.europa.eu/resource/authority/file-type/XML"^^xsd:anyURI;
+.
+        
+<SERIES/webservice/series_epos_platform/specimen_reports/1459299> a hydra:Operation;
+    hydra:method "GET"^^xsd:string;
+    hydra:returns "application/xml";
+    hydra:property[ a hydra:IriTemplate;
+        hydra:template "http://150.140.186.204:53361/TCS_Metadata_Retrieval_WS/WebService.asmx/specimen_reports?specimen_id={?specimen_id}"^^xsd:string;
+            hydra:mapping[ a hydra:IriTemplateMapping;
+                hydra:variable "specimen_id"^^xsd:string;
+                rdfs:range "xsd:string";
+                rdfs:label "Download metadata of specimen: SR_Q_RCM. ";
+            schema:defaultValue "1459299";
+                http:paramValue "1459299";
+                hydra:required "true"^^xsd:boolean;
+                ];
+        ] ; 
+.
+    
+<SERIES/dataset/specimen/1459300> a dcat:Dataset;
+        dct:title "SR_Q_RCpd";
+        dct:identifier "SERIES/dataset/specimen/1459300";
+        adms:identifier [ a adms:Identifier;
+        	adms:schemaAgency "DDSS-ID";
+        	skos:notation "WP17-DDSS-S10";
+        ]; 
+        dct:description "Summary with the main focus on Retrofit technique";
+    	dct:created "2019-11-02T00:00:00Z"^^xsd:date;
+    	dct:temporal [ a dct:PeriodOfTime; 
+    		schema:startDate "2001-01-01T00:00:00Z"^^xsd:date;
+    	];
+    	dct:spatial [ a dct:Location;
+	        locn:geometry "POINT(21.7780958 38.2868967)"^^gsp:wktLiteral;
+];
+        dcat:theme <epos:SeismicPerformanceAssessmentandRehabilitationofExistingBuildings>;
+        dcat:keyword "SR_Q_RCpd";
+        dcat:contactPoint <http://orcid.org/0000-0002-8616-334X/scientificContact> ;
+        dct:publisher <PIC:999894528>;
+        dcat:distribution <SERIES/distribution/specimen/1459300>;
+.
+                      
+<SERIES/distribution/specimen/1459300> a dcat:Distribution;
+    dct:identifier "SERIES/distribution/specimen/1459300";
+    dct:title "SR_Q_RCpd project information";
+    dct:description "Enables to download information/report about the specimen";
+    dct:type "http://publications.europa.eu/resource/authority/distribution-type/WEB_SERVICE"^^xsd:anyURI;
+    dct:conformsTo <SERIES/webservice/series_epos_platform>;
+    dcat:accessURL <SERIES/webservice/series_epos_platform/specimen_reports/1459300>;
+    dct:format "http://publications.europa.eu/resource/authority/file-type/XML"^^xsd:anyURI;
+.
+        
+<SERIES/webservice/series_epos_platform/specimen_reports/1459300> a hydra:Operation;
+    hydra:method "GET"^^xsd:string;
+    hydra:returns "application/xml";
+    hydra:property[ a hydra:IriTemplate;
+        hydra:template "http://150.140.186.204:53361/TCS_Metadata_Retrieval_WS/WebService.asmx/specimen_reports?specimen_id={?specimen_id}"^^xsd:string;
+            hydra:mapping[ a hydra:IriTemplateMapping;
+                hydra:variable "specimen_id"^^xsd:string;
+                rdfs:range "xsd:string";
+                rdfs:label "Download metadata of specimen: SR_Q_RCpd. ";
+            schema:defaultValue "1459300";
+                http:paramValue "1459300";
+                hydra:required "true"^^xsd:boolean;
+                ];
+        ] ; 
+.
+    
+<SERIES/webservice/series_epos_platform> a epos:WebService;
+	schema:identifier "SERIES/webservice/series_epos_platform";
+	schema:description "Access to SERIES metadata";
+	schema:name "Access to SERIES metadata";
+	dcat:contactPoint <http://orcid.org/0000-0002-8616-334X/scientificContact> ;
+	hydra:entrypoint "http://150.140.186.204:53361/TCS_Metadata_Retrieval_WS/WebService.asmx"^^xsd:anyURI; 
+	schema:provider <PIC:999894528>;
+	dct:spatial [ a dct:Location;
+	        locn:geometry "POINT(21.7780958 38.2868967)"^^gsp:wktLiteral;
+];
+	schema:datePublished "2019-11-20T00:00:00Z"^^xsd:dateTime;
+	schema:dateModified "2019-01-01T00:00:00Z"^^xsd:dateTime ;
+	hydra:supportedOperation <SERIES/webservice/series_epos_platform/project_reports/33462>;
+	hydra:supportedOperation <SERIES/webservice/series_epos_platform/specimen_reports/1458463>;
+	hydra:supportedOperation <SERIES/webservice/series_epos_platform/specimen_reports/1458464>;
+	hydra:supportedOperation <SERIES/webservice/series_epos_platform/specimen_reports/1458465>;
+	hydra:supportedOperation <SERIES/webservice/series_epos_platform/project_reports/33465>;
+	hydra:supportedOperation <SERIES/webservice/series_epos_platform/specimen_reports/1459293>;
+	hydra:supportedOperation <SERIES/webservice/series_epos_platform/specimen_reports/1459294>;
+	hydra:supportedOperation <SERIES/webservice/series_epos_platform/specimen_reports/1459295>;
+	hydra:supportedOperation <SERIES/webservice/series_epos_platform/specimen_reports/1459296>;
+	hydra:supportedOperation <SERIES/webservice/series_epos_platform/specimen_reports/1459297>;
+	hydra:supportedOperation <SERIES/webservice/series_epos_platform/specimen_reports/1459298>;
+	hydra:supportedOperation <SERIES/webservice/series_epos_platform/specimen_reports/1459299>;
+	hydra:supportedOperation <SERIES/webservice/series_epos_platform/specimen_reports/1459300>;
+	dcat:theme <epos:PseudodynamicTestson4-storeyNonductileFrameswithRCInfillingoftheBay>;
+	dcat:theme <epos:SeismicPerformanceAssessmentandRehabilitationofExistingBuildings>;
+	schema:keywords "signal metadata","experiments","specimens","projects","document repository";
+. 
+        
