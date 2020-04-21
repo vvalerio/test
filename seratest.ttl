@@ -192,7 +192,7 @@
 
 <epos:PseudodynamicTestson4-storeyNonductileFrameswithRCInfillingoftheBay> a skos:Concept;
     	skos:inScheme <epos:SeismicEngineering>;
-    	skos:prefLabel "Pseudodynamic Tests on 4-storey Nonductile Frames with RC Infilling of the Bay";
+    	skos:prefLabel "Tests on 4-storey Nonductile Frames with RC Infilling of the Bay";
 . 
         
 <SERIES/dataset/project/33462> a dcat:Dataset;
@@ -389,7 +389,7 @@
     
 <epos:SeismicPerformanceAssessmentandRehabilitationofExistingBuildings> a skos:Concept;
     	skos:inScheme <epos:SeismicEngineering>;
-    	skos:prefLabel "Seismic Performance Assessment and Rehabilitation of Existing Buildings";
+    	skos:prefLabel "Performance Assessment and Rehabilitation of Existing Buildings";
 . 
         
 <SERIES/dataset/project/33465> a dcat:Dataset;
