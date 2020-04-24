@@ -1,0 +1,63 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix epos: <https://www.epos-eu.org/epos-dcat-ap#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix hydra: <http://www.w3.org/ns/hydra/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix cnt: <http://www.w3.org/2011/content#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix http: <http://www.w3.org/2006/http#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix gsp: <http://www.opengis.net/ont/geosparql#> .
+
+
+
+<http://orcid.org/0000-0001-7750-7254> a schema:Person ;
+    schema:identifier [ a schema:PropertyValue ;
+      schema:propertyID  "orcid" ;
+      schema:value   "0000-0001-7750-7254" ;
+    ];
+    schema:identifier [ a schema:PropertyValue ;
+        schema:propertyID  "ScopusAuthorID" ;
+        schema:value   "55861456000" ;
+    ];
+	  schema:familyName "Trani" ;
+	  schema:givenName "Luca" ;
+    schema:address [ a schema:PostalAddress ;
+	 	    schema:streetAddress "Utrechtseweg, 297" ;
+		    schema:addressLocality "De Bilt" ;
+		    schema:postalCode "3731GA" ;
+		    schema:addressCountry "The Netherlands" ;
+	  ];
+    schema:email "luca.trani@private.com" ;
+    schema:telephone "+310302206297" ;
+    schema:url  "http://orcid.org/0000-0001-7750-7254"^^xsd:anyURI ;
+	  schema:qualifications "Senior Advisor, Researcher" ;
+	  schema:contactPoint <http://orcid.org/0000-0001-7750-7254/legalContact> ;
+	  schema:contactPoint <http://orcid.org/0000-0001-7750-7254/scientificContact> ;
+	  schema:contactPoint <http://orcid.org/0000-0001-7750-7254/financialContact> ;
+.
+
+<http://orcid.org/0000-0001-7750-7254/legalContact> a schema:ContactPoint ;
+	schema:email "luca.trani@knmi.nl ";
+	schema:availableLanguage "en" ;
+	schema:contactType "legalContact";
+.
+
+<http://orcid.org/0000-0001-7750-7254/financialContact> a schema:ContactPoint ;
+	schema:email "luca.trani@knmi.nl ";
+	schema:availableLanguage "en" ;
+	schema:contactType "financialContact" ;
+.
+
+<http://orcid.org/0000-0001-7750-7254/scientificContact> a schema:ContactPoint ;
+	schema:email "luca.trani@knmi.nl" ;
+	schema:availableLanguage "en" ;
+	schema:contactType "scientificContact" ;
+.
