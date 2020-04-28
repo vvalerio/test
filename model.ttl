@@ -449,6 +449,10 @@ epos:PersonShape
 # Person optional properties
 ####
   sh:property [
+      sh:path schema:givenName ;
+      sh:datatype xsd:string;
+    ] ;
+  sh:property [
       sh:path schema:familyName ;
       sh:datatype xsd:string;
     ] ;
