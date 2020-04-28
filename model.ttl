@@ -861,6 +861,17 @@ epos:IriTemplateMappingShape
       sh:path http:paramValue ;
       sh:datatype xsd:string ;  
   ] ;
+  sh:property [
+      sh:path schema:valuePattern ;
+      sh:datatype xsd:string ;
+      sh:maxCount 1 ;   
+  ] ;
+
+  sh:property [
+        sh:path hydra:property ;
+        sh:datatype xsd:string ;
+        sh:maxCount 1 ;   
+    ] ;
 .
 
 epos:ServiceShape
