@@ -330,7 +330,7 @@ epos:CatalogShape
     ] ;
   sh:property [
       sh:path dct:spatial ;
-      sh:class epos:LocationShape ;
+      sh:class dct:Location ;
     ] ;
   sh:property [
       sh:path dcat:record ;
@@ -726,7 +726,7 @@ epos:WebServiceShape
 ####
  sh:property [
       sh:path dct:spatial ;
-      sh:class epos:LocationShape ;
+      sh:class dct:Location ;
     ] ;
   sh:property [
       sh:path hydra:supportedOperation ;
@@ -1047,7 +1047,7 @@ epos:EquipmentShape
  ];
  sh:property [
       sh:path dct:spatial ;
-      sh:class epos:LocationShape ;
+      sh:class dct:Location ;
     ] ;
  sh:property [
       sh:path epos:annotation ;
@@ -1212,7 +1212,7 @@ sh:property [
     ] ;
   sh:property [
       sh:path dct:spatial ;
-      sh:class epos:LocationShape ;
+      sh:class dct:Location ;
     ] ;
   sh:property [
       sh:path dct:temporal ;
