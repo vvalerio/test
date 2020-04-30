@@ -203,7 +203,8 @@ epos:resolution
 ####
 # SHACL Shapes Graphs
 ####
-
+epos:DatasetShape
+  a sh:NodeShape ;
   sh:targetClass dcat:Dataset ;
 ####
 # Dataset mandatory properties
