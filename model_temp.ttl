@@ -22,7 +22,6 @@
 @prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
 @prefix http: <http://www.w3.org/2006/http#> .
 @prefix locn: <http://www.w3.org/ns/locn#> .
-@prefix gsp: <http://www.opengis.net/ont/geosparql#> .
 
 <http://www.epos-eu.org/epos-dcat-ap>
   rdf:type owl:Ontology ;
@@ -330,7 +329,7 @@ epos:CatalogShape
     ] ;
   sh:property [
       sh:path dct:spatial ;
-      sh:node epos:LocationShape ;
+      sh:class epos:LocationShape ;
     ] ;
   sh:property [
       sh:path dcat:record ;
@@ -449,6 +448,10 @@ epos:PersonShape
 ####
 # Person optional properties
 ####
+  sh:property [
+      sh:path schema:givenName ;
+      sh:datatype xsd:string;
+    ] ;
   sh:property [
       sh:path schema:familyName ;
       sh:datatype xsd:string;
@@ -722,7 +725,7 @@ epos:WebServiceShape
 ####
  sh:property [
       sh:path dct:spatial ;
-      sh:node epos:LocationShape ;
+      sh:class epos:LocationShape ;
     ] ;
   sh:property [
       sh:path hydra:supportedOperation ;
@@ -862,6 +865,17 @@ epos:IriTemplateMappingShape
       sh:path http:paramValue ;
       sh:datatype xsd:string ;  
   ] ;
+  sh:property [
+      sh:path schema:valuePattern ;
+      sh:datatype xsd:string ;
+      sh:maxCount 1 ;   
+  ] ;
+
+  sh:property [
+        sh:path hydra:property ;
+        sh:datatype xsd:string ;
+        sh:maxCount 1 ;   
+    ] ;
 .
 
 epos:ServiceShape
@@ -1032,7 +1046,7 @@ epos:EquipmentShape
  ];
  sh:property [
       sh:path dct:spatial ;
-      sh:node epos:LocationShape ;
+      sh:class epos:LocationShape ;
     ] ;
  sh:property [
       sh:path epos:annotation ;
@@ -1197,7 +1211,7 @@ sh:property [
     ] ;
   sh:property [
       sh:path dct:spatial ;
-      sh:node epos:LocationShape ;
+      sh:class epos:LocationShape ;
     ] ;
   sh:property [
       sh:path dct:temporal ;
@@ -1688,6 +1702,19 @@ epos:SoftwareApplicationShape
       sh:path schema:installUrl ;
       sh:datatype xsd:anyURI;
     ] ;
+    sh:property [
+      sh:path schema:mainEntityOfPage ;
+      sh:datatype xsd:anyURI ;
+       sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path schema:keywords ;
+        sh:datatype xsd:string ;
+    ] ;
+    sh:property [
+        sh:path dcat:theme;
+        sh:class skos:Concept ;
+    ] ;
 .
 
 epos:ControlActionShape
@@ -1789,6 +1816,19 @@ epos:SoftwareSourceCodeShape
     sh:property [
       sh:path schema:targetProduct ;
       sh:class schema:SoftwareApplication ;
+    ] ;
+    sh:property [
+      sh:path schema:mainEntityOfPage ;
+      sh:datatype xsd:anyURI ;
+       sh:maxCount 1 ;
+    ] ;
+    sh:property [
+      sh:path schema:keywords ;
+      sh:datatype xsd:string ;
+    ] ;
+    sh:property [
+     sh:path dcat:theme;
+     sh:class skos:Concept ;
     ] ;
 .
 
