@@ -1,0 +1,276 @@
+@prefix : <https://www.epos-eu.org/epos-dcat-ap#> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix dash: <http://datashapes.org/dash#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix epos: <https://www.epos-eu.org/epos-dcat-ap#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix cnt: <http://www.w3.org/2011/content#> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix spdx: <http://spdx.org/rdf/terms#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix hydra: <http://www.w3.org/ns/hydra/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix http: <http://www.w3.org/2006/http#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+
+<http://www.epos-eu.org/epos-dcat-ap>
+  rdf:type owl:Ontology ;
+  dct:abstract "EPOS DCAT Application Profile is an extension of DCAT-AP for solid-Earth sciences communities."@en  ;
+  dct:creator [  foaf:name "Luca Trani" ; ] ;
+  dct:contributor [foaf:name "Rossana Paciello" ; ] ;
+  dct:contributor [foaf:name "Manuela Sbarra" ;  ] ;
+  dct:contributor [foaf:name "Damian Ulbricht" ; ] ;
+  dct:contributor [foaf:name "Sylvain Grellet" ;  ] ;
+  dct:contributor [foaf:name "Andy Riddick" ;  ] ;
+  dct:contributor [foaf:name "Xiaoliang Wang" ; ] ;
+  dct:created "2018-02-09"^^xsd:date ;
+  dct:modified "2019-05-21"^^xsd:date ;
+  dct:relation <https://joinup.ec.europa.eu/node/69559> ;
+  dct:title "EPOS DCAT Application Profile"@en  ;
+  rdfs:comment "This document specifies the set of classes, properties and shapes graphs used in the EPOS DCAT Application Profile."@en  ;
+  rdfs:label "EPOS-DCAT-Application Profile"@en  ;
+  owl:imports <http://datashapes.org/dash> ;
+ # owl:imports <http://www.schema.org> ;
+ # owl:imports <http://www.w3.org/2004/02/skos/core> ;
+  #owl:imports <http://www.w3.org/2006/vcard/ns> ;
+  #owl:imports <http://www.w3.org/2008/05/skos-xl> ;
+  #owl:imports <http://www.w3.org/ns/dcat> ;
+ # owl:imports <http://www.w3.org/ns/oa#> ;
+  #owl:imports <http://www.w3.org/ns/org#> ;
+  #owl:imports <http://xmlns.com/foaf/0.1/> ;
+  owl:versionInfo "0.15" ;
+  foaf:homepage <http://www.epos-eu.org/epos-dcat-ap> ; .
+####
+# Classes
+####
+epos:Equipment
+  a owl:Class ;
+  rdfs:comment "A generic equipment. E.g. a GPS sensor, a seismic station's channel"@en  ;
+  rdfs:isDefinedBy <http://www.epos-eu.org/epos-dcat-ap> ;
+  rdfs:label "Equipment"@en  ;
+  rdfs:subClassOf rdfs:Resource ;
+  rdfs:subClassOf schema:Product ;
+.
+epos:Facility
+  a owl:Class ;
+  rdfs:comment "A resource representing a Facility. E.g. a laboratory, a seismic station"@en  ;
+  rdfs:isDefinedBy <http://www.epos-eu.org/epos-dcat-ap> ;
+  rdfs:label "Facility"@en  ;
+  rdfs:subClassOf rdfs:Resource ;
+.
+epos:Publication
+  a owl:Class ;
+  rdfs:comment "EPOS specialisation of schema:CreativeWork"@en  ;
+  rdfs:isDefinedBy <http://www.epos-eu.org/epos-dcat-ap> ;
+  rdfs:label "Publication"@en  ;
+  rdfs:subClassOf schema:CreativeWork ;
+.
+epos:WebService
+  a owl:Class ;
+  rdfs:comment "A service accessible via a Web API "@en  ;
+  rdfs:subClassOf schema:Service;
+  rdfs:subClassOf rdfs:Resource ;
+  rdfs:label "WebService"@en  ;
+  rdfs:isDefinedBy <http://www.epos-eu.org/epos-dcat-ap> ;
+.
+##Alignment schema:Organization and foaf:Organization##
+schema:Organization a owl:Class;
+  owl:equivalentClass foaf:Organization;
+  rdfs:label "Organization"@en;
+.
+##Alignment schema:Person and foaf:Person##
+schema:Person a owl:Class;
+  owl:equivalentClass foaf:Person;
+  rdfs:label "Person"@en;
+.
+##Alignment schema:ContactPoint and vcard:Kind##
+schema:ContactPoint a owl:Class;
+    owl:equivalentClass vcard:Kind;
+    rdfs:label "ContactPoint"@en;
+.
+####
+# Properties
+####
+epos:resource
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain dcat:Catalog ;
+  rdfs:range rdfs:Resource;
+.
+##Alignment dcat:contactPoint and schema:contactPoint##
+dcat:contactPoint owl:equivalentProperty schema:contactPoint .
+##Alignment dcat:keyword and schema:keywords##
+dcat:keyword owl:equivalentProperty schema:keywords .
+##Extending range and domain of dcat:contactPoint##
+dcat:contactPoint
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain [ rdf:type owl:Class ;
+  				owl:unionOf (dcat:Dataset schema:Organization schema:Person epos:Equipment schema:SoftwareApplication schema:SoftwareSourceCode
+  epos:WebService foaf:Project epos:Facility)
+  				];
+  rdfs:range [ rdf:type owl:Class ;
+  				owl:unionOf (vcard:Kind schema:ContactPoint)
+  			];
+.
+epos:associatedProject
+  rdf:type owl:ObjectProperty;
+  rdfs:domain schema:Organization ;
+  rdfs:range foaf:Project ;
+.
+epos:annotation
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain [rdf:type owl:Class ;
+  owl:unionOf (rdfs:Resource foaf:Agent dcat:Distribution)] ;
+  rdfs:range oa:Annotation ;
+.
+##Extending the domain of dcat:theme##
+dcat:theme
+  rdf:type owl:ObjectProperty ;
+  rdfs:comment "The main category/domain of the referred resource."@en  ;
+  rdfs:domain [rdf:type owl:Class ;
+  owl:unionOf (rdfs:Resource dcat:Dataset)] ;
+  rdfs:range skos:Concept ;
+.
+epos:dynamicRange
+  rdf:type owl:ObjectProperty ;
+  rdfs:comment "This property contains the full scale measuring ability, in nT (unit and value)"@en  ;
+  rdfs:domain epos:Equipment ;
+  rdfs:range schema:QuantitativeValue ;
+.
+epos:filter
+  rdf:type owl:ObjectProperty ;
+  rdfs:comment "This property describes the filter that an instrument might apply to produce data"@en  ;
+  rdfs:domain epos:Equipment ;
+  rdfs:range rdfs:Literal ;
+.
+epos:samplePeriod
+  rdf:type owl:ObjectProperty ;
+  rdfs:comment "This property contains the sample period in ms"@en  ;
+  rdfs:domain epos:Equipment ;
+  rdfs:range schema:QuantitativeValue ;
+.
+epos:orientation
+  rdf:type owl:ObjectProperty ;
+  rdfs:comment "This property describes how the instrument is oriented."@en  ;
+  rdfs:domain epos:Equipment ;
+  rdfs:range rdfs:Literal ;
+.
+##Spatial properties##
+epos:northernmostLatitude 
+  rdf:type owl:DatatypeProperty ;
+  rdfs:subPropertyOf geo:lat;
+  rdfs:comment "The WGS84 upper bound (max) latitude of a SpatialThing (decimal degrees)"
+.
+epos:southernmostLatitude
+  rdf:type owl:DatatypeProperty ;
+  rdfs:subPropertyOf geo:lat;
+  rdfs:comment "The WGS84 lower bound (min) latitude of a SpatialThing (decimal degrees)"
+.
+epos:westernmostLongitude
+  rdf:type owl:DatatypeProperty ;
+  rdfs:subPropertyOf geo:long;
+  rdfs:comment "The WGS84 lower bound (min) longitude of a SpatialThing (decimal degrees)"
+.
+epos:easternmostLongitude
+  rdf:type owl:DatatypeProperty ;
+  rdfs:subPropertyOf geo:long;
+  rdfs:comment "The WGS84 upper bound (max) longitude of a SpatialThing (decimal degrees)"
+.
+##Extending the range of schema:owns##
+schema:owns
+ rdf:type owl:ObjectProperty ;
+  rdfs:domain [rdf:type owl:Class ;
+  owl:unionOf (schema:Person schema:Organization)];
+  rdfs:range [rdf:type owl:Class ;
+  owl:unionOf (schema:OwnershipInfo schema:Product epos:Facility)];
+.
+epos:resolution
+  rdf:type owl:ObjectProperty ;
+  rdfs:comment "This property contains the resolution in nT"@en  ;
+  rdfs:domain epos:Equipment ;
+  rdfs:range rdfs:Literal ;
+.
+####
+# SHACL Shapes Graphs
+####
+
+epos:DatasetShape
+  a sh:NodeShape ;
+  sh:targetClass dcat:Dataset ;
+####
+# Dataset mandatory properties
+####
+ sh:property [
+      sh:path dct:description ;
+      sh:minCount 1 ;
+      sh:datatype xsd:string ;
+    ] ;
+
+ sh:property [
+      sh:path dct:title ;
+      sh:minCount 1 ;
+      sh:datatype xsd:string ;
+ ] ;
+####
+# Dataset recommended properties
+####
+  
+ sh:property [
+      sh:path dcat:keyword ;
+      sh:minCount 1 ;
+      sh:datatype xsd:string ;
+      sh:message "Keyword is recommended. Please fill in a value"@en  ;
+      sh:severity sh:Warning ;
+    ] ;
+ sh:property [
+      sh:path dcat:keyword ;
+      sh:datatype xsd:string ;
+    ] ;
+
+####
+# Dataset optional properties
+####
+  
+  sh:property [
+      sh:path dct:type ;
+      sh:datatype xsd:anyURI ;
+      sh:maxCount 1 ;
+    ] ;
+
+  sh:property [
+      sh:path dct:accrualPeriodicity ;
+      #sh:class dct:Frequency ;
+      sh:datatype xsd:anyURI ;
+      sh:maxCount 1 ;
+    ] ;
+  sh:property [
+      sh:path dct:spatial ;
+      sh:class epos:LocationShape ;
+    ] ;
+  sh:property [
+      sh:path adms:versionNotes ;
+      sh:datatype xsd:string ;
+    ] ;
+.
+
+epos:LocationShape
+a sh:NodeShape ;
+sh:targetClass dct:Location ;
+####
+# properties
+####
+sh:property [
+   sh:path locn:geometry ;
+   sh:datatype gsp:wktLiteral;
+   sh:minCount 1 ;
+ ] ;
+.
