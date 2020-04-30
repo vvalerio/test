@@ -329,7 +329,7 @@ epos:CatalogShape
     ] ;
   sh:property [
       sh:path dct:spatial ;
-      sh:class dct:Location ;
+      sh:node epos:LocationShape ;
     ] ;
   sh:property [
       sh:path dcat:record ;
@@ -725,7 +725,7 @@ epos:WebServiceShape
 ####
  sh:property [
       sh:path dct:spatial ;
-      sh:class dct:Location;
+      sh:node epos:LocationShape ;
     ] ;
   sh:property [
       sh:path hydra:supportedOperation ;
@@ -1046,7 +1046,7 @@ epos:EquipmentShape
  ];
  sh:property [
       sh:path dct:spatial ;
-      sh:class dct:Location ;
+      sh:node epos:LocationShape ;
     ] ;
  sh:property [
       sh:path epos:annotation ;
@@ -1211,7 +1211,7 @@ sh:property [
     ] ;
   sh:property [
       sh:path dct:spatial ;
-      sh:class dct:Location ;
+      sh:node epos:LocationShape ;
     ] ;
   sh:property [
       sh:path dct:temporal ;
@@ -1702,6 +1702,19 @@ epos:SoftwareApplicationShape
       sh:path schema:installUrl ;
       sh:datatype xsd:anyURI;
     ] ;
+    sh:property [
+      sh:path schema:mainEntityOfPage ;
+      sh:datatype xsd:anyURI ;
+       sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path schema:keywords ;
+        sh:datatype xsd:string ;
+    ] ;
+    sh:property [
+        sh:path dcat:theme;
+        sh:class skos:Concept ;
+    ] ;
 .
 
 epos:ControlActionShape
@@ -1803,6 +1816,19 @@ epos:SoftwareSourceCodeShape
     sh:property [
       sh:path schema:targetProduct ;
       sh:class schema:SoftwareApplication ;
+    ] ;
+    sh:property [
+      sh:path schema:mainEntityOfPage ;
+      sh:datatype xsd:anyURI ;
+       sh:maxCount 1 ;
+    ] ;
+    sh:property [
+      sh:path schema:keywords ;
+      sh:datatype xsd:string ;
+    ] ;
+    sh:property [
+     sh:path dcat:theme;
+     sh:class skos:Concept ;
     ] ;
 .
 
@@ -1924,7 +1950,7 @@ sh:targetClass dct:Location ;
 ####
 sh:property [
    sh:path locn:geometry ;
-   sh:datatype xsd:string;
+   sh:datatype gsp:wktLiteral;
    sh:minCount 1 ;
  ] ;
 .
@@ -2012,5 +2038,4 @@ epos:PostalAddressShape
         sh:minCount 1 ;
         sh:maxCount 1 ;
       ] ;
-
 .
