@@ -115,12 +115,12 @@ dcat:keyword owl:equivalentProperty schema:keywords .
 dcat:contactPoint
   rdf:type owl:ObjectProperty ;
   rdfs:domain [ rdf:type owl:Class ;
-  				owl:unionOf (dcat:Dataset schema:Organization schema:Person epos:Equipment schema:SoftwareApplication schema:SoftwareSourceCode
+      owl:unionOf (dcat:Dataset schema:Organization schema:Person epos:Equipment schema:SoftwareApplication schema:SoftwareSourceCode
   epos:WebService foaf:Project epos:Facility)
-  				];
+  ];
   rdfs:range [ rdf:type owl:Class ;
-  				owl:unionOf (vcard:Kind schema:ContactPoint)
-  			];
+      owl:unionOf (vcard:Kind schema:ContactPoint)
+  ];
 .
 epos:associatedProject
   rdf:type owl:ObjectProperty;
@@ -166,7 +166,7 @@ epos:orientation
   rdfs:range rdfs:Literal ;
 .
 ##Spatial properties##
-epos:northernmostLatitude 
+epos:northernmostLatitude
   rdf:type owl:DatatypeProperty ;
   rdfs:subPropertyOf geo:lat;
   rdfs:comment "The WGS84 upper bound (max) latitude of a SpatialThing (decimal degrees)"
@@ -230,7 +230,7 @@ epos:CatalogShape
   ] ;
   sh:property [
       sh:path dct:description ;
-	    sh:datatype xsd:string;
+      sh:datatype xsd:string;
       sh:minCount 1 ;
   ] ;
   sh:property [
@@ -245,7 +245,7 @@ epos:CatalogShape
       sh:path dcat:dataset ;
       sh:class dcat:Dataset ;
       sh:minCount 1 ;
-    ] ;
+  ] ;
 ####
 # Catalog recommended properties
 ####
@@ -255,91 +255,91 @@ epos:CatalogShape
       sh:message "Release date is recommended. Please fill in a value"@en  ;
       sh:node epos:DateOrDateTimeDataType ;
       sh:severity sh:Warning ;
-    ] ;
+  ] ;
   sh:property [
       sh:path dct:issued ;
       sh:maxCount 1 ;
       sh:node epos:DateOrDateTimeDataType ;
-    ] ;
+  ] ;
   sh:property [
       sh:path dct:modified ;
       sh:minCount 1 ;
       sh:message "Update/modification date is recommended. Please fill in a value"@en  ;
       sh:node epos:DateOrDateTimeDataType ;
       sh:severity sh:Warning ;
-    ] ;
+  ] ;
   sh:property [
       sh:path dct:modified ;
       sh:maxCount 1 ;
       sh:node epos:DateOrDateTimeDataType ;
-    ] ;
+  ] ;
   sh:property [
       sh:path dcat:themeTaxonomy ;
       sh:minCount 1 ;
       sh:message "Theme is recommended. Please fill in a value"@en  ;
       sh:datatype xsd:anyURI;
       sh:severity sh:Warning ;
-    ] ;
+  ] ;
   sh:property [
       sh:path foaf:homepage ;
       sh:minCount 1 ;
       sh:class foaf:Document ;
       sh:message "Homepage is recommended. Please fill in a value"@en  ;
       sh:severity sh:Warning ;
-    ] ;
+  ] ;
   sh:property [
       sh:path foaf:homepage ;
       sh:maxCount 1 ;
       sh:class foaf:Document ;
-    ] ;
+  ] ;
   sh:property [
       sh:path dct:license ;
       sh:minCount 1 ;
       sh:class dct:LicenseDocument ;
       sh:message "License is recommended. Please fill in a value"@en  ;
       sh:severity sh:Warning ;
-    ] ;
+  ] ;
   sh:property [
       sh:path dct:license ;
       sh:maxCount 1 ;
       sh:class dct:LicenseDocument ;
-    ] ;
+  ] ;
   sh:property [
       sh:path dct:language ;
       sh:minCount 1 ;
       sh:class dct:LinguisticSystem ;
       sh:message "Language is recommended. Please fill in a value"@en  ;
       sh:severity sh:Warning ;
-    ] ;
+  ] ;
 ####
 # Catalog optional properties
 ####
   sh:property [
       sh:path dct:hasPart ;
       sh:class dcat:Catalog ;
-    ] ;
+  ] ;
   sh:property [
       sh:path dct:isPartOf ;
       sh:class dcat:Catalog ;
       sh:maxCount 1 ;
-    ] ;
+  ] ;
   sh:property [
       sh:path dct:rights ;
       sh:class dct:RightsStatement ;
       sh:maxCount 1 ;
-    ] ;
+  ] ;
   sh:property [
       sh:path dct:spatial ;
       sh:class dct:Location ;
-    ] ;
+  ] ;
   sh:property [
       sh:path dcat:record ;
       sh:class dcat:CatalogRecord ;
-    ] ;
+  ] ;
   sh:property [
       sh:path epos:resource ;
       sh:class rdfs:Resource ;
-    ] ;
+  ] ;
 .
 epos:CatalogRecordShape
   a sh:NodeShape ;
@@ -352,13 +352,13 @@ epos:CatalogRecordShape
       sh:class dcat:Dataset ;
       sh:maxCount 1 ;
       sh:minCount 1 ;
-    ] ;
+  ] ;
   sh:property [
       sh:path dct:modified ;
       sh:maxCount 1 ;
       sh:minCount 1 ;
       sh:node epos:DateOrDateTimeDataType ;
-    ] ;
+  ] ;
 ####
 # CatalogRecord recommended properties
 ####
@@ -369,30 +369,30 @@ epos:CatalogRecordShape
         [sh:datatype xsd:anyURI; ] );
       sh:message "Identifier is recommended. Please fill in a value"@en  ;
       sh:severity sh:Warning ;
-    ] ;
+  ] ;
   sh:property [
       sh:path dct:identifier;
       sh:or ( [sh:datatype xsd:string; ]
         [sh:datatype xsd:anyURI; ] );
       sh:maxCount 1 ;
-    ] ;
+  ] ;
   sh:property [
       sh:path dct:conformsTo ;
       sh:datatype xsd:anyURI;
       sh:maxCount 1 ;
-    ] ;
+  ] ;
   sh:property [
       sh:path dct:conformsTo ;
       sh:datatype xsd:anyURI;
       sh:minCount 1 ;
       sh:message "ConformsTo is recommended. Please fill in a value"@en  ;
       sh:severity sh:Warning ;
-    ] ;
+  ] ;
   sh:property [
       sh:path adms:status ;
       sh:maxCount 1 ;
       sh:datatype xsd:anyURI;
-    ] ;
+  ] ;
   sh:property [
       sh:path adms:status ;
       sh:minCount 1 ;
@@ -404,14 +404,14 @@ epos:CatalogRecordShape
       sh:path dct:issued ;
       sh:maxCount 1 ;
       sh:node epos:DateOrDateTimeDataType ;
-    ] ;
+  ] ;
   sh:property [
       sh:path dct:issued ;
       sh:minCount 1 ;
       sh:node epos:DateOrDateTimeDataType ;
       sh:message "Issued is recommended. Please fill in a value"@en  ;
       sh:severity sh:Warning ;
-    ] ;
+  ] ;
 ####
 # CatalogRecord optional properties
 ####
@@ -445,18 +445,20 @@ epos:PersonShape
         [ sh:datatype xsd:anyURI; ]
         [sh:class schema:PropertyValue;]) ;
       sh:minCount 1 ;
-    ] ;
+  ] ;
 ####
 # Person optional properties
 ####
   sh:property [
       sh:path schema:givenName ;
       sh:datatype xsd:string;
+      sh:maxCount 1 ;
     ] ;
   sh:property [
       sh:path schema:familyName ;
       sh:datatype xsd:string;
-    ] ;
+      sh:maxCount 1 ;
+  ] ;
   sh:property [
       sh:path [sh:alternativePath (schema:contactPoint dcat:contactPoint)] ;
       sh:node epos:ContactPointType ;
@@ -466,32 +468,33 @@ epos:PersonShape
       sh:or ([sh:datatype xsd:string ;]
         [sh:class schema:PostalAddress; ] ) ;
       sh:maxCount 1 ;
-    ] ;
+  ] ;
   sh:property [
       sh:path schema:email ;
       sh:datatype xsd:string;
-    ] ;
-   sh:property [
+  ] ;
+  sh:property [
       sh:path schema:qualifications ;
       sh:datatype xsd:string;
-    ] ;
+      sh:maxCount 1 ;
+  ] ;
   sh:property [
       sh:path schema:telephone ;
       sh:datatype xsd:string;
-      sh:maxCount 1 ;
-    ] ;
+  ] ;
   sh:property [
       sh:path schema:url ;
       sh:datatype xsd:anyURI;
-    ] ;
+      sh:maxCount 1 ;
+  ] ;
   sh:property [
       sh:path schema:affiliation ;
       sh:class schema:Organization;
-    ] ;
+  ] ;
   sh:property [
       sh:path epos:annotation ;
       sh:class oa:Annotation;
-    ] ;
+  ] ;
 .
 epos:OrganizationShape
   a sh:NodeShape ;
@@ -505,7 +508,7 @@ epos:OrganizationShape
         [sh:datatype xsd:anyURI; ]
         [sh:class schema:PropertyValue; ] ) ;
       sh:minCount 1 ;
-    ] ;
+  ] ;
 ####
 # Organization recommended properties
 ####
@@ -513,7 +516,7 @@ epos:OrganizationShape
       sh:path schema:legalName;
       sh:datatype xsd:string;
       sh:maxCount 1 ;
-    ] ;
+  ] ;
   sh:property [
       sh:path schema:legalName;
       sh:description "This property contains the official name of the Organization.";
@@ -521,49 +524,50 @@ epos:OrganizationShape
       sh:minCount 1 ;
       sh:message "LegalName is recommended. Please fill in a value"@en ;
       sh:severity sh:Warning ;
-    ] ;
+  ] ;
   sh:property [
       sh:path schema:leiCode;
       sh:datatype xsd:string;
       sh:maxCount 1 ;
-    ] ;
+  ] ;
   sh:property [
       sh:path schema:leiCode;
       sh:datatype xsd:string;
       sh:minCount 1 ;
       sh:message "LeiCode is recommended. Please fill in a value"@en ;
       sh:severity sh:Warning ;
-    ] ;
+  ] ;
 ####
 # Organization optional properties
 ####
   sh:property [
       sh:path epos:annotation ;
       sh:class oa:Annotation;
-    ] ;
+  ] ;
   sh:property [
       sh:path schema:address;
         sh:or ( [sh:datatype xsd:string ; ]
         [ sh:class schema:PostalAddress; ] ) ;
       sh:maxCount 1 ;
-    ] ;
+  ] ;
   sh:property [
       sh:path schema:logo ;
       sh:datatype xsd:anyURI;
       sh:maxCount 1 ;
-    ] ;
+  ] ;
   sh:property [
       sh:path schema:url ;
       sh:datatype xsd:anyURI;
-    ] ;
+      sh:maxCount 1 ;
+  ] ;
   sh:property [
       sh:path schema:email ;
       sh:datatype xsd:string;
-    ] ;
+  ] ;
   sh:property [
       sh:path schema:telephone ;
       sh:datatype xsd:string;
-    ] ;
+  ] ;
   sh:property [
       sh:path [sh:alternativePath (schema:contactPoint dcat:contactPoint)] ;
       sh:node epos:ContactPointType ;
@@ -576,7 +580,11 @@ epos:OrganizationShape
       sh:path schema:owns;
       sh:or ( [sh:class epos:Facility; ]
         [sh:class epos:Equipment; ]);
-    ] ;
+  ] ;
+  sh:property [
+      sh:path epos:associatedProject;
+      sh:class foaf:Project;
+  ];
 .
 epos:ContactPointShape
   a sh:NodeShape ;
@@ -591,27 +599,32 @@ epos:ContactPointShape
       sh:message "contactType is recommended. Please fill in a value (e.g. legalContact, financialContact, scientificContact, manager)"@en  ;
       sh:severity sh:Warning ;
       #sh:in ( "legalContact" "financialContact" "scientificContact" "manager" );
-    ] ;
+  ] ;
+  sh:property [
+      sh:path schema:contactType ;
+      sh:datatype xsd:string;
+      sh:maxCount 1 ;
+  ] ;
 ####
 # ContactPoint optional properties
 ####
   sh:property [
       sh:path schema:name ;
       sh:datatype xsd:string;
-    ] ;
+      sh:maxCount 1 ;
+  ] ;
   sh:property [
       sh:path schema:email ;
       sh:datatype xsd:string;
-    ] ;
+  ] ;
   sh:property [
        sh:path schema:availableLanguage ;
        sh:datatype xsd:string;
-     ] ;
+  ] ;
   sh:property [
       sh:path schema:telephone ;
       sh:datatype xsd:string;
-      sh:maxCount 1 ;
-    ] ;
+  ] ;
 .
 epos:WebServiceShape
   a sh:NodeShape ;
@@ -625,7 +638,8 @@ epos:WebServiceShape
       [ sh:datatype xsd:anyURI; ]
       [ sh:class schema:PropertyValue; ] ) ;
       sh:minCount 1 ;
-    ] ;
+      sh:maxCount 1 ;
+  ] ;
 ####
 # WebService recommended properties
 ####
@@ -635,31 +649,31 @@ epos:WebServiceShape
       sh:minCount 1 ;
       sh:message "Description is recommended. Please fill in a value"@en  ;
       sh:severity sh:Warning ;
-    ] ;
+  ] ;
   sh:property [
       sh:path schema:description ;
       sh:datatype xsd:string;
       sh:maxCount 1 ;
-    ] ;
+  ] ;
   sh:property [
      sh:path dcat:theme;
      sh:class skos:Concept ;
      sh:minCount 1 ;
      sh:message "Theme is recommended. Please fill in a value"@en  ;
      sh:severity sh:Warning ;
-    ] ;
+  ] ;
   sh:property [
       sh:path schema:name ;
       sh:maxCount 1 ;
       sh:datatype xsd:string;
-    ] ;
+ ] ;
  sh:property [
       sh:path schema:name ;
       sh:minCount 1 ;
       sh:datatype xsd:string;
       sh:message "Name is recommended. Please fill in a value"@en  ;
       sh:severity sh:Warning ;
-    ] ;
+  ] ;
   sh:property [
       sh:path hydra:entrypoint ;
       sh:maxCount 1 ;
@@ -679,11 +693,7 @@ epos:WebServiceShape
       sh:message "Contact Point is recommended. Please fill in a value"@en  ;
       sh:severity sh:Warning ;
     ] ;
-  sh:property [
-      sh:path [sh:alternativePath (schema:contactPoint dcat:contactPoint)] ;
-      sh:node epos:ContactPointType ;
-  ] ;
-  sh:property [
+   sh:property [
       sh:path schema:provider;
       sh:or ( [sh:class schema:Organization ; ]
         [ sh:class schema:Person ; ] );
@@ -724,22 +734,22 @@ epos:WebServiceShape
 ####
 # WebService optional properties
 ####
- sh:property [
+  sh:property [
       sh:path dct:spatial ;
       sh:class dct:Location ;
-    ] ;
+  ] ;
   sh:property [
       sh:path hydra:supportedOperation ;
       sh:class hydra:Operation ;
-    ] ;
+  ] ;
   sh:property [
       sh:path dct:conformsTo ;
       sh:class hydra:ApiDocumentation ;
-    ] ;
+  ] ;
   sh:property [
       sh:path schema:keywords;
       sh:datatype xsd:string ;
-    ] ;
+  ] ;
   sh:property [
       sh:path dct:license ;
       sh:or ( [sh:class dct:LicenseDocument ; ]
@@ -755,29 +765,20 @@ epos:OperationShape
 a sh:NodeShape ;
 sh:targetClass hydra:Operation;
 ####
-# Operation mandatory properties
-####
-  sh:property [
-    sh:path hydra:method ;
-    sh:minCount 1 ;
-    sh:maxCount 1 ;
-    sh:datatype xsd:string ;
- ] ;
-####
 # Operation  recommended properties
 ####
-  sh:property [
+ sh:property [
     sh:path hydra:property ;
     sh:class hydra:IriTemplate ;
     sh:minCount 1 ;
     sh:message "IRI template is recommended. Please fill in a value"@en ;
     sh:severity sh:Warning ;
-  ] ;
+ ];
  sh:property [
     sh:path hydra:property ;
     sh:class hydra:IriTemplate ;
     sh:maxCount 1 ;
-  ] ;
+ ];
  sh:property [
     sh:path hydra:returns ;
     sh:datatype xsd:string;
@@ -785,25 +786,20 @@ sh:targetClass hydra:Operation;
     sh:message "returns is recommended. Please fill in a value"@en ;
     sh:severity sh:Warning ;
  ] ;
- sh:property [
-    sh:path hydra:returns ;
-    sh:datatype xsd:string;
- ] ;
 ####
 # Operation optional properties
 ####
-  sh:property [
-    sh:path hydra:expects ;
-    sh:class hydra:Class ;
+sh:property [
+    sh:path hydra:method ;
+    sh:maxCount 1 ;
+    sh:datatype xsd:string ;
  ] ;
 .
-
-
 epos:IriTemplateShape
   a sh:NodeShape ;
   sh:targetClass hydra:IriTemplate ;
 ####
-# IriTemplate properties
+# IriTemplate  mandatory properties
 ####
   sh:property [
       sh:path hydra:template ;
@@ -811,17 +807,19 @@ epos:IriTemplateShape
       sh:minCount 1 ;
       sh:maxCount 1 ;
   ] ;
+####
+# IriTemplate  optional properties
+####
   sh:property [
       sh:path hydra:mapping ;
-      sh:class hydra:IriTemplateMapping ;      
+      sh:class hydra:IriTemplateMapping ;
   ] ;
 .
-
 epos:IriTemplateMappingShape
   a sh:NodeShape ;
   sh:targetClass hydra:IriTemplateMapping ;
 ####
-# IriTemplateMapping properties
+# IriTemplateMapping mandatory properties
 ####
   sh:property [
       sh:path hydra:variable ;
@@ -833,52 +831,53 @@ epos:IriTemplateMappingShape
       sh:path rdfs:label ;
       sh:datatype xsd:string ;
       sh:minCount 1 ;
-      sh:maxCount 1 ;   
+      sh:maxCount 1 ;
   ] ;
   sh:property [
       sh:path hydra:required ;
       sh:datatype xsd:boolean ;
       sh:minCount 1 ;
-      sh:maxCount 1 ;   
+      sh:maxCount 1 ;
   ] ;
   sh:property [
       sh:path rdfs:range ;
       sh:datatype xsd:string ;
       sh:minCount 1 ;
-      sh:maxCount 1 ;   
+      sh:maxCount 1 ;
   ] ;
+####
+# IriTemplateMapping optional properties
+####
   sh:property [
       sh:path schema:defaultValue ;
       sh:datatype xsd:string ;
-      sh:maxCount 1 ;   
+      sh:maxCount 1 ;
   ] ;
   sh:property [
       sh:path schema:minValue ;
       sh:datatype xsd:string ;
-      sh:maxCount 1 ;   
+      sh:maxCount 1 ;
   ] ;
   sh:property [
       sh:path schema:maxValue ;
       sh:datatype xsd:string;
-      sh:maxCount 1 ;   
+      sh:maxCount 1 ;
   ] ;
   sh:property [
       sh:path http:paramValue ;
-      sh:datatype xsd:string ;  
+      sh:datatype xsd:string ;
   ] ;
   sh:property [
       sh:path schema:valuePattern ;
       sh:datatype xsd:string ;
-      sh:maxCount 1 ;   
+      sh:maxCount 1 ;
   ] ;
-
   sh:property [
         sh:path hydra:property ;
         sh:datatype xsd:string ;
-        sh:maxCount 1 ;   
+        sh:maxCount 1 ;
     ] ;
 .
-
 epos:ServiceShape
   a sh:NodeShape ;
   sh:targetClass schema:Service;
@@ -891,7 +890,7 @@ epos:ServiceShape
       [ sh:datatype xsd:anyURI; ]
       [ sh:class schema:PropertyValue; ] ) ;
       sh:minCount 1 ;
-    ] ;
+  ] ;
 ####
 # Service recommended properties
 ####
@@ -906,33 +905,27 @@ epos:ServiceShape
       sh:datatype xsd:string;
       sh:message "Name is recommended. Please fill in a value"@en  ;
       sh:severity sh:Warning ;
-];
-sh:property [
+ ];
+ sh:property [
       sh:path [sh:alternativePath (schema:contactPoint dcat:contactPoint)] ;
       sh:node epos:ContactPointType ;
       sh:minCount 1 ;
       sh:message "Contact point is recommended. Please fill in a value"@en  ;
       sh:severity sh:Warning ;
-    ] ;
-sh:property [
+ ] ;
+ sh:property [
       sh:path schema:description;
       sh:minCount 1 ;
       sh:datatype xsd:string;
       sh:message "Description is recommended. Please fill in a value"@en  ;
       sh:severity sh:Warning ;
-    ] ;
-sh:property [
+  ] ;
+ sh:property [
       sh:path schema:description ;
       sh:datatype xsd:string;
       sh:maxCount 1 ;
-    ] ;
-sh:property [
-    sh:path schema:provider;
-    sh:or ( [ sh:class schema:Organization ; ]
-      [ sh:class schema:Person ; ] );
-    sh:maxCount 1;
-  ] ;
-sh:property [
+ ] ;
+ sh:property [
     sh:path schema:provider;
     sh:or ( [ sh:class schema:Organization ; ]
       [ sh:class schema:Person ; ] );
@@ -946,7 +939,17 @@ sh:property [
 sh:property [
       sh:path schema:serviceType ;
       sh:datatype xsd:string;
-    ] ;
+      sh:maxCount 1;
+] ;
+sh:property [
+      sh:path schema:keywords ;
+      sh:datatype xsd:string;
+      sh:maxCount 1;
+] ;
+sh:property [
+     sh:path dcat:theme;
+     sh:class skos:Concept ;
+] ;
 .
 epos:EquipmentShape
   a sh:NodeShape ;
@@ -993,6 +996,7 @@ epos:EquipmentShape
  sh:property [
       sh:path schema:manufacturer ;
       sh:class schema:Organization ;
+      sh:maxCount 1 ;
  ] ;
  sh:property [
       sh:path schema:manufacturer ;
@@ -1024,22 +1028,27 @@ epos:EquipmentShape
  sh:property [
       sh:path epos:filter ;
       sh:datatype xsd:string ;
+      sh:maxCount 1 ;
  ] ;
  sh:property [
       sh:path epos:dynamicRange ;
       sh:class schema:QuantitativeValue ;
+      sh:maxCount 1 ;
  ] ;
  sh:property [
       sh:path epos:orientation ;
       sh:datatype xsd:string ;
+       sh:maxCount 1 ;
  ] ;
  sh:property [
       sh:path epos:resolution ;
       sh:datatype xsd:string ;
+      sh:maxCount 1 ;
  ] ;
  sh:property [
       sh:path epos:samplePeriod ;
       sh:class schema:QuantitativeValue ;
+      sh:maxCount 1 ;
  ] ;
  sh:property [
       sh:path [sh:alternativePath (schema:contactPoint dcat:contactPoint)] ;
@@ -1048,7 +1057,8 @@ epos:EquipmentShape
  sh:property [
       sh:path dct:spatial ;
       sh:class dct:Location ;
-    ] ;
+      sh:maxCount 1 ;
+ ] ;
  sh:property [
       sh:path epos:annotation ;
       sh:class oa:Annotation ;
@@ -1056,17 +1066,18 @@ epos:EquipmentShape
  sh:property [
        sh:path dct:temporal ;
        sh:class dct:PeriodOfTime ;
+       sh:maxCount 1 ;
  ] ;
-sh:property [
+ sh:property [
       sh:path dct:relation ;
       sh:or ( [ sh:class rdfs:Resource ; ]
         [ sh:class dcat:Dataset ; ]
-	[ sh:class epos:WebService ; ] );
-] ;
-sh:property [
+       [ sh:class epos:WebService ; ] );
+ ] ;
+ sh:property [
      sh:path dcat:theme ;
      sh:class skos:Concept ;
-] ;
+ ] ;
 .
 epos:DatasetShape
   a sh:NodeShape ;
@@ -1094,168 +1105,156 @@ epos:DatasetShape
 ####
 # Dataset recommended properties
 ####
-  sh:property [
+ sh:property [
       sh:path dcat:distribution ;
       sh:minCount 1 ;
       sh:class dcat:Distribution;
       sh:message "Distribution is recommended. Please fill in a value"@en  ;
       sh:severity sh:Warning ;
-    ] ;
-  sh:property [
-      sh:path dcat:distribution ;
-      sh:class dcat:Distribution;
-    ] ;
-  sh:property [
+ ] ;
+ sh:property [
       sh:path dcat:contactPoint ;
       sh:minCount 1 ;
       sh:node epos:ContactPointType ;
       sh:message "Contact point is recommended. Please fill in a value"@en  ;
       sh:severity sh:Warning ;
-  ] ;
-  sh:property [
-      sh:path dcat:contactPoint ;
-      sh:node epos:ContactPointType ;
-    ] ;
-  sh:property [
+ ] ;
+ sh:property [
       sh:path dct:publisher ;
       sh:minCount 1 ;
       sh:or ( [ sh:class foaf:Agent ; ]
       [ sh:class schema:Organization ; ] ) ;
       sh:message "Publisher is recommended. Please fill in a value"@en  ;
       sh:severity sh:Warning ;
-    ] ;
+  ] ;
  sh:property [
       sh:path dct:publisher ;
       sh:maxCount 1 ;
       sh:or ( [ sh:class foaf:Agent ; ]
       [ sh:class schema:Organization ; ] ) ;
-    ] ;
+ ] ;
  sh:property [
       sh:path dcat:keyword ;
       sh:minCount 1 ;
       sh:datatype xsd:string ;
       sh:message "Keyword is recommended. Please fill in a value"@en  ;
       sh:severity sh:Warning ;
-    ] ;
+  ] ;
  sh:property [
-      sh:path dcat:keyword ;
-      sh:datatype xsd:string ;
-    ] ;
-sh:property [
       sh:path dcat:theme ;
       sh:class skos:Concept ;
       sh:minCount 1 ;
       sh:message "Theme is recommended. Please fill in a value"@en  ;
       sh:severity sh:Warning ;
-] ;
+  ] ;
 ####
 # Dataset optional properties
 ####
-  sh:property [
+ sh:property [
       sh:path dct:created ;
       sh:maxCount 1 ;
       sh:node epos:DateOrDateTimeDataType ;
-    ] ;
-  sh:property [
+ ] ;
+ sh:property [
       sh:path dct:type ;
       sh:datatype xsd:anyURI ;
       sh:maxCount 1 ;
-    ] ;
-  sh:property [
+ ] ;
+ sh:property [
       sh:path dct:accessRights ;
       sh:class dct:RightsStatement ;
       sh:maxCount 1 ;
-    ] ;
-  sh:property [
+ ] ;
+ sh:property [
       sh:path dct:accrualPeriodicity ;
       #sh:class dct:Frequency ;
       sh:datatype xsd:anyURI ;
       sh:maxCount 1 ;
-    ] ;
-  sh:property [
+ ] ;
+ sh:property [
       sh:path dct:conformsTo ;
       sh:class dct:Standard ;
-  ] ;
-  sh:property [
+ ] ;
+ sh:property [
       sh:path dct:hasVersion ;
       sh:class dcat:Dataset ;
-    ] ;
-  sh:property [
+ ] ;
+ sh:property [
       sh:path dct:isVersionOf ;
       sh:class dcat:Dataset ;
-    ] ;
-  sh:property [
+ ] ;
+ sh:property [
       sh:path dct:issued ;
       sh:maxCount 1 ;
       sh:node epos:DateOrDateTimeDataType ;
-    ] ;
-  sh:property [
+ ] ;
+ sh:property [
       sh:path dct:modified ;
       sh:maxCount 1 ;
       sh:node epos:DateOrDateTimeDataType ;
-    ] ;
-  sh:property [
+ ] ;
+ sh:property [
       sh:path dct:language ;
       sh:class dct:LinguisticSystem ;
-    ] ;
-  sh:property [
+ ] ;
+ sh:property [
       sh:path dct:provenance ;
       sh:class dct:ProvenanceStatement ;
-    ] ;
-  sh:property [
+ ] ;
+ sh:property [
       sh:path dct:relation ;
       sh:class rdfs:Resource ;
-    ] ;
-  sh:property [
+ ] ;
+ sh:property [
       sh:path dct:source ;
       sh:class dcat:Dataset ;
-    ] ;
-  sh:property [
+ ] ;
+ sh:property [
       sh:path dct:spatial ;
       sh:class dct:Location ;
-    ] ;
-  sh:property [
+ ] ;
+ sh:property [
       sh:path dct:temporal ;
       sh:class dct:PeriodOfTime ;
-    ] ;
-  sh:property [
+ ] ;
+ sh:property [
       sh:path owl:versionInfo ;
       sh:maxCount 1 ;
       sh:datatype xsd:string;
-   ] ;
-  sh:property [
+ ] ;
+ sh:property [
       sh:path adms:identifier ;
       sh:class adms:Identifier ;
-    ] ;
-  sh:property [
+ ] ;
+ sh:property [
       sh:path adms:sample ;
       sh:class dcat:Distribution ;
-    ] ;
-  sh:property [
+ ] ;
+ sh:property [
       sh:path dcat:landingPage ;
       sh:class foaf:Document ;
-    ] ;
-  sh:property [
+ ] ;
+ sh:property [
       sh:path foaf:page ;
       sh:class foaf:Document ;
-    ] ;
-  sh:property [
+ ] ;
+ sh:property [
       sh:path adms:versionNotes ;
       sh:datatype xsd:string ;
-    ] ;
+ ] ;
 ## Support for collections of datasets
-  sh:property [
+ sh:property [
       sh:path dct:isPartOf ;
       sh:class dcat:Dataset ;
-    ] ;
-  sh:property [
+ ] ;
+ sh:property [
       sh:path dct:hasPart ;
       sh:class dcat:Dataset ;
-    ] ;
-    sh:property [
+ ] ;
+ sh:property [
       sh:path epos:annotation ;
       sh:class oa:Annotation ;
-    ] ;
+ ] ;
 .
 epos:FacilityShape
   a sh:NodeShape ;
@@ -1268,19 +1267,20 @@ epos:FacilityShape
       sh:minCount 1 ;
       sh:maxCount 1 ;
       sh:datatype xsd:string ;
-    ] ;
+  ] ;
   sh:property [
       sh:path dct:identifier ;
       sh:or ( [ sh:datatype xsd:string ; ]
         [ sh:datatype xsd:anyURI ; ] );
       sh:minCount 1 ;
       sh:maxCount 1 ;
-    ] ;
-   sh:property [
+  ] ;
+  sh:property [
       sh:path dct:title ;
       sh:minCount 1 ;
+      sh:maxCount 1 ;
       sh:datatype xsd:string ;
-    ] ;
+   ];
 ####
 # Facility recommended properties
 ####
@@ -1291,20 +1291,20 @@ epos:FacilityShape
         [ sh:class skos:Concept ; ] ) ;
       sh:message "Type is recommended. Please fill in a value"@en  ;
       sh:severity sh:Warning ;
-    ] ;
+  ] ;
   sh:property [
       sh:path dct:type ;
       sh:or ( [ sh:datatype xsd:anyURI ; ]
         [ sh:class skos:Concept ; ] ) ;
       sh:maxCount 1 ;
-    ] ;
+  ] ;
   sh:property [
      sh:path dcat:theme;
      sh:class skos:Concept ;
      sh:minCount 1 ;
      sh:message "Theme is recommended. Please fill in a value"@en  ;
      sh:severity sh:Warning ;
-    ] ;
+  ] ;
   ####
   # Facility optional properties
   ####
@@ -1316,26 +1316,25 @@ epos:FacilityShape
       sh:path vcard:hasAddress ;
       sh:class vcard:Address ;
       sh:maxCount 1 ;
-    ] ;
+   ] ;
    sh:property [
       sh:path foaf:page ;
       sh:class foaf:Document ;
-      sh:maxCount 1 ;
-    ] ;
+     ] ;
    sh:property [
       sh:path [sh:alternativePath (schema:contactPoint dcat:contactPoint)] ;
       sh:node epos:ContactPointType ;
-  ] ;
-  sh:property [
+   ] ;
+   sh:property [
        sh:path dct:relation ;
        sh:or ( [ sh:class rdfs:Resource ; ]
         [ sh:class dcat:Dataset ; ]
-	[ sh:class epos:WebService ; ] );
-  ] ;
-  sh:property [
+        [ sh:class epos:WebService ; ] );
+   ] ;
+   sh:property [
       sh:path epos:annotation ;
       sh:class oa:Annotation;
-    ] ;
+   ] ;
 .
 epos:DistributionShape
   a sh:NodeShape ;
@@ -1349,7 +1348,7 @@ epos:DistributionShape
         [ sh:datatype xsd:anyURI ; ] );
       sh:minCount 1 ;
       sh:maxCount 1 ;
-    ] ;
+   ] ;
    sh:property [
       sh:path dcat:accessURL ;
       sh:or ( [ sh:class rdfs:Resource ; ]
@@ -1364,48 +1363,43 @@ epos:DistributionShape
       sh:path dct:conformsTo ;
       sh:or ( [ sh:class dct:Standard ; ]
         [ sh:class epos:WebService ; ] ) ;
-    ] ;
-  sh:property [
-      sh:path dct:conformsTo ;
-      sh:or ( [ sh:class dct:Standard ; ]
-        [ sh:class epos:WebService ; ] ) ;
       sh:minCount 1 ;
       sh:message "conformsTo is recommended. Please fill in a value"@en  ;
       sh:severity sh:Warning ;
-    ] ;
+  ] ;
   sh:property [
       sh:path dct:type ;
       sh:minCount 1 ;
       sh:datatype xsd:anyURI;
       sh:message "Type is recommended. Please fill in a value"@en  ;
       sh:severity sh:Warning ;
-    ] ;
+  ] ;
   sh:property [
       sh:path dct:type ;
       sh:datatype xsd:anyURI ;
       sh:maxCount 1 ;
-    ] ;
+  ] ;
   sh:property [
       sh:path dct:description ;
       sh:minCount 1 ;
       sh:datatype xsd:string ;
       sh:message "Description is recommended. Please fill in a value"@en  ;
       sh:severity sh:Warning ;
-    ] ;
+  ] ;
   sh:property [
       sh:path dct:format ;
       sh:or ( [ sh:datatype xsd:string ; ]
         [ sh:datatype xsd:anyURI ; ] );
       sh:maxCount 1 ;
-    ] ;
-   sh:property [
+  ] ;
+  sh:property [
       sh:path dct:format ;
       sh:or ( [ sh:datatype xsd:string ; ]
         [ sh:datatype xsd:anyURI ; ] );
       sh:minCount 1 ;
       sh:message "Format is recommended. Please fill in a value"@en  ;
       sh:severity sh:Warning ;
-    ] ;
+  ] ;
   ####
   # Distribution optional properties
   ####
@@ -1413,65 +1407,64 @@ epos:DistributionShape
       sh:path dct:issued ;
       sh:maxCount 1 ;
       sh:node epos:DateOrDateTimeDataType ;
-    ] ;
+  ] ;
   sh:property [
       sh:path dct:language ;
       sh:class dct:LinguisticSystem ;
-    ] ;
+  ] ;
   sh:property [
       sh:path dct:license ;
       sh:or ( [ sh:class dct:LicenseDocument ; ]
         [ sh:datatype xsd:anyURI ; ] );
       sh:maxCount 1 ;
-    ] ;
+  ] ;
   sh:property [
       sh:path dct:modified ;
       sh:maxCount 1 ;
       sh:node epos:DateOrDateTimeDataType ;
-    ] ;
+  ] ;
   sh:property [
       sh:path dct:rights ;
       sh:class dct:RightsStatement ;
       sh:maxCount 1 ;
-    ] ;
+  ] ;
   sh:property [
       sh:path dct:title ;
       sh:datatype xsd:string ;
-      sh:maxCount 1 ;
-    ] ;
+  ] ;
   sh:property [
       sh:path spdx:checksum ;
       sh:class spdx:Checksum ;
       sh:maxCount 1 ;
-    ] ;
+  ] ;
   sh:property [
       sh:path adms:status ;
       sh:class skos:Concept ;
       sh:maxCount 1 ;
-    ] ;
+  ] ;
   sh:property [
       sh:path dcat:byteSize ;
       sh:datatype xsd:decimal ;
       sh:maxCount 1 ;
-    ] ;
+  ] ;
   sh:property [
       sh:path dcat:downloadURL ;
       #sh:class rdfs:Resource ;
       sh:datatype xsd:anyURI ;
-    ] ;
+  ] ;
   sh:property [
       sh:path dcat:mediaType ;
       sh:class dct:MediaTypeOrExtent ;
       sh:maxCount 1 ;
-    ] ;
+  ] ;
   sh:property [
       sh:path foaf:page ;
       sh:class foaf:Document ;
-    ] ;
+  ] ;
   sh:property [
       sh:path epos:annotation ;
       sh:class oa:Annotation ;
-    ] ;
+  ] ;
 .
 epos:ProjectShape
   a sh:NodeShape ;
@@ -1479,50 +1472,48 @@ epos:ProjectShape
   ####
   # Project mandatory properties
   ####
-   sh:property [
+  sh:property [
       sh:path dct:identifier ;
       sh:or ( [ sh:datatype xsd:string ; ]
         [ sh:datatype xsd:anyURI ; ] );
       sh:minCount 1 ;
-    ] ;
-    sh:property [
+      sh:maxCount 1 ;
+  ] ;
+  sh:property [
       sh:path dct:title ;
       sh:minCount 1 ;
       sh:maxCount 1 ;
       sh:datatype xsd:string ;
-    ] ;
+  ] ;
   ####
   # Project recommended properties
   ####
   sh:property [
       sh:path [sh:alternativePath (schema:contactPoint dcat:contactPoint)] ;
       sh:node epos:ContactPointType ;
-    ] ;
-   sh:property [
-      sh:path [sh:alternativePath (schema:contactPoint dcat:contactPoint)] ;
-      sh:node epos:ContactPointType ;
       sh:minCount 1 ;
       sh:message "Contact point is recommended. Please fill in a value"@en  ;
       sh:severity sh:Warning ;
-    ] ;
-   sh:property [
+  ] ;
+  sh:property [
       sh:path dct:description ;
       sh:minCount 1 ;
       sh:datatype xsd:string;
       sh:message "Description is recommended. Please fill in a value"@en  ;
       sh:severity sh:Warning ;
-    ] ;
-   sh:property [
+  ] ;
+  sh:property [
       sh:path dct:description ;
       sh:datatype xsd:string ;
       sh:maxCount 1 ;
-    ] ;
+  ] ;
   ####
   # Project optional properties
   ####
   sh:property [
       sh:path foaf:homepage ;
       sh:class foaf:Document ;
+      sh:maxCount 1 ;
   ] ;
 .
 epos:PublicationShape
@@ -1531,18 +1522,19 @@ epos:PublicationShape
   ####
   # Publication mandatory properties
   ####
-   sh:property [
+  sh:property [
       sh:path schema:identifier ;
       sh:or ( [ sh:datatype xsd:string ; ]
         [ sh:datatype xsd:anyURI ; ]
         [ sh:class schema:PropertyValue ; ] ) ;
       sh:minCount 1 ;
-    ] ;
-    sh:property [
+  ] ;
+  sh:property [
       sh:path schema:name ;
       sh:minCount 1 ;
+      sh:maxCount 1 ;
       sh:datatype xsd:string ;
-    ] ;
+  ] ;
   ####
   # Publication recommended properties
   ####
@@ -1552,20 +1544,20 @@ epos:PublicationShape
       sh:node epos:DateOrDateTimeDataType ;
       sh:message "Published date is recommended. Please fill in a value"@en  ;
       sh:severity sh:Warning ;
-    ] ;
+  ] ;
   sh:property [
       sh:path schema:datePublished ;
       sh:maxCount 1 ;
       sh:node epos:DateOrDateTimeDataType ;
-    ] ;
+  ] ;
   sh:property [
       sh:path schema:publisher ;
       sh:or ( [ sh:class schema:Person ; ]
       [ sh:class schema:Organization ; ]
       [ sh:class foaf:Agent ; ] ) ;
     sh:maxCount 1;
-    ] ;
-   sh:property [
+  ] ;
+  sh:property [
       sh:path schema:publisher ;
       sh:or ( [ sh:class schema:Person ; ]
       [ sh:class schema:Organization ; ]
@@ -1573,214 +1565,225 @@ epos:PublicationShape
       sh:minCount 1 ;
       sh:message "Publisher is recommended. Please fill in a value"@en  ;
       sh:severity sh:Warning ;
-    ] ;
-    sh:property [
+  ] ;
+  sh:property [
       sh:path dct:abstract ;
       sh:minCount 1 ;
       sh:datatype xsd:string;
       sh:message "Abstract is recommended. Please fill in a value"@en  ;
       sh:severity sh:Warning ;
-    ] ;
-   sh:property [
+  ] ;
+  sh:property [
       sh:path dct:abstract ;
       sh:datatype xsd:string;
       sh:maxCount 1 ;
-    ] ;
-   sh:property [
+  ] ;
+  sh:property [
       sh:path schema:author ;
       sh:class schema:Person;
-    ] ;
-   sh:property [
+      sh:maxCount 1 ;
+  ] ;
+  sh:property [
       sh:path schema:author ;
       sh:class schema:Person;
       sh:minCount 1 ;
       sh:message "Author is recommended. Please fill in a value"@en  ;
       sh:severity sh:Warning ;
-    ] ;
-    sh:property [
-      sh:path schema:contributor ;
-      sh:class schema:Person;
-    ] ;
-   sh:property [
+  ] ;
+  sh:property [
       sh:path schema:contributor ;
       sh:class schema:Person;
       sh:minCount 1 ;
       sh:message "Contributor is recommended. Please fill in a value"@en  ;
       sh:severity sh:Warning ;
-    ] ;
+  ] ;
   ####
   # Publication optional properties
   ####
   sh:property [
       sh:path schema:license ;
       sh:datatype xsd:anyURI;
-    ] ;
-   sh:property [
+      sh:maxCount 1 ;
+  ] ;
+  sh:property [
       sh:path schema:keywords;
       sh:datatype xsd:string ;
-    ] ;
-   sh:property [
+      sh:maxCount 1 ;
+  ] ;
+  sh:property [
       sh:path schema:issn ;
       sh:datatype xsd:string ;
-    ] ;
-   sh:property [
+      sh:maxCount 1 ;
+  ] ;
+  sh:property [
       sh:path schema:numberOfPages ;
       sh:datatype xsd:integer;
-    ] ;
-   sh:property [
+      sh:maxCount 1 ;
+  ] ;
+  sh:property [
       sh:path schema:volumeNumber ;
       sh:datatype xsd:string;
-    ] ;
+      sh:maxCount 1 ;
+  ] ;
+  sh:property [
+     sh:path dcat:theme;
+     sh:class skos:Concept ;
+  ] ;
 .
-
 epos:SoftwareApplicationShape
   a sh:NodeShape ;
   sh:targetClass schema:SoftwareApplication;
   ####
   # SoftwareApplication mandatory properties
   ####
-   sh:property [
+  sh:property [
       sh:path schema:identifier ;
       sh:or ( [ sh:datatype xsd:string; ]
         [ sh:datatype xsd:anyURI; ]
         [sh:class schema:PropertyValue; ] ) ;
       sh:minCount 1 ;
-    ] ;
+  ] ;
   ####
   # SoftwareApplication recommended properties
   ####
-    sh:property [
+  sh:property [
       sh:path schema:name ;
       sh:datatype xsd:string;
       sh:minCount 1 ;
       sh:message "Name is recommended. Please fill in a value"@en  ;
       sh:severity sh:Warning ;
-    ] ;
-    sh:property [
-      sh:path [sh:alternativePath (schema:contactPoint dcat:contactPoint)] ;
-      sh:node epos:ContactPointType ;
-    ] ;
-    sh:property [
+  ] ;
+  sh:property [
+      sh:path schema:name ;
+      sh:datatype xsd:string;
+      sh:maxCount 1 ;
+  ] ;
+  sh:property [
       sh:path [sh:alternativePath (schema:contactPoint dcat:contactPoint)] ;
       sh:node epos:ContactPointType ;
       sh:minCount 1 ;
       sh:message "Contact point is recommended. Please fill in a value"@en  ;
       sh:severity sh:Warning ;
-    ] ;
+  ] ;
   ####
   # SoftwareApplication optional properties
   ####
-    sh:property [
+  sh:property [
       sh:path schema:description ;
       sh:datatype xsd:string ;
-    ] ;
-    sh:property [
-      sh:path schema:downloadUrl ;
-      sh:datatype xsd:anyURI;
-    ] ;
-    sh:property [
-      sh:path schema:license ;
-      sh:datatype xsd:anyURI;
-    ] ;
-    sh:property [
-      sh:path schema:softwareVersion;
-      sh:datatype xsd:string ;
-    ] ;
-    sh:property [
+      sh:maxCount 1 ;
+  ] ;
+  sh:property [
+    sh:path schema:downloadUrl ;
+    sh:datatype xsd:anyURI;
+    sh:maxCount 1 ;
+  ] ;
+  sh:property [
+    sh:path schema:license ;
+    sh:datatype xsd:anyURI;
+    sh:maxCount 1 ;
+  ] ;
+  sh:property [
+    sh:path schema:softwareVersion;
+    sh:datatype xsd:string ;
+    sh:maxCount 1 ;
+  ] ;
+  sh:property [
       sh:path schema:softwareRequirements ;
       sh:or ( [ sh:datatype xsd:string ; ]
         [ sh:datatype xsd:anyURI ; ] );
-    ] ;
-    sh:property [
-      sh:path schema:potentialAction ;
-      sh:class schema:ControlAction ;
-    ] ;
-    sh:property [
+      sh:maxCount 1 ;
+  ] ;
+  sh:property [
+    sh:path schema:potentialAction ;
+    sh:class schema:ControlAction ;
+    sh:maxCount 1 ;
+  ] ;
+  sh:property [
       sh:path dct:relation ;
       sh:class hydra:Operation ;
-    ] ; 
-   sh:property [
+  ] ;
+  sh:property [
       sh:path schema:installUrl ;
       sh:datatype xsd:anyURI;
-    ] ;
-    sh:property [
-      sh:path schema:mainEntityOfPage ;
-      sh:datatype xsd:anyURI ;
+      sh:maxCount 1 ;
+  ] ;
+  sh:property [
+       sh:path schema:mainEntityOfPage ;
+       sh:datatype xsd:anyURI ;
        sh:maxCount 1 ;
-    ] ;
-    sh:property [
+  ] ;
+  sh:property [
         sh:path schema:keywords ;
         sh:datatype xsd:string ;
-    ] ;
-    sh:property [
+        sh:maxCount 1 ;
+  ] ;
+  sh:property [
         sh:path dcat:theme;
         sh:class skos:Concept ;
-    ] ;
+  ] ;
 .
-
 epos:ControlActionShape
   a sh:NodeShape ;
   sh:targetClass schema:ControlAction ;
   ####
-  # properties
+  # ControlAction optional properties
   ####
-   sh:property [
+  sh:property [
       sh:path schema:object ;
       sh:class schema:CreativeWork ;
-    ] ;
-   sh:property [
+  ] ;
+  sh:property [
       sh:path schema:result ;
       sh:class schema:CreativeWork ;
-    ] ; 
+  ] ;
 .
-
 epos:CreativeWorkShape
   a sh:NodeShape ;
   sh:targetClass schema:CreativeWork ;
   ####
-  # properties
+  # CreativeWork optional properties
   ####
-   sh:property [
+  sh:property [
       sh:path schema:encodingFormat ;
       sh:or ( [ sh:datatype xsd:string ; ]
         [ sh:datatype xsd:anyURI ; ] );
-    ] ;
-   sh:property [
+  ] ;
+  sh:property [
       sh:path dct:conformsTo ;
       sh:or ( [ sh:datatype xsd:string ; ]
         [ sh:datatype xsd:anyURI ; ] );
-    ] ; 
+  ] ;
 .
-
-
 epos:SoftwareSourceCodeShape
   a sh:NodeShape ;
   sh:targetClass schema:SoftwareSourceCode;
   ####
   # SoftwareSourceCode mandatory properties
   ####
-   sh:property [
+  sh:property [
       sh:path schema:identifier ;
       sh:or ( [ sh:datatype xsd:string; ]
         [ sh:datatype xsd:anyURI; ]
         [sh:class schema:PropertyValue; ] ) ;
       sh:minCount 1 ;
-    ] ;
+  ] ;
   ####
   # SoftwareSourceCode recommended properties
   ####
-    sh:property [
+  sh:property [
       sh:path schema:name ;
       sh:datatype xsd:string;
       sh:minCount 1 ;
       sh:message "Name is recommended. Please fill in a value"@en  ;
       sh:severity sh:Warning ;
-    ] ;
-    sh:property [
-      sh:path [sh:alternativePath (schema:contactPoint dcat:contactPoint)] ;
-      sh:node epos:ContactPointType ;
-    ] ;
-    sh:property [
+  ] ;
+  sh:property [
+      sh:path schema:name ;
+      sh:datatype xsd:string;
+      sh:maxCount 1 ;
+  ] ;
+  sh:property [
       sh:path [sh:alternativePath (schema:contactPoint dcat:contactPoint)] ;
       sh:node epos:ContactPointType ;
       sh:minCount 1 ;
@@ -1790,87 +1793,92 @@ epos:SoftwareSourceCodeShape
   ####
   # SoftwareSourceCode optional properties
   ####
-    sh:property [
+  sh:property [
       sh:path schema:description ;
       sh:datatype xsd:string ;
-    ] ;
-    sh:property [
+      sh:maxCount 1 ;
+  ] ;
+  sh:property [
       sh:path schema:codeRepository ;
       sh:datatype xsd:anyURI ;
-    ] ;
-    sh:property [
+      sh:maxCount 1 ;
+  ] ;
+  sh:property [
       sh:path schema:license ;
       sh:datatype xsd:anyURI ;
-    ] ;
-    sh:property [
+      sh:maxCount 1 ;
+  ] ;
+  sh:property [
       sh:path schema:softwareVersion;
       sh:datatype xsd:string ;
-    ] ;
-    sh:property [
+      sh:maxCount 1 ;
+  ] ;
+  sh:property [
       sh:path schema:programmingLanguage;
       sh:datatype xsd:string ;
-    ] ;
-    sh:property [
+  ] ;
+  sh:property [
       sh:path schema:runtimePlatform ;
       sh:datatype xsd:string ;
-    ] ;
-    sh:property [
+     sh:maxCount 1 ;
+  ] ;
+  sh:property [
       sh:path schema:targetProduct ;
       sh:class schema:SoftwareApplication ;
-    ] ;
-    sh:property [
+  ] ;
+  sh:property [
       sh:path schema:mainEntityOfPage ;
       sh:datatype xsd:anyURI ;
        sh:maxCount 1 ;
-    ] ;
-    sh:property [
+  ] ;
+  sh:property [
       sh:path schema:keywords ;
       sh:datatype xsd:string ;
-    ] ;
-    sh:property [
+      sh:maxCount 1 ;
+  ] ;
+  sh:property [
      sh:path dcat:theme;
      sh:class skos:Concept ;
-    ] ;
+  ] ;
 .
-
 epos:ConceptSchemeShape
   a sh:NodeShape ;
   sh:targetClass skos:ConceptScheme ;
-  
+
   sh:property [
       sh:path dct:title ;
       sh:datatype xsd:string;
       sh:minCount 1 ;
-      sh:maxCount 1 ;
       sh:message "Title is recommended. Please fill in a value"@en  ;
       sh:severity sh:Warning ;
-    ] ;
-    
+  ] ;
+  sh:property [
+      sh:path dct:title ;
+      sh:datatype xsd:string;
+      sh:maxCount 1 ;
+  ] ;
   sh:property [
       sh:path dct:description ;
       sh:datatype xsd:string;
       sh:minCount 1 ;
-      sh:maxCount 1 ;
       sh:message "Description is recommended. Please fill in a value"@en  ;
       sh:severity sh:Warning ;
-   ] ;
-    
- 
+  ] ;
+  sh:property [
+      sh:path dct:description ;
+      sh:datatype xsd:string;
+      sh:maxCount 1 ;
+  ] ;
  .
-    
 epos:ConceptShape
   a sh:NodeShape ;
   sh:targetClass skos:Concept ;
-  
-    
   sh:property [
       sh:path skos:definition ;
       sh:datatype xsd:string ;
       sh:maxCount 1 ;
       sh:minCount 1 ;
-          
-    ] ;
-    
+  ] ;
   sh:property [
       sh:path skos:prefLabel ;
       sh:datatype xsd:string ;
@@ -1882,26 +1890,22 @@ epos:ConceptShape
       sh:class skos:ConceptScheme;
       sh:maxCount 1 ;
       sh:minCount 1 ;
-    ] ;
-  .
-
+  ] ;
+.
 epos:IdentifierShape
   a sh:NodeShape ;
   sh:targetClass adms:Identifier;
-  
-  sh:property [
+    sh:property [
       sh:path adms:schemeAgency ;
       sh:datatype xsd:string ;
-      sh:maxCount 1 ;   
-    ] ;
-    
-    sh:property [
+      sh:maxCount 1 ;
+  ] ;
+  sh:property [
       sh:path skos:notation ;
       sh:datatype xsd:string ;
       sh:maxCount 1 ;
     ] ;
-    
-  .
+.
 
 epos:PropertyValueShape
   a sh:NodeShape ;
@@ -1909,20 +1913,19 @@ epos:PropertyValueShape
   ####
   # properties
   ####
-   sh:property [
+  sh:property [
       sh:path schema:propertyID ;
       sh:datatype xsd:string;
       sh:maxCount 1 ;
-     sh:minCount 1 ;
-    ] ;
-   sh:property [
+      sh:minCount 1 ;
+  ] ;
+  sh:property [
       sh:path schema:value ;
       sh:datatype xsd:string;
       sh:maxCount 1 ;
-     sh:minCount 1 ;
-    ] ; 
+      sh:minCount 1 ;
+  ] ;
 .
-
 
 epos:QuantitativeValueShape
   a sh:NodeShape ;
@@ -1930,18 +1933,18 @@ epos:QuantitativeValueShape
   ####
   # properties
   ####
-   sh:property [
+  sh:property [
       sh:path schema:unitCode ;
       sh:datatype xsd:string;
       sh:maxCount 1 ;
-     sh:minCount 1 ;
-    ] ;
-   sh:property [
+      sh:minCount 1 ;
+  ] ;
+  sh:property [
       sh:path schema:value ;
       sh:datatype xsd:double;
       sh:maxCount 1 ;
-     sh:minCount 1 ;
-    ] ;
+      sh:minCount 1 ;
+  ] ;
 .
 epos:LocationShape
 a sh:NodeShape ;
@@ -1949,11 +1952,11 @@ sh:targetClass dct:Location ;
 ####
 # properties
 ####
-sh:property [
-   sh:path locn:geometry ;
-   sh:datatype gsp:wktLiteral;
-   sh:minCount 1 ;
- ] ;
+  sh:property [
+     sh:path locn:geometry ;
+     sh:datatype gsp:wktLiteral;
+     sh:minCount 1 ;
+  ] ;
 .
 
 epos:PostalAddressShape
@@ -1969,27 +1972,27 @@ epos:PostalAddressShape
     sh:minCount 1 ;
     sh:maxCount 1 ;
   ] ;
-  sh:property [
+ sh:property [
      sh:path schema:addressLocality ;
      sh:datatype xsd:string;
      sh:minCount 1 ;
      sh:maxCount 1 ;
-   ] ;
-   sh:property [
+ ] ;
+ sh:property [
       sh:path schema:postalCode ;
       sh:datatype xsd:string;
       sh:minCount 1 ;
       sh:maxCount 1 ;
-    ] ;
-    sh:property [
+ ] ;
+ sh:property [
        sh:path schema:addressCountry ;
        sh:datatype xsd:string;
        sh:minCount 1 ;
       sh:maxCount 1 ;
-     ] ;
- .
+ ];
+.
 
- epos:ApiDocumentationShape
+epos:ApiDocumentationShape
   a sh:NodeShape ;
   sh:targetClass hydra:ApiDocumentation;
   sh:property [
@@ -2002,17 +2005,17 @@ epos:PostalAddressShape
       sh:path hydra:description ;
       sh:datatype xsd:string;
       sh:minCount 1 ;
-     sh:maxCount 1 ;
-    ] ;
-    sh:property [
+      sh:maxCount 1 ;
+  ] ;
+  sh:property [
        sh:path hydra:entrypoint ;
        sh:datatype xsd:anyURI ;
        sh:minCount 1 ;
       sh:maxCount 1 ;
-     ] ;
+  ] ;
  .
 
- epos:AddressShape
+epos:AddressShape
   a sh:NodeShape ;
   sh:targetClass vcard:Address;
   sh:property [
@@ -2020,23 +2023,23 @@ epos:PostalAddressShape
      sh:datatype xsd:string;
      sh:minCount 1 ;
      sh:maxCount 1 ;
-   ] ;
-   sh:property [
+  ] ;
+  sh:property [
       sh:path vcard:locality ;
       sh:datatype xsd:string;
       sh:minCount 1 ;
       sh:maxCount 1 ;
-    ] ;
-    sh:property [
+  ] ;
+  sh:property [
        sh:path vcard:postal-code ;
        sh:datatype xsd:string;
        sh:minCount 1 ;
        sh:maxCount 1 ;
-     ] ;
-     sh:property [
+  ] ;
+  sh:property [
         sh:path vcard:street-address ;
         sh:datatype xsd:string;
         sh:minCount 1 ;
         sh:maxCount 1 ;
-      ] ;
+  ] ;
 .
