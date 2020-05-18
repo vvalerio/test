@@ -2258,3 +2258,22 @@ epos:AddressShape
         sh:maxCount 1 ;
   ] ;
 .
+
+epos:PeriodOfTimeShape
+  a sh:NodeShape ;
+  sh:targetClass dct:PeriodOfTime ;
+
+sh:property [
+      sh:path schema:startDate ;
+      sh:maxCount 1 ;
+      sh:description "This property contains the start of the period."  ;
+      sh:node epos:DateOrDateTimeDataType ;
+  ] ;
+
+  sh:property [
+        sh:path schema:endDate ;
+        sh:maxCount 1 ;
+        sh:description "This property contains the end of the period."  ;
+        sh:node epos:DateOrDateTimeDataType ;
+    ] ;
+.
