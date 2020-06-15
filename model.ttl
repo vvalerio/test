@@ -637,7 +637,6 @@ epos:OrganizationShape
 epos:ContactPointShape
   a sh:NodeShape ;
   sh:targetClass schema:ContactPoint;
-  sh:nodeKind sh:BlankNode ;
 ####
 # ContactPoint recommended properties
 ###
@@ -870,7 +869,6 @@ sh:targetClass hydra:Operation;
 epos:IriTemplateShape
   a sh:NodeShape ;
   sh:targetClass hydra:IriTemplate ;
-  sh:nodeKind sh:BlankNode ;
 ####
 # IriTemplate  mandatory properties
 ####
@@ -893,7 +891,6 @@ epos:IriTemplateShape
 epos:IriTemplateMappingShape
   a sh:NodeShape ;
   sh:targetClass hydra:IriTemplateMapping ;
-  sh:nodeKind sh:BlankNode ;
 ####
 # IriTemplateMapping mandatory properties
 ####
@@ -2112,7 +2109,6 @@ epos:ConceptShape
 epos:IdentifierShape
   a sh:NodeShape ;
   sh:targetClass adms:Identifier;
-  sh:nodeKind sh:BlankNode ;
     sh:property [
       sh:path adms:schemeAgency ;
       sh:datatype xsd:string ;
@@ -2129,7 +2125,6 @@ epos:IdentifierShape
 epos:PropertyValueShape
   a sh:NodeShape ;
   sh:targetClass schema:PropertyValue ;
-  sh:nodeKind sh:BlankNode ;
   ####
   # properties
   ####
@@ -2150,7 +2145,6 @@ epos:PropertyValueShape
 epos:QuantitativeValueShape
   a sh:NodeShape ;
   sh:targetClass schema:QuantitativeValue ;
-  sh:nodeKind sh:BlankNode ;
   ####
   # properties
   ####
@@ -2170,7 +2164,6 @@ epos:QuantitativeValueShape
 epos:LocationShape
 a sh:NodeShape ;
 sh:targetClass dct:Location ;
-sh:nodeKind sh:BlankNode ;
 ####
 # properties
 ####
@@ -2184,7 +2177,6 @@ sh:nodeKind sh:BlankNode ;
 epos:PostalAddressShape
  a sh:NodeShape ;
  sh:targetClass schema:PostalAddress;
-  sh:nodeKind sh:BlankNode ;
  ####
  # properties
  ####
@@ -2241,7 +2233,6 @@ epos:ApiDocumentationShape
 epos:AddressShape
   a sh:NodeShape ;
   sh:targetClass vcard:Address;
-  sh:nodeKind sh:BlankNode ;
   sh:property [
      sh:path vcard:country-name ;
      sh:datatype xsd:string;
@@ -2271,7 +2262,6 @@ epos:AddressShape
 epos:PeriodOfTimeShape
   a sh:NodeShape ;
   sh:targetClass dct:PeriodOfTime ;
-  sh:nodeKind sh:BlankNode ;
 
 sh:property [
       sh:path schema:startDate ;
