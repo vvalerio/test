@@ -31,7 +31,7 @@
 	 schema:givenName "Rui";
 	 schema:address [ a schema:PostalAddress;
 		 schema:streetAddress "Rua Marques D'Avila e Bolama";
-		 schema:addressLocality "Covilha";
+		 schema:addressLocality "jilha";
 		 schema:postalCode "P-6100-001";
 		 schema:addressCountry "Portugal";
 	 ];
@@ -1471,6 +1471,7 @@
 	    rdfs:label "format; not all may be available";
 	    rdfs:range "xsd:string";
 	    hydra:required "true"^^xsd:boolean;
+	    hydra:property "schema:encodingFormat";
 	    http:paramValue "midas";
 		http:paramValue "xml";
 		http:paramValue "json";
