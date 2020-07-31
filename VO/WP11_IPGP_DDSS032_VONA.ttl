@@ -305,6 +305,7 @@
         dct:description "Aviation color code and the activity color code for volcanoes in French Overseas";
 .
 <epos:volcanic-activity> a skos:Concept;
+	skos:definition "volcano reports meta-data" ;
 	skos:inScheme <epos:VolcanoObservations>;
 	skos:prefLabel "volcano reports meta-data";
 .
