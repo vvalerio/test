@@ -1,0 +1,17 @@
+https://epos-ci.brgm.fr/api/v4/projects/95/repository/files/WP08-AHEAD_historical_earthquakes.ttl/raw?ref=master&private_token=euj_E_v2knKWGJKkP-b5
+https://epos-ci.brgm.fr/api/v4/projects/95/repository/files/WP08-BGR.ttl/raw?ref=master&private_token=euj_E_v2knKWGJKkP-b5
+https://epos-ci.brgm.fr/api/v4/projects/95/repository/files/WP08-EDSF.ttl/raw?ref=master&private_token=euj_E_v2knKWGJKkP-b5
+https://epos-ci.brgm.fr/api/v4/projects/95/repository/files/WP08-EFEHR_exposure.ttl/raw?ref=master&private_token=euj_E_v2knKWGJKkP-b5
+https://epos-ci.brgm.fr/api/v4/projects/95/repository/files/WP08-ESM-flatfile-2018.ttl/raw?ref=master&private_token=euj_E_v2knKWGJKkP-b5
+https://epos-ci.brgm.fr/api/v4/projects/95/repository/files/WP08-ESM-shakemap.ttl/raw?ref=master&private_token=euj_E_v2knKWGJKkP-b5
+https://epos-ci.brgm.fr/api/v4/projects/95/repository/files/WP08-INGV_Dataselect_station_ws_last.ttl/raw?ref=master&private_token=euj_E_v2knKWGJKkP-b5
+https://epos-ci.brgm.fr/api/v4/projects/95/repository/files/WP08-NOA.ttl/raw?ref=master&private_token=euj_E_v2knKWGJKkP-b5
+https://epos-ci.brgm.fr/api/v4/projects/95/repository/files/WP08-ODC.ttl/raw?ref=master&private_token=euj_E_v2knKWGJKkP-b5
+https://epos-ci.brgm.fr/api/v4/projects/95/repository/files/WP8-EMSC-WebServices.ttl/raw?ref=master&private_token=euj_E_v2knKWGJKkP-b5
+https://epos-ci.brgm.fr/api/v4/projects/95/repository/files/WP8-GFZ-20180911.ttl/raw?ref=master&private_token=euj_E_v2knKWGJKkP-b5
+https://epos-ci.brgm.fr/api/v4/projects/95/repository/files/WP8-LMU-20180914.ttl/raw?ref=master&private_token=euj_E_v2knKWGJKkP-b5
+https://epos-ci.brgm.fr/api/v4/projects/95/repository/files/WP8-NIEP-20180913.ttl/raw?ref=master&private_token=euj_E_v2knKWGJKkP-b5
+https://epos-ci.brgm.fr/api/v4/projects/95/repository/files/WP8-RESIF-20180913.ttl/raw?ref=master&private_token=euj_E_v2knKWGJKkP-b5
+https://epos-ci.brgm.fr/api/v4/projects/95/repository/files/WP8-hazardmaps.ttl/raw?ref=master&private_token=euj_E_v2knKWGJKkP-b
+https://epos-ci.brgm.fr/api/v4/projects/108/repository/files/WP08-test.ttl/raw?ref=master&private_token=euj_E_v2knKWGJKkP-b5
+https://epos-ci.brgm.fr/api/v4/projects/108/repository/files/WP08Plugin.ttl/raw?ref=master&private_token=euj_E_v2knKWGJKkP-b5
