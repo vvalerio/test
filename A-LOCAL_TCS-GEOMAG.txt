@@ -1,0 +1,14 @@
+https://epos-ci.brgm.fr/api/v4/projects/91/repository/files/-DCAT-AP_WP13_DDSS-001_INTERMAGNET.ttl/raw?ref=master&private_token=euj_E_v2knKWGJKkP-b5
+https://epos-ci.brgm.fr/api/v4/projects/91/repository/files/-DCAT-AP_WP13_DDSS-001_WDC.ttl/raw?ref=master&private_token=euj_E_v2knKWGJKkP-b5
+https://epos-ci.brgm.fr/api/v4/projects/91/repository/files/-DCAT-AP_WP13_DDSS-002.ttl/raw?ref=master&private_token=euj_E_v2knKWGJKkP-b5
+https://epos-ci.brgm.fr/api/v4/projects/91/repository/files/-DCAT-AP_WP13_DDSS-003.ttl/raw?ref=master&private_token=euj_E_v2knKWGJKkP-b5
+https://epos-ci.brgm.fr/api/v4/projects/91/repository/files/-DCAT-AP_WP13_DDSS-004_MTS.ttl/raw?ref=master&private_token=euj_E_v2knKWGJKkP-b5
+https://epos-ci.brgm.fr/api/v4/projects/91/repository/files/-DCAT-AP_WP13_DDSS-006.ttl/raw?ref=master&private_token=euj_E_v2knKWGJKkP-b5
+https://epos-ci.brgm.fr/api/v4/projects/91/repository/files/-DCAT-AP_WP13_DDSS-007.ttl/raw?ref=master&private_token=euj_E_v2knKWGJKkP-b5
+https://epos-ci.brgm.fr/api/v4/projects/91/repository/files/-DCAT-AP_WP13_DDSS-008.ttl/raw?ref=master&private_token=euj_E_v2knKWGJKkP-b5
+https://epos-ci.brgm.fr/api/v4/projects/91/repository/files/-DCAT-AP_WP13_DDSS-009.ttl/raw?ref=master&private_token=euj_E_v2knKWGJKkP-b5
+https://epos-ci.brgm.fr/api/v4/projects/91/repository/files/-DCAT-AP_WP13_DDSS-010_MTF.ttl/raw?ref=master&private_token=euj_E_v2knKWGJKkP-b5
+https://epos-ci.brgm.fr/api/v4/projects/91/repository/files/-DCAT-AP_WP13_DDSS-012_IGRF.ttl/raw?ref=master&private_token=euj_E_v2knKWGJKkP-b5
+https://epos-ci.brgm.fr/api/v4/projects/91/repository/files/-DCAT-AP_WP13_DDSS-012_WMM.ttl/raw?ref=master&private_token=euj_E_v2knKWGJKkP-b5
+https://epos-ci.brgm.fr/api/v4/projects/91/repository/files/-DCAT-AP_WP13_DDSS-013_MOD.ttl/raw?ref=master&private_token=euj_E_v2knKWGJKkP-b5
+https://epos-ci.brgm.fr/api/v4/projects/108/repository/files/WP13-test.ttl/raw?ref=master&private_token=euj_E_v2knKWGJKkP-b5
