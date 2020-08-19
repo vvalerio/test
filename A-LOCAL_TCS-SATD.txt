@@ -1,0 +1,2 @@
+https://epos-ci.brgm.fr/api/v4/projects/96/repository/files/EPOS-DCAT-AP_WP12_v1.2.ttl/raw?ref=master&private_token=euj_E_v2knKWGJKkP-b5
+https://epos-ci.brgm.fr/api/v4/projects/108/repository/files/WP12Plugin.ttl/raw?ref=master&private_token=euj_E_v2knKWGJKkP-b5
