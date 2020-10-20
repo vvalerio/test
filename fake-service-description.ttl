@@ -1,0 +1,150 @@
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix epos: <https://www.epos-eu.org/epos-dcat-ap#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix hydra: <http://www.w3.org/ns/hydra/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix cnt: <http://www.w3.org/2011/content#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix http: <http://www.w3.org/2006/http#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix gsp: <http://www.opengis.net/ont/geosparql#> .
+
+<http://orcid.org/0000-0001-5805-9337> a schema:Person ;
+    schema:identifier [ a schema:PropertyValue ;
+      schema:propertyID  "orcid" ;
+      schema:value   "0000-0001-5805-9337" ;
+    ];
+
+	schema:familyName "Valerio" ;
+	schema:givenName "Vinciarelli" ;
+    schema:address [ a schema:PostalAddress ;
+	 	    schema:streetAddress "Via di Vigna Murata, 605" ;
+		    schema:addressLocality "Roma" ;
+		    schema:postalCode "00143" ;
+		    schema:addressCountry "Italy" ;
+	  ];
+    schema:email "valerio.vinciarelli@ingv.it" ;
+    schema:telephone "+39000101010" ;
+    schema:url  "http://0000-0001-5805-9337"^^xsd:anyURI ;
+	schema:qualifications "Dev" ;
+	schema:affiliation <PIC:999472675> ;
+.
+
+<PIC:999472675> a schema:Organization;
+	schema:identifier [ a schema:PropertyValue;
+	schema:propertyID "PIC";
+	schema:value "999472675";
+	];
+	schema:legalName "Istituto Nazionale di Geofisica e Vulcanologia";
+	#schema:leiCode "????";
+	schema:address [ a schema:PostalAddress;
+	schema:streetAddress "Via di Vigna Murata, 605";
+	schema:addressLocality "Rome";
+	schema:postalCode "00143";
+	schema:addressCountry "ITALY";
+	];
+	schema:logo "http://roma2.rm.ingv.it/userfiles/file/Logo/INGV_Logo-abbr_colore.jpg"^^xsd:anyURI;
+	schema:url "http://www.ingv.it"^^xsd:anyURI;
+.
+
+<http://orcid.org/0000-0001-5805-9337/contactPoint> a schema:ContactPoint ;
+	schema:email "valerio.vinciarelli@ingv.it" ;
+	schema:availableLanguage "en" ;
+    schema:contactType "scientificContact";
+.
+
+<https://www.epos-eu.org/epos-dcat-ap/Fake/Dataset/001> a dcat:Dataset ;
+        dct:identifier "https://www.epos-eu.org/epos-dcat-ap/Fake/Dataset/001" ;
+        dct:title "Fake Dataset" ;
+        dct:description "Fake RDF/Turtle dataset using a WP08-DDSS-001" ;
+        adms:identifier [ a adms:Identifier ;
+            adms:schemaAgency "DDSS-ID" ;
+            skos:notation "WP08-DDSS-001" ;
+
+        ];
+        dct:created "2020-10-20T00:00:00Z"^^xsd:dateTime ;
+        dct:issued "2020-10-20T00:00:00Z"^^xsd:dateTime ;
+        dct:modified "2020-10-20T00:00:00Z"^^xsd:dateTime ;
+        owl:versionInfo "1.0.0" ;
+	    dct:type "http://purl.org/dc/dcmitype/Collection"^^xsd:anyURI ;
+        dct:accrualPeriodicity "http://purl.org/cld/freq/continuous"^^xsd:anyURI ;
+        dcat:theme  <epos:TCSConnectorTest> ;
+        dcat:keyword "Fake","TCSConnector","TCS" ;
+        dcat:contactPoint <http://orcid.org/0000-0001-5805-9337/contactPoint> ;
+	    dct:publisher <PIC:999472675> ;
+        dcat:distribution <https://www.epos-eu.org/epos-dcat-ap/Fake/Dataset/001/Distribution/001> ;
+        dct:spatial [ a dct:Location ;
+          locn:geometry "POLYGON((180.0 -90.0, -180.0 -90.0, -180.0 90.0, 180.0 90.0, 180.0 -90.0))"^^gsp:wktLiteral ;
+        ];
+        dct:temporal [ a dct:PeriodOfTime ;
+                schema:startDate "1988-01-01T00:00:00Z"^^xsd:dateTime ;
+        ] ;
+.
+
+<https://www.epos-eu.org/epos-dcat-ap/Fake/Dataset/001/Distribution/001> a dcat:Distribution ;
+        dct:identifier "https://www.epos-eu.org/epos-dcat-ap/Seismology/Dataset/001/Distribution/001" ;
+        dct:title "Title of Fake Distribution" ;
+	    dct:description "Description of Fake Distribution" ;
+	    dct:issued "2020-10-20"^^xsd:date ;
+        dct:modified "2020-10-20"^^xsd:date ;
+        dct:type "http://publications.europa.eu/resource/authority/distribution-type/WEB_SERVICE"^^xsd:anyURI ;
+        dct:conformsTo <https://www.epos-eu.org/epos-dcat-ap/Fake/WebService/001> ;
+        dcat:accessURL <https://www.epos-eu.org/epos-dcat-ap/Fake/WebService/001/Operation/001> ;
+        dct:format "http://publications.europa.eu/resource/authority/file-type/XML"^^xsd:anyURI ;
+        dct:license "http://creativecommons.org/licenses/by/4.0/"^^xsd:anyURI ;
+        dcat:downloadURL "http://192.168.1.11:3000/"^^xsd:anyURI ; #PUT  AN URL HERE
+.
+
+<https://www.epos-eu.org/epos-dcat-ap/Fake/WebService/001> a epos:WebService ;
+        schema:identifier "https://www.epos-eu.org/epos-dcat-ap/Fake/WebService/001" ;
+        schema:description "NGINX webservice to test TCSConnector and Mapper" ;
+	    schema:name "NGINX webservice TCSConnector test" ;
+        dcat:contactPoint <http://orcid.org/0000-0001-5805-9337/contactPoint> ;
+        schema:datePublished "2020-10-20T00:00:00Z"^^xsd:dateTime ;
+	    schema:dateModified "2020-10-20T00:00:00Z"^^xsd:dateTime ;
+        schema:provider <PIC:999472675> ;
+        hydra:entrypoint "http://192.168.1.11:3000/"^^xsd:anyURI ; #PUT  AN URL HERE
+        dcat:theme  <epos:TCSConnectorTest> ;
+        schema:keywords "Fake","TCSConnector","TCS" ;
+        hydra:supportedOperation <https://www.epos-eu.org/epos-dcat-ap/Fake/WebService/001/Operation/001> ;
+        dct:conformsTo <https://www.epos-eu.org/epos-dcat-ap/Fake/WebService/001/APIDocumentation> ; 
+        dct:spatial [ a dct:Location ;
+            locn:geometry "POLYGON((180.0 -90.0, -180.0 -90.0, -180.0 90.0, 180.0 90.0, 180.0 -90.0))"^^gsp:wktLiteral ;
+        ];
+        dct:temporal [ a dct:PeriodOfTime ;
+          schema:startDate "1988-01-01T00:00:00Z"^^xsd:dateTime ;
+        ] ;
+        dct:license "http://creativecommons.org/licenses/by/4.0/"^^xsd:anyURI ;
+.
+
+<https://www.epos-eu.org/epos-dcat-ap/Fake/WebService/001/APIDocumentation> a hydra:APIDocumentation ;
+      hydra:title "documentation title" ;
+      hydra:description "some description of API Documentation" ;
+      hydra:entrypoint "API Documentation entrypoint" ;
+.
+
+<https://www.epos-eu.org/epos-dcat-ap/Fake/WebService/001/Operation/001> a hydra:Operation;
+ 	hydra:method "GET";
+    hydra:returns "application/xml" ;
+    hydra:property[ a hydra:IriTemplate ;
+        hydra:template "http://192.168.1.11:3000/"^^xsd:string ;  #TEST
+    ];
+.
+
+<epos:Fake> a skos:ConceptScheme ;
+	dct:title "Fake" ;
+	dct:description "It contains the concepts of the Fake test" ;
+.
+
+<epos:TCSConnectorTest> a skos:Concept ;
+	skos:definition "Fake concept to test the TCSConnector" ;
+	skos:inScheme <epos:Fake> ;
+	skos:prefLabel "TCSConnector Test" ;
+.
