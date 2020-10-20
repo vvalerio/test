@@ -64,7 +64,11 @@
         dct:identifier "https://www.epos-eu.org/epos-dcat-ap/Fake/Dataset/001" ;
         dct:title "Fake Dataset" ;
         dct:description "Fake RDF/Turtle dataset" ;
- 
+ 	adms:identifier [ a adms:Identifier ;
+            adms:schemaAgency "DDSS-ID" ;
+            skos:notation "test" ;
+
+        ];
         dct:created "2020-10-20T00:00:00Z"^^xsd:dateTime ;
         dct:issued "2020-10-20T00:00:00Z"^^xsd:dateTime ;
         dct:modified "2020-10-20T00:00:00Z"^^xsd:dateTime ;
