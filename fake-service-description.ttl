@@ -134,7 +134,7 @@
  	hydra:method "GET";
     hydra:returns "application/xml" ;
     hydra:property[ a hydra:IriTemplate ;
-        hydra:template "http://192.168.1.11:3000/"^^xsd:string ;  #TEST
+        hydra:template "http://192.168.1.11:3000/fake/"^^xsd:string ;  #TEST
     ];
 .
 
