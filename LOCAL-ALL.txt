@@ -14,7 +14,8 @@ https://epos-ci.brgm.fr/api/v4/projects/95/repository/files/WP8-NIEP-20180913.tt
 https://epos-ci.brgm.fr/api/v4/projects/95/repository/files/WP8-RESIF-20180913.ttl/raw?ref=0.0.1&private_token=euj_E_v2knKWGJKkP-b5
 https://epos-ci.brgm.fr/api/v4/projects/95/repository/files/WP8-hazardmaps.ttl/raw?ref=0.0.1&private_token=euj_E_v2knKWGJKkP-b5
 https://epos-ci.brgm.fr/api/v4/projects/95/repository/files/WP08-UIB-NORSAR.ttl/raw?ref=0.0.1&private_token=euj_E_v2knKWGJKkP-b5
-https://epos-ci.brgm.fr/api/v4/projects/95/repository/files/FEDERATOR-SED.ttl/raw?ref=0.0.1&private_token=euj_E_v2knKWGJKkP-b5https://epos-ci.brgm.fr/api/v4/projects/90/repository/files/CSIC-DDSS-056_new.ttl/raw?ref=0.0.1&private_token=euj_E_v2knKWGJKkP-b5
+https://epos-ci.brgm.fr/api/v4/projects/95/repository/files/FEDERATOR-SED.ttl/raw?ref=0.0.1&private_token=euj_E_v2knKWGJKkP-b5
+https://epos-ci.brgm.fr/api/v4/projects/90/repository/files/CSIC-DDSS-056_new.ttl/raw?ref=0.0.1&private_token=euj_E_v2knKWGJKkP-b5
 https://epos-ci.brgm.fr/api/v4/projects/90/repository/files/CSIC-DDSS-057_new.ttl/raw?ref=0.0.1&private_token=euj_E_v2knKWGJKkP-b5
 https://epos-ci.brgm.fr/api/v4/projects/90/repository/files/CSIC-DDSS-058_new.ttl/raw?ref=0.0.1&private_token=euj_E_v2knKWGJKkP-b5
 https://epos-ci.brgm.fr/api/v4/projects/90/repository/files/CSIC-DDSS-059_new.ttl/raw?ref=0.0.1&private_token=euj_E_v2knKWGJKkP-b5
