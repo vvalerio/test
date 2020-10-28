@@ -22,7 +22,7 @@ https://epos-ci.brgm.fr/api/v4/projects/90/repository/files/OPGC_WP11-DDSS-053_d
 https://epos-ci.brgm.fr/api/v4/projects/90/repository/files/WP11_GNSS_stations_corrected_DDSS067.ttl/raw?ref=master&private_token=euj_E_v2knKWGJKkP-b5
 https://epos-ci.brgm.fr/api/v4/projects/90/repository/files/WP11_GNSS_stations_data_corrected_DDSS003.ttl/raw?ref=master&private_token=euj_E_v2knKWGJKkP-b5
 https://epos-ci.brgm.fr/api/v4/projects/90/repository/files/WP11_GNSS_stations_marker_corrected_DDSS067.ttl/raw?ref=master&private_token=euj_E_v2knKWGJKkP-b5
-https://epos-ci.brgm.fr/api/v4/projects/90/repository/files/WP11_IGME_DDSS001.ttl/raw?ref=master&private_token=euj_E_v2knKWGJKkP-b5
+https://epos-ci.brgm.fr/api/v4/projects/90/repository/files/WP_11_NOA_DDSS001-2.ttl/raw?ref=master&private_token=euj_E_v2knKWGJKkP-b5
 https://epos-ci.brgm.fr/api/v4/projects/90/repository/files/WP11_IPGP_DDSS001-002.ttl/raw?ref=master&private_token=euj_E_v2knKWGJKkP-b5
 https://epos-ci.brgm.fr/api/v4/projects/90/repository/files/WP11_IPGP_DDSS005.ttl/raw?ref=master&private_token=euj_E_v2knKWGJKkP-b5
 https://epos-ci.brgm.fr/api/v4/projects/90/repository/files/WP11_IPGP_DDSS006.ttl/raw?ref=master&private_token=euj_E_v2knKWGJKkP-b5
@@ -37,3 +37,4 @@ https://epos-ci.brgm.fr/api/v4/projects/90/repository/files/rdfturtle_dispersion
 https://epos-ci.brgm.fr/api/v4/projects/90/repository/files/rdfturtle_hazardmaps_only_warning.ttl/raw?ref=master&private_token=euj_E_v2knKWGJKkP-b5
 https://epos-ci.brgm.fr/api/v4/projects/90/repository/files/rdfturtle_so2_hazard_maps.ttl/raw?ref=master&private_token=euj_E_v2knKWGJKkP-b5
 https://epos-ci.brgm.fr/api/v4/projects/108/repository/files/WP09-Plugin-Ice.ttl/raw?ref=master&private_token=euj_E_v2knKWGJKkP-b5
+https://epos-ci.brgm.fr/api/v4/projects/108/repository/files/WP11plugin.ttl/raw?ref=master&private_token=euj_E_v2knKWGJKkP-b5
