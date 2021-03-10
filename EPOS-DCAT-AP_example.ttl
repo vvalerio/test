@@ -1,0 +1,503 @@
+@prefix :      <https://www.epos-eu.org/epos-dcat-ap#> .
+@prefix schema: <http://schema.org/> .
+@prefix spdx:  <http://spdx.org/rdf/terms#> .
+@prefix gsp:   <http://www.opengis.net/ont/geosparql#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix hydra: <http://www.w3.org/ns/hydra/core#> .
+@prefix geo:   <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix oa:    <http://www.w3.org/ns/oa#> .
+@prefix dct:   <http://purl.org/dc/terms/> .
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix locn:  <http://www.w3.org/ns/locn#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix epos:  <https://www.epos-eu.org/epos-dcat-ap#> .
+@prefix adms:  <http://www.w3.org/ns/adms#> .
+@prefix org:   <http://www.w3.org/ns/org#> .
+@prefix cnt:   <http://www.w3.org/2011/content#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix http:  <http://www.w3.org/2006/http#> .
+@prefix dash:  <http://datashapes.org/dash#> .
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+
+<98185ec6209c92014ecaa65228f5a401>
+        a                     vcard:Address , vcard:hasAddress ;
+        vcard:country-name    "Country" ;
+        vcard:locality        "locality" ;
+        vcard:postal-code     "00000" ;
+        vcard:street-address  "Street Address" .
+
+<d4a336d1ff95387cbdc1ad0e5ad59511>
+        a                 dct:PeriodOfTime ;
+        schema:startDate  "1988-01-01T00:00:00Z"^^xsd:dateTime .
+
+<332511e2d18b5ab73ec6aac3ae50a8c4>
+        a                 dct:PeriodOfTime , dct:temporal ;
+        schema:startDate  "1988-01-01T00:00:00Z"^^xsd:dateTime .
+
+<PIC:997012076>  a           schema:Organization ;
+        schema:address       <621190f131aefd6b481357fc8c1e4a90> ;
+        schema:contactPoint  <http://orcid.org/0000-0001-7750-7254/legalContact> , <http://orcid.org/0000-0001-7750-7254/scientificContact> , <http://orcid.org/0000-0001-7750-7254/financialContact> ;
+        schema:email         "orfeus_example@email" ;
+        schema:identifier    <cc4d34eff2b30e5bbd98b7b01e997fa1> ;
+        schema:legalName     "ORFEUS Observatories and Research Facilities for European Seismology" ;
+        schema:leiCode       "Legal Entity Identifier Search: http://www.lei-lookup.com/#!search" ;
+        schema:telephone     "+31302206343" ;
+        schema:url           "http://www.orfeus-eu.org/"^^xsd:anyURI .
+
+<http://orcid.org/0000-0001-7750-7254/scientificContact>
+        a                         schema:contactPoint , schema:ContactPoint ;
+        schema:availableLanguage  "en" ;
+        schema:contactType        "scientificContact" ;
+        schema:email              "luca.trani@knmi.nl" .
+
+<epos:SeismicNetwork>
+        a                skos:Concept , dcat:theme ;
+        skos:definition  "Collection of seismic stations in a seismic network" ;
+        skos:inScheme    <epos:Seismology> ;
+        skos:prefLabel   "Seismic Network" .
+
+<2fe339b6e046cd9335ac275a3a828d61>
+        a                       schema:PostalAddress , schema:address ;
+        schema:addressCountry   "The Netherlands" ;
+        schema:addressLocality  "De Bilt" ;
+        schema:postalCode       "3731GA" ;
+        schema:streetAddress    "Utrechtseweg, 297" .
+
+<9d7f3132f20e24214655594735d7029b>
+        a              dct:spatial , dct:Location ;
+        locn:geometry  "POLYGON((180.0 -90.0, -180.0 -90.0, -180.0 90.0, 180.0 90.0, 180.0 -90.0))"^^gsp:wktLiteral .
+
+<678e82239e39e9afd5a64afdbfe5b4ad>
+        a                epos:dynamicRange , schema:QuantitativeValue ;
+        schema:unitCode  "unit code" ;
+        schema:value     "0.0"^^xsd:double .
+
+<cc4d34eff2b30e5bbd98b7b01e997fa1>
+        a                  schema:identifier , schema:PropertyValue ;
+        schema:propertyID  "PIC" ;
+        schema:value       "997012076" .
+
+<a4cbd596dc9631996490ff811b637b4b>
+        a              dct:Location ;
+        locn:geometry  "POLYGON((-180 -90, 180 -90, 180 90, -180 90, -180 -90))"^^gsp:wktLiteral .
+
+<9a38ada735b54adaf31840213cfc7fe8>
+        a                    hydra:mapping , hydra:IriTemplateMapping ;
+        rdfs:label           "Station code" ;
+        rdfs:range           "xsd:string" ;
+        schema:defaultValue  "HGN" ;
+        hydra:required       true ;
+        hydra:variable       "station" .
+
+<https://www.epos-eu.org/epos-dcat-ap/Seismology/Dataset/001>
+        a                  dcat:Dataset , dct:relation ;
+        dct:modified       "2016-01-01T00:00:00Z"^^xsd:dateTime ;
+        dct:spatial        <9d7f3132f20e24214655594735d7029b> ;
+        dct:title          "Primary Seismic Waveform Data" ;
+        dcat:contactPoint  <http://orcid.org/0000-0002-6250-2474/contactPoint> .
+
+<a22cc13abc3b198091c2a6caae008ce0>
+        a                 dct:PeriodOfTime ;
+        schema:endDate    "2020-10-31T00:00:00Z"^^xsd:dateTime ;
+        schema:startDate  "2020-01-01T00:00:00Z"^^xsd:dateTime .
+
+<b6384897c379fe22d1a3653d308ce88f>
+        a              dct:spatial , dct:Location ;
+        locn:geometry  "POINT(5.1767 52.1017 3)"^^gsp:wktLiteral .
+
+<http://orcid.org/0000-0002-6250-2474/contactPoint>
+        a                         schema:ContactPoint , schema:contactPoint , dcat:contactPoint ;
+        schema:availableLanguage  "en" ;
+        schema:contactType        "manager" ;
+        schema:email              "koymans@knmi@nl" .
+
+<epos:Seismology>  a     skos:ConceptScheme , skos:inScheme ;
+        dct:description  "It contains the concepts of the Seismology domain" ;
+        dct:title        "Seismology" .
+
+<ee5717e7db027b4d650c6dcdeb775995>
+        a                hydra:IriTemplateMapping , hydra:mapping ;
+        rdfs:label       "Minimum Longitude" ;
+        rdfs:range       "xsd:float" ;
+        schema:maxValue  "180.0" ;
+        schema:minValue  "-180.0" ;
+        hydra:property   "epos:westernmostLongitude" ;
+        hydra:required   false ;
+        hydra:variable   "minlongitude" .
+
+<https://www.epos-eu.org/epos-dcat-ap/Seismology/WebService/002/ODC>
+        a                     epos:WebService , dct:conformsTo ;
+        dct:conformsTo        <https://www.epos-eu.org/epos-dcat-ap/Seismology/WebService/002/APIDocumentation> ;
+        dct:license           "http://creativecommons.org/licenses/by/4.0/"^^xsd:anyURI ;
+        dct:temporal          <1bbc3b0b640ddef8bdf641984cbcdc5f> ;
+        schema:dateModified   "2016-01-01T00:00:00Z"^^xsd:dateTime ;
+        schema:datePublished  "2016-01-01T00:00:00Z"^^xsd:dateTime ;
+        schema:identifier     "https://www.epos-eu.org/epos-dcat-ap/Seismology/WebService/002/ODC" ;
+        schema:name           "FDSN Station Web Service at ORFEUS Data Center" ;
+        dcat:theme            <epos:SeismicNetwork> ;
+        hydra:entrypoint      "https://www.orfeus-eu.org/fdsnws/station/1/application.wadl"^^xsd:anyURI .
+
+<4905d8f6983d57d84afbbe734774fcbd>
+        a                 dct:PeriodOfTime ;
+        schema:startDate  "1997-11-25T00:00:00Z"^^xsd:dateTime .
+
+<8a78706eb682d505250b41c4755a1359>
+        a                    hydra:mapping , hydra:IriTemplateMapping ;
+        rdfs:label           "End of the timespan" ;
+        rdfs:range           "xsd:dateTime" ;
+        schema:valuePattern  "YYYY-MM-DDThh:mm:ss" ;
+        hydra:property       "schema:endDate" ;
+        hydra:required       true ;
+        hydra:variable       "endtime" .
+
+<https://www.epos-eu.org/epos-dcat-ap/Seismology/WebService/002/APIDocumentation>
+        a                  hydra:ApiDocumentation , dct:conformsTo ;
+        hydra:description  "some description of API Documentation" ;
+        hydra:entrypoint   "https://www.orfeus-eu.org/data/eida/webservices/station/"^^xsd:anyURI ;
+        hydra:title        "FDSNWS Station API Description" .
+
+<d2b0aaaea8c156a48c836797dfa69b49>
+        a                  schema:PropertyValue , schema:identifier ;
+        schema:propertyID  "ScopusAuthorID" ;
+        schema:value       "55861456000" .
+
+<dd12817fe493490bb43b232b5769c509>
+        a               hydra:IriTemplateMapping , hydra:mapping ;
+        rdfs:label      "Location code" ;
+        rdfs:range      "xsd:string" ;
+        hydra:required  false ;
+        hydra:variable  "location" .
+
+<55a2d5aebdf6896b47ebf56e8a0884c6>
+        a                  adms:Identifier ;
+        skos:notation      "WP08-DDSS-002" ;
+        adms:schemeAgency  "DDSS-ID" .
+
+<http://www.w3.org/ns/softwareID>
+        a                        schema:SoftwareApplication ;
+        schema:contactPoint      <http://orcid.org/0000-0002-6250-2474/contactPoint> ;
+        schema:description       "description of the software" ;
+        schema:downloadUrl       "URL"^^xsd:anyURI ;
+        schema:identifier        "softwareID" ;
+        schema:identifier        <d9968e5c24c18686a0a7aa001dbcab6e> ;
+        schema:keywords          "keyword2" , "keyword3" , "keyword1" ;
+        schema:license           "https://www.gnu.org/licenses/gpl.html"^^xsd:anyURI ;
+        schema:mainEntityOfPage  "web_page_URL"^^xsd:anyURI ;
+        schema:name              "name of the software" ;
+        schema:softwareVersion   "1.1" ;
+        dcat:theme               <epos:SeismicWaveform> .
+
+<http://orcid.org/0000-0001-7750-7254/financialContact>
+        a                         schema:ContactPoint , schema:contactPoint ;
+        schema:availableLanguage  "en" ;
+        schema:contactType        "financialContact" ;
+        schema:email              "luca.trani@knmi.nl " .
+
+<ffc78f69e14ac3632c32be549634f81e>
+        a                hydra:IriTemplateMapping , hydra:mapping ;
+        rdfs:label       "Maximum Latitude" ;
+        rdfs:range       "xsd:float" ;
+        schema:maxValue  "90.0" ;
+        schema:minValue  "-90.0" ;
+        hydra:property   "epos:northernmostLatitude" ;
+        hydra:required   false ;
+        hydra:variable   "maxlatitude" .
+
+<621190f131aefd6b481357fc8c1e4a90>
+        a                       schema:PostalAddress , schema:address ;
+        schema:addressCountry   "The Netherlands" ;
+        schema:addressLocality  "De Bilt" ;
+        schema:postalCode       "3731GA" ;
+        schema:streetAddress    "Utrechtseweg, 297" .
+
+<epos:SeismicStation>
+        a                skos:Concept ;
+        skos:definition  "Station of a seismic network" ;
+        skos:inScheme    <epos:Seismology> ;
+        skos:prefLabel   "Seismic Station" .
+
+<2b36cf0f7141110a79a8f508e3798367>
+        a                schema:QuantitativeValue ;
+        schema:unitCode  "unit code" ;
+        schema:value     "0.0"^^xsd:double .
+
+<9274199b87f59f720efcb92dff2c378a>
+        a                    hydra:mapping , hydra:IriTemplateMapping ;
+        rdfs:label           "Quality" ;
+        rdfs:range           "xsd:string" ;
+        schema:defaultValue  "B" ;
+        http:paramValue      "B" , "M" ;
+        hydra:required       false ;
+        hydra:variable       "quality" .
+
+<a5c6b57dcbc408148013384cbfbef6f8>
+        a                       schema:PostalAddress ;
+        schema:addressCountry   "The Netherlands" ;
+        schema:addressLocality  "De Bilt" ;
+        schema:postalCode       "3731GA" ;
+        schema:streetAddress    "Utrechtseweg, 297" .
+
+<87faed49af618842ea421d3df6a27e94>
+        a                hydra:mapping , hydra:IriTemplateMapping ;
+        rdfs:label       "Level of instrument detail" ;
+        rdfs:range       "xsd:string" ;
+        http:paramValue  "response" , "station" , "network" , "channel" ;
+        hydra:required   false ;
+        hydra:variable   "level" .
+
+<eb92ea5558269324ddd61575971d9f66>
+        a                       schema:address , schema:PostalAddress ;
+        schema:addressCountry   "The Netherlands" ;
+        schema:addressLocality  "De Bilt" ;
+        schema:postalCode       "3731GA" ;
+        schema:streetAddress    "Utrechtseweg, 297" .
+
+<5b9a4a3a7a5a9a7282adcc555300d8fc>
+        a                    hydra:mapping , hydra:IriTemplateMapping ;
+        rdfs:label           "Start of the timespan" ;
+        rdfs:range           "xsd:dateTime" ;
+        schema:defaultValue  "2012-01-01T00:00:00" ;
+        schema:valuePattern  "YYYY-MM-DDThh:mm:ss" ;
+        hydra:property       "schema:startDate" ;
+        hydra:required       true ;
+        hydra:variable       "starttime" .
+
+<https://www.epos-eu.org/epos-dcat-ap/Seismology/WebService/001/Operation/001>
+        a               dcat:accessURL , hydra:Operation ;
+        hydra:method    "GET" ;
+        hydra:property  <ef9e6978d71f3d428559f98971f75a92> ;
+        hydra:returns   "application/vnd.fdsn.mseed" .
+
+<https://www.epos-eu.org/epos-dcat-ap/Seismology/Dataset/001/Distribution/001>
+        a               dcat:Distribution ;
+        dct:identifier  "https://www.epos-eu.org/epos-dcat-ap/Seismology/Dataset/001/Distribution/001" ;
+        dct:issued      "2017-01-01T00:00:00Z"^^xsd:dateTime ;
+        dct:license     "http://creativecommons.org/licenses/by/4.0/"^^xsd:anyURI ;
+        dct:modified    "2017-01-01T00:00:00Z"^^xsd:dateTime ;
+        dct:title       "Title of Seismic Waveform Distribution" ;
+        dct:type        "http://publications.europa.eu/resource/authority/distribution-type/WEB_SERVICE"^^xsd:anyURI ;
+        dcat:accessURL  <https://www.epos-eu.org/epos-dcat-ap/Seismology/WebService/001/Operation/001> .
+
+<4cf6f5366a293f2b1aa53741dd756da9>
+        a              dct:Location , dct:spatial ;
+        locn:geometry  "POLYGON((-180 -90, 180 -90, 180 90, -180 90, -180 -90))"^^gsp:wktLiteral .
+
+<c2de278a36f3f6c97829c1980e2188f9>
+        a               hydra:IriTemplate , hydra:property ;
+        hydra:mapping   <a8dd5ccc9c59db711ae52c7680b56bb4> , <87faed49af618842ea421d3df6a27e94> , <ffc78f69e14ac3632c32be549634f81e> , <a7cf02389c738885f5b65f48633f9ffe> , <f97fe1e661213fd1df84b01d62a2d409> , <dd12817fe493490bb43b232b5769c509> , <5b21d730c64ea8f13dbaebb9d59b92c9> , <ee5717e7db027b4d650c6dcdeb775995> , <9a38ada735b54adaf31840213cfc7fe8> , <8a78706eb682d505250b41c4755a1359> , <7fc1ab928f4384b92e2b0572d0b3cd59> ;
+        hydra:template  "https://www.orfeus-eu.org/fdsnws/station/1/query{?starttime, endtime, network, station, location, channel,  minlatitude, maxlatitude, minlongitude, maxlongitude, level}" .
+
+<a1b830bf5106830c876cd99617970f6c>
+        a                  adms:Identifier ;
+        skos:notation      "WP08-DDSS-001" ;
+        adms:schemeAgency  "DDSS-ID" .
+
+<https://www.epos-eu.org/epos-dcat-ap/Seismology/Dataset/002/Distribution/002/ODC>
+        a               dcat:Distribution ;
+        dct:identifier  "https://www.epos-eu.org/epos-dcat-ap/Seismology/Dataset/002/Distribution/002/ODC" ;
+        dct:issued      "2017-01-01T00:00:00Z"^^xsd:dateTime ;
+        dct:license     "http://creativecommons.org/licenses/by/4.0/"^^xsd:anyURI ;
+        dct:modified    "2017-01-01T00:00:00Z"^^xsd:dateTime ;
+        dct:title       "Seismic Stations  :: FDSN STATION" ;
+        dct:type        "http://publications.europa.eu/resource/authority/distribution-type/WEB_SERVICE"^^xsd:anyURI ;
+        dcat:accessURL  <https://www.epos-eu.org/epos-dcat-ap/Seismology/WebService/002/Operation/002/ODC> .
+
+<https://doi.org/10.21944/e970fd34-23b9-3411-b366-e4f72877d2c5>
+        a                 epos:Facility , schema:owns ;
+        dct:identifier    "https://doi.org/10.21944/e970fd34-23b9-3411-b366-e4f72877d2c5" ;
+        dct:spatial       <355c5a2c311baaa9e0636233c5443eb2> ;
+        dct:title         "Netherlands Seismic and Acoustic Network - NL" ;
+        vcard:hasAddress  <98185ec6209c92014ecaa65228f5a401> ;
+        dcat:theme        <epos:SeismicNetwork> .
+
+<http://orcid.org/0000-0002-6250-2474>
+        a                    schema:Person ;
+        schema:address       <2fe339b6e046cd9335ac275a3a828d61> ;
+        schema:contactPoint  <http://orcid.org/0000-0002-6250-2474/contactPoint> ;
+        schema:familyName    "Koymans" ;
+        schema:givenName     "Mathijs" ;
+        schema:identifier    "http://orcid.org/0000-0002-6250-2474" ;
+        schema:telephone     "+31302206911" ;
+        schema:url           "http://orcid.org/0000-0002-6250-2474"^^xsd:anyURI .
+
+<d06173ee584a31504a0883916db285d0>
+        a                  schema:identifier , schema:PropertyValue ;
+        schema:propertyID  "orcid" ;
+        schema:value       "0000-0001-7750-7254" .
+
+<7fc1ab928f4384b92e2b0572d0b3cd59>
+        a                hydra:mapping , hydra:IriTemplateMapping ;
+        rdfs:label       "Maximum Longitude" ;
+        rdfs:range       "xsd:float" ;
+        schema:maxValue  "180.0" ;
+        schema:minValue  "-180.0" ;
+        hydra:property   "epos:easternmostLongitude" ;
+        hydra:required   false ;
+        hydra:variable   "maxlongitude" .
+
+<762e0f6b738f72fe2e262fb4e76c281a>
+        a                 dct:PeriodOfTime ;
+        schema:startDate  "1988-01-01T00:00:00Z"^^xsd:dateTime .
+
+<https://www.fdsn.org/networks/NL/station/DBN>
+        a                  epos:Equipment ;
+        dct:spatial        <b6384897c379fe22d1a3653d308ce88f> ;
+        epos:dynamicRange  <678e82239e39e9afd5a64afdbfe5b4ad> ;
+        epos:filter        "filter" .
+
+<89b2bd5f5fd1a4aee525faf1c03bce42>
+        a                    hydra:mapping , hydra:IriTemplateMapping ;
+        rdfs:label           "Network code" ;
+        rdfs:range           "xsd:string" ;
+        schema:defaultValue  "BE" ;
+        hydra:required       false ;
+        hydra:variable       "network" .
+
+<32e641f7490229c2177d72c4ea94fb18>
+        a              dct:Location ;
+        locn:geometry  "POLYGON((180.0 -90.0, -180.0 -90.0, -180.0 90.0, 180.0 90.0, 180.0 -90.0))"^^gsp:wktLiteral .
+
+<https://www.epos-eu.org/epos-dcat-ap/Seismology/WebService/001>
+        a                     epos:WebService , dct:conformsTo ;
+        dct:conformsTo        <https://www.epos-eu.org/epos-dcat-ap/Seismology/WebService/001/APIDocumentation> ;
+        dct:license           "http://creativecommons.org/licenses/by/4.0/"^^xsd:anyURI ;
+        dct:temporal          <332511e2d18b5ab73ec6aac3ae50a8c4> ;
+        schema:dateModified   "2016-01-01T00:00:00Z"^^xsd:dateTime ;
+        schema:datePublished  "2016-01-01T00:00:00Z"^^xsd:dateTime ;
+        schema:identifier     "https://www.epos-eu.org/epos-dcat-ap/Seismology/WebService/001" ;
+        schema:name           "FDSN Dataselect - ORFEUS Data Center (ODC)" ;
+        dcat:theme            <epos:SeismicWaveform> ;
+        hydra:entrypoint      "http://www.orfeus-eu.org/fdsnws/dataselect/1/application.wadl"^^xsd:anyURI .
+
+<4312b91bc0dd11b6e751ae352079627a>
+        a                    hydra:mapping , hydra:IriTemplateMapping ;
+        rdfs:label           "End of the timespan" ;
+        rdfs:range           "xsd:dateTime" ;
+        schema:defaultValue  "2012-02-01T00:00:00" ;
+        schema:valuePattern  "YYYY-MM-DDThh:mm:ss" ;
+        hydra:property       "schema:endDate" ;
+        hydra:required       true ;
+        hydra:variable       "endtime" .
+
+<355c5a2c311baaa9e0636233c5443eb2>
+        a              dct:Location , dct:spatial ;
+        locn:geometry  "POLYGON((14.7 37.6 , 14.7 38.1 , 15.7 38.1 , 15.7 37.6 , 14.7 37.6))"^^gsp:wktLiteral .
+
+<5b21d730c64ea8f13dbaebb9d59b92c9>
+        a                    hydra:IriTemplateMapping , hydra:mapping ;
+        rdfs:label           "Network code" ;
+        rdfs:range           "xsd:string" ;
+        schema:defaultValue  "NL" ;
+        hydra:required       true ;
+        hydra:variable       "network" .
+
+<https://www.epos-eu.org/epos-dcat-ap/Seismology/WebService/002/Operation/002/ODC>
+        a               dcat:accessURL , hydra:Operation ;
+        hydra:method    "GET" ;
+        hydra:property  <c2de278a36f3f6c97829c1980e2188f9> ;
+        hydra:returns   "application/xml" .
+
+<82dee7a248d1802016a3f60eb1121da7>
+        a                  schema:PropertyValue ;
+        schema:propertyID  "PIC" ;
+        schema:value       "999518944" .
+
+<https://www.epos-eu.org/epos-dcat-ap/Seismology/Dataset/002/ODC>
+        a                  dcat:Dataset ;
+        dct:modified       "2016-01-01T00:00:00Z"^^xsd:dateTime ;
+        dct:spatial        <4cf6f5366a293f2b1aa53741dd756da9> ;
+        dct:title          "Primary Seismic Waveform Data" ;
+        dcat:contactPoint  <http://orcid.org/0000-0002-6250-2474/contactPoint> .
+
+<http://orcid.org/0000-0001-7750-7254>
+        a                    schema:Person ;
+        schema:address       <eb92ea5558269324ddd61575971d9f66> ;
+        schema:contactPoint  <http://orcid.org/0000-0001-7750-7254/legalContact> , <http://orcid.org/0000-0001-7750-7254/financialContact> , <http://orcid.org/0000-0001-7750-7254/scientificContact> ;
+        schema:familyName    "Trani" ;
+        schema:givenName     "Luca" ;
+        schema:identifier    <d2b0aaaea8c156a48c836797dfa69b49> , <d06173ee584a31504a0883916db285d0> ;
+        schema:telephone     "+310302206297" ;
+        schema:url           "http://orcid.org/0000-0001-7750-7254"^^xsd:anyURI .
+
+<d9968e5c24c18686a0a7aa001dbcab6e>
+        a                  schema:PropertyValue , schema:identifier ;
+        schema:propertyID  "DDSS-ID" ;
+        schema:value       "WP8-DDSS-XXX" .
+
+<7f82569f374274c3fce2c66d3ef59383>
+        a              dct:Location ;
+        locn:geometry  "POLYGON((14.7 37.6 , 14.7 38.1 , 15.7 38.1 , 15.7 37.6 , 14.7 37.6))"^^gsp:wktLiteral .
+
+<ef9e6978d71f3d428559f98971f75a92>
+        a               hydra:IriTemplate , hydra:property ;
+        hydra:mapping   <5b9a4a3a7a5a9a7282adcc555300d8fc> , <4312b91bc0dd11b6e751ae352079627a> , <89b2bd5f5fd1a4aee525faf1c03bce42> , <9274199b87f59f720efcb92dff2c378a> ;
+        hydra:template  "http://www.orfeus-eu.org/fdsnws/dataselect/1/query/{?starttime,endtime,network,quality}" .
+
+<1bbc3b0b640ddef8bdf641984cbcdc5f>
+        a                 dct:PeriodOfTime , dct:temporal ;
+        schema:startDate  "1988-01-01T00:00:00Z"^^xsd:dateTime .
+
+<https://github.com/Jollyfant/EPOS-TURTLE>
+        a                           schema:SoftwareSourceCode ;
+        schema:codeRepository       "https://github.com/Jollyfant/EPOS-TURTLE"^^xsd:anyURI ;
+        schema:contactPoint         <http://orcid.org/0000-0002-6250-2474/contactPoint> ;
+        schema:description          "Python library for EPOS-RDF conversion" ;
+        schema:identifier           "https://github.com/Jollyfant/EPOS-TURTLE" ;
+        schema:keywords             "keyword2" , "keyword1" , "keyword3" ;
+        schema:license              "https://github.com/Jollyfant/EPOS-TURTLE/blob/master/LICENSE"^^xsd:anyURI ;
+        schema:mainEntityOfPage     "web_page_URL"^^xsd:anyURI ;
+        schema:name                 "Python library for EPOS-RDF conversion" ;
+        schema:programmingLanguage  "Python" ;
+        schema:softwareVersion      "1.0" ;
+        dcat:theme                  <epos:SeismicWaveform> .
+
+<a7cf02389c738885f5b65f48633f9ffe>
+        a               hydra:mapping ;
+        rdfs:label      "Channel code" ;
+        rdfs:range      "xsd:string" ;
+        hydra:required  false ;
+        hydra:variable  "channel" .
+
+<f97fe1e661213fd1df84b01d62a2d409>
+        a                hydra:IriTemplateMapping , hydra:mapping ;
+        rdfs:label       "Minimum Latitude" ;
+        rdfs:range       "xsd:float" ;
+        schema:maxValue  "90.0" ;
+        schema:minValue  "-90.0" ;
+        hydra:property   "epos:southernmostLatitude" ;
+        hydra:required   false ;
+        hydra:variable   "minlatitude" .
+
+<http://orcid.org/0000-0001-7750-7254/legalContact>
+        a                         schema:contactPoint , schema:ContactPoint ;
+        schema:availableLanguage  "en" ;
+        schema:contactType        "legalContact" ;
+        schema:email              "luca.trani@knmi.nl " .
+
+<https://www.epos-eu.org/epos-dcat-ap/Seismology/WebService/001/APIDocumentation>
+        a                  hydra:ApiDocumentation , dct:conformsTo ;
+        hydra:description  "some description of API Documentation" ;
+        hydra:entrypoint   "API-Documentation-entrypoint"^^xsd:anyURI ;
+        hydra:title        "documentation title" .
+
+<a8dd5ccc9c59db711ae52c7680b56bb4>
+        a                    hydra:IriTemplateMapping , hydra:mapping ;
+        rdfs:label           "Start of the timespan" ;
+        rdfs:range           "xsd:dateTime" ;
+        schema:valuePattern  "YYYY-MM-DDThh:mm:ss" ;
+        hydra:property       "schema:startDate" ;
+        hydra:required       true ;
+        hydra:variable       "starttime" .
+
+<PIC:999518944>  a  schema:Organization , schema:provider , schema:affiliation , dct:publisher .
+
+<epos:SeismicWaveform>
+        a                skos:Concept , dcat:theme ;
+        skos:definition  "Measurement of the dynamic displacement of the Earth" ;
+        skos:inScheme    <epos:Seismology> ;
+        skos:prefLabel   "Seismic waveform" .
