@@ -1,0 +1,311 @@
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix epos: <https://www.epos-eu.org/epos-dcat-ap#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix hydra: <http://www.w3.org/ns/hydra/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix cnt: <http://www.w3.org/2011/content#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix http: <http://www.w3.org/2006/http#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix gsp: <http://www.opengis.net/ont/geosparql#> .
+
+# last modified Lucia Cacciola 19-04-2021
+
+#########
+# PERSON
+#########
+
+#DANILO REITANO contactPoint
+
+<https://orcid.org/0000-0002-0915-3711> a schema:Person;
+	schema:identifier [ a schema:PropertyValue;
+		schema:propertyID "ORCID";
+		schema:value "https://orcid.org/0000-0002-0915-3711";
+	];
+	schema:familyName "Reitano";
+	schema:givenName "Danilo";
+	schema:address [ a schema:PostalAddress;
+		schema:streetAddress "Piazza Roma, 2";
+		schema:addressLocality "Catania";
+		schema:postalCode "95125";
+		schema:addressCountry "Italy";
+	];
+	schema:email "danilo.reitano@ingv.it";
+	schema:telephone "+00390957165800";
+	schema:url "https://orcid.org/0000-0002-0915-3711"^^xsd:anyURI;
+	schema:qualifications "Technologist";
+	schema:affiliation <PIC:999472675>;
+	schema:contactPoint <https://orcid.org/0000-0002-0915-3711/contactPoint>;
+.
+
+#LUCIA CACCIOLA contactPoint
+<https://orcid.org/0000-0003-1732-870X> a schema:Person;
+	schema:identifier [ a schema:PropertyValue;
+		schema:propertyID "ORCID";
+		schema:value "https://orcid.org/0000-0003-1732-870X";
+	];
+	schema:familyName "Lucia";
+	schema:givenName "Cacciola";
+	schema:address [ a schema:PostalAddress;
+		schema:streetAddress "Piazza Roma, 2";
+		schema:addressLocality "Catania";
+		schema:postalCode "95125";
+		schema:addressCountry "Italy";
+	];
+	schema:email "lucia.cacciola@ingv.it";
+	schema:telephone "+003909571658001";
+	schema:url "https://orcid.org/0000-0003-1732-870X"^^xsd:anyURI;
+	schema:qualifications "Research fellow";
+	schema:affiliation <PIC:999472675>;
+	schema:contactPoint <https://orcid.org/0000-0003-1732-870X/contactPoint>;
+.
+
+#SALVATORE MANGIAGLI contactPoint
+<https://orcid.org/0000-0003-2744-0578> a schema:Person;
+	schema:identifier [ a schema:PropertyValue;
+		schema:propertyID "ORCID";
+		schema:value "https://orcid.org/0000-0003-2744-0578";
+	];
+	schema:familyName "Salvatore";
+	schema:givenName "Mangiagli";
+	schema:address [ a schema:PostalAddress;
+		schema:streetAddress "Piazza Roma, 2";
+		schema:addressLocality "Catania";
+		schema:postalCode "95125";
+		schema:addressCountry "Italy";
+	];
+	schema:email "salvatore.mangiagli@ingv.it";
+	schema:telephone "+00390957165800";
+	schema:url "https://orcid.org/0000-0003-2744-0578"^^xsd:anyURI;
+	schema:qualifications "Technologist";
+	schema:affiliation <PIC:999472675>;
+	schema:contactPoint <https://orcid.org/0000-0003-2744-0578/contactPoint>;
+.
+
+
+#ROSA ANNA CORSARO contactPoint
+
+<https://orcid.org/0000-0001-6137-8806> a schema:Person;
+	schema:identifier [ a schema:PropertyValue;
+		schema:propertyID "ORCID";
+		schema:value "https://orcid.org/0000-0001-6137-8806";
+	];
+	schema:familyName "Corsaro";
+	schema:givenName "Rosa Anna";
+	schema:address [ a schema:PostalAddress;
+		schema:streetAddress "Piazza Roma, 2";
+		schema:addressLocality "Catania";
+		schema:postalCode "95125";
+		schema:addressCountry "Italy";
+	];
+	schema:email "rosanna.corsaro@ingv.it";
+	schema:telephone "+00390957165800";
+	schema:url "https://orcid.org/0000-0001-6137-8806"^^xsd:anyURI;
+	schema:qualifications "Volcanologist";
+	schema:affiliation <PIC:999472675>;
+.
+
+<https://orcid.org/0000-0002-8651-6387> a schema:Person;
+	schema:identifier [ a schema:PropertyValue;
+		schema:propertyID "orcid";
+		schema:value "https://orcid.org/0000-0002-8651-6387";
+	];
+	schema:familyName "Doglioni";
+	schema:givenName "Carlo";
+	schema:address [ a schema:PostalAddress;
+		schema:streetAddress "Via di Vigna Murata 605";
+		schema:addressLocality "Rome";
+		schema:postalCode "00143";
+		schema:addressCountry "Italy";
+	];
+	schema:email "segreteria.presidenza@ingv.it";
+	schema:telephone "+3906518601";
+	schema:url "https://orcid.org/0000-0002-8651-6387"^^xsd:anyURI;
+	schema:qualifications "Professor";
+	schema:affiliation <PIC:999472675>;
+.
+
+#########
+# ContactPoint
+#########
+
+<https://orcid.org/0000-0002-0915-3711/contactPoint> a schema:ContactPoint;
+		schema:email "danilo.reitano@ingv.it";
+		schema:availableLanguage "en" ;
+		schema:contactType "contactPoint" ;
+.
+
+<https://orcid.org/0000-0003-0435-7763/scientificContact> a schema:ContactPoint;
+		schema:email "rosanna.corsaro@ingv.it";
+		schema:availableLanguage "en" ;
+		schema:contactType "scientificContact" ;
+.
+
+<https://orcid.org/0000-0003-1732-870X/contactPoint> a schema:ContactPoint;
+	schema:email "lucia.cacciola@ingv.it";
+	schema:availableLanguage "en" ;
+        schema:contactType "contactPoint" ;
+.
+
+<https://orcid.org/0000-0003-2744-0578/contactPoint> a schema:ContactPoint;
+	schema:email "salvatore.mangiagli@ingv.it";
+	schema:availableLanguage "en" ;
+        schema:contactType "contactPoint" ;
+.
+
+<https://orcid.org/0000-0002-8651-6387/legalContact> a schema:ContactPoint;
+		schema:email "segreteria.presidenza@ingv.it";
+		schema:availableLanguage "en" ;
+		schema:contactType "legalContact" ;
+.
+
+<https://orcid.org/0000-0002-8651-6387/financialContact> a schema:ContactPoint;
+		schema:email "segreteria.presidenza@ingv.it";
+		schema:availableLanguage "en" ;
+		schema:contactType "financialContact" ;
+.
+
+#########
+# Organization
+#########
+
+<PIC:999472675> a schema:Organization;
+	schema:identifier [ a schema:PropertyValue;
+		schema:propertyID "PIC";
+		schema:value "999472675";
+	];
+	schema:legalName "National Institute of Geophysics and Volcanology";
+	schema:leiCode "Legal Entity Identifier Search: http://www.lei-lookup.com/#!search" ;
+	schema:address [ a schema:PostalAddress;
+		schema:streetAddress "Via di Vigna Murata, 605";
+		schema:addressLocality "Rome";
+		schema:postalCode "00143";
+		schema:addressCountry "Italy";
+	];
+	schema:logo "http://roma2.rm.ingv.it/userfiles/file/Logo/INGV_Logo-abbr_colore.jpg"^^xsd:anyURI;
+	schema:url "http://www.ingv.it/"^^xsd:anyURI;
+	schema:contactPoint <https://orcid.org/0000-0003-0435-7763/scientificContact>;
+	schema:contactPoint <https://orcid.org/0000-0002-8651-6387/legalContact>;
+	schema:contactPoint <https://orcid.org/0000-0002-8651-6387/financialContact>;
+.
+#########
+# Dataset
+#########
+
+<WP11/INGV/DDSS-032> a dcat:Dataset;
+        dct:title "Volcano Observatory Notice for Aviation Italy";
+        dct:identifier "WP11/INGV/DDSS-032";
+        adms:identifier [ a adms:Identifier ;
+            adms:schemeAgency "DDSS-ID" ;
+            skos:notation "WP11-DDSS-032" ;
+        ];
+        dct:description "Volcano Observatory Notice for Aviation Italy";
+        ## example of frequency using a controlled vocabulary
+	dct:type "http://purl.org/dc/dcmitype/Collection"^^xsd:anyURI;
+        dct:accrualPeriodicity "http://purl.org/cld/freq/irregular"^^xsd:anyURI;
+        dct:created "2021-02-01"^^xsd:date;
+	dct:temporal [ a dct:PeriodOfTime;
+			schema:startDate "2014-07-06T00:00:00Z"^^xsd:dateTime;
+		];
+	dct:spatial [ a dct:Location;
+		locn:geometry "POLYGON((14.7 37.6 , 15.7 37.6 , 15.7 39.6, 14.7 39.6 , 14.7 37.6))"^^gsp:wktLiteral;
+
+		];
+        dcat:theme  <epos:VONA-Reports> ;
+        dcat:keyword "Volcanology", "Etna", "Report", "Stromboli", "VONA" , "Aviation color code", "Volcanic activity" ;
+        dcat:contactPoint <https://orcid.org/0000-0002-0915-3711/contactPoint>;
+        dcat:contactPoint <https://orcid.org/0000-0003-1732-870X/contactPoint>;
+        dcat:contactPoint <https://orcid.org/0000-0003-2744-0578/contactPoint>;
+	dct:publisher <PIC:999472675>;
+        dcat:distribution <WP11/INGV/DDSS-032/WSDistribution>;
+.
+
+#########
+# Distribution
+#########
+
+<WP11/INGV/DDSS-032/WSDistribution> a dcat:Distribution;
+        dct:identifier "WP11/INGV/DDSS-032/WSDistribution";
+        dct:title "Volcano Observatory Notice for Aviation Italy";
+	dct:description "Volcano Observatory Notice for Aviation Italy";
+	dct:created "2021-02-01"^^xsd:date; # modified
+	dct:type "http://publications.europa.eu/resource/authority/distribution-type/WEB_SERVICE"^^xsd:anyURI;
+	dcat:accessURL <VONA/INGV/DDSS-032/operation>;
+	dct:conformsTo <VONA/INGV/DDSS-032>;
+	dct:format "http://publications.europa.eu/resource/authority/file-type/JSON"^^xsd:anyURI;
+.
+
+#########
+# WebService
+#########
+
+<VONA/INGV/DDSS-032> a epos:WebService;
+	schema:identifier "REST/INGV/DDSS-032";
+	schema:description "Volcano Observatory Notice for Aviation (VONA)";
+	schema:name "DailyReport";
+	schema:datePublished "2021-02-01T00:00:00Z"^^xsd:dateTime;
+	schema:dateModified "2021-02-01T00:00:00Z"^^xsd:dateTime;
+	dct:spatial [ a dct:Location;
+		locn:geometry "POLYGON((14.7 37.6 , 15.7 37.6 , 15.7 39.6, 14.7 39.6 , 14.7 37.6))"^^gsp:wktLiteral;
+		];
+	schema:provider <PIC:999472675>;
+	schema:keywords "Volcanology", "Etna", "Report", "Stromboli", "VONA" , "Aviation color code", "Volcanic activity";
+	hydra:entrypoint "http://vo-tcs.ct.ingv.it:8088/gateway/sezioniesterne/landingPage.php?ID=50"^^xsd:anyURI; 
+	hydra:supportedOperation <VONA/INGV/DDSS-032/operation>;
+	dcat:theme <epos:VONA-Reports>;
+	dcat:contactPoint <https://orcid.org/0000-0002-0915-3711/contactPoint>;
+        dcat:contactPoint <https://orcid.org/0000-0003-1732-870X/contactPoint>;
+        dcat:contactPoint <https://orcid.org/0000-0003-2744-0578/contactPoint>;
+.
+
+#########
+# Operation
+#########
+
+<VONA/INGV/DDSS-032/operation> a hydra:Operation;
+	hydra:method "GET"^^xsd:string;
+	hydra:returns "application/json";
+	hydra:property[ a hydra:IriTemplate;
+        #end point precedente
+        #hydra:template "http://193.206.223.51:8888/vona/volcano_name={volcano_name}/publication_date={publication_date}"^^xsd:string;
+        #hydra:template "http://vo-tcs.ct.ingv.it/rest/vona/volcano_name={volcano_name}/publication_date={publication_date}"^^xsd:string;
+        hydra:template "http://193.206.223.51/rest/vona/volcano_name={volcano_name}/publication_date={publication_date}"^^xsd:string;
+        
+		hydra:mapping[ a hydra:IriTemplateMapping;
+			hydra:variable "volcano_name"^^xsd:string;
+			rdfs:range "xsd:string" ;
+			rdfs:label "Volcano name ";
+			http:paramValue "Etna";
+			http:paramValue "Stromboli";
+			schema:defaultValue "Stromboli" ;
+			hydra:required "false"^^xsd:boolean;
+		];
+		hydra:mapping[ a hydra:IriTemplateMapping;
+			hydra:variable "publication_date"^^xsd:string;
+			rdfs:range "xsd:dateTime" ;
+			schema:valuePattern "YYYY-MM-DDThh:mm:ssZ";
+			rdfs:label "Insert publication date in a standard format: (yyyy-mm-ddThh:mm:ssZ) ";
+			schema:defaultValue "2019-07-30T00:00:00Z" ;
+			hydra:required "false"^^xsd:boolean;
+		];
+	] ;
+.
+#########
+# Concept
+#########
+<epos:VolcanoObservations> a skos:ConceptScheme;
+	dct:title "Volcano Observations";
+	dct:description "It contains the concepts of Volcano-Observations";
+.
+<epos:VONA-Reports> a skos:Concept;
+	skos:inScheme <epos:VolcanoObservations>;
+	skos:prefLabel "VONA Reports";
+	skos:definition "VONA Reports";
+.
