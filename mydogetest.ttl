@@ -88,19 +88,18 @@
         schema:url             "https://orcid.org/0000-0003-2744-0578"^^xsd:anyURI .
 
 <6a7b520f283c23874cbf348deaf51a29>
-        rdf:type                epos:PostalAddress ;
+        rdf:type                schema:PostalAddress ;
         schema:addressCountry   "Italy" ;
         schema:addressLocality  "Catania" ;
         schema:postalCode       "95125" ;
         schema:streetAddress    "Piazza Roma, 2" .
 
 <d6681454f2f12894c41031a791f8c37f>
-        rdf:type           epos:PropertyValue ;
+        rdf:type           schema:PropertyValue ;
         schema:propertyID  "orcid" ;
         schema:value       "https://orcid.org/0000-0002-8651-6387" .
 
 <https://orcid.org/0000-0002-0915-3711/contactPoint>
-        rdf:type                  schema:ContactPoint ;
         schema:availableLanguage  "en" ;
         schema:contactType        "contactPoint" ;
         schema:email              "danilo.reitano@ingv.it" .
@@ -157,7 +156,7 @@
         locn:geometry  "POLYGON((14.7 37.6 , 15.7 37.6 , 15.7 39.6, 14.7 39.6 , 14.7 37.6))"^^gsp:wktLiteral .
 
 <ff05d3cd4d35e42e87a15bf68b052e00>
-        rdf:type          epos:PeriodOfTime ;
+        rdf:type          dct:PeriodOfTime ;
         schema:startDate  "2014-07-06T00:00:00Z"^^xsd:dateTime .
 
 <c5dcb1724ea99ad7e8fdff8ddd634abb>
@@ -181,7 +180,7 @@
         adms:schemeAgency  "DDSS-ID" .
 
 <679ff08db0c1034afa12c5d4ed49817c>
-        rdf:type           schema:PropertyValue ;
+        rdf:type           epos:PropertyValue ;
         schema:propertyID  "PIC" ;
         schema:value       "999472675" .
 
@@ -214,11 +213,11 @@
 
 <https://www.epos-eu.org/epos-dcat-ap#PropertyValue/5b4ba0b8-a111-401e-9434-a0de320c38e7>
         rdf:type           schema:PropertyValue ;
-        schema:propertyID  "GRA" ;
+        schema:propertyID  "PIC" ;
         schema:value       "435287394729" .
 
 <135c7ecf061fb9db76a905751dc1aca8>
-        rdf:type        hydra:IriTemplate ;
+        rdf:type        epos:IriTemplate ;
         hydra:mapping   <da54e5284332aa1daec4599d10935ec5> , <fbb71d795b6176ee43237921a5169ca9> ;
         hydra:template  "http://193.206.223.51/rest/vona/volcano_name={volcano_name}/publication_date={publication_date}" .
 
@@ -274,7 +273,7 @@
         dcat:theme              <epos:VONA-Reports> .
 
 <fbb71d795b6176ee43237921a5169ca9>
-        rdf:type             epos:IriTemplateMapping ;
+        rdf:type             hydra:IriTemplateMapping ;
         rdfs:label           "Insert publication date in a standard format: (yyyy-mm-ddThh:mm:ssZ) " ;
         rdfs:range           "xsd:dateTime" ;
         schema:defaultValue  "2019-07-30T00:00:00Z" ;
@@ -298,7 +297,7 @@
         hydra:supportedOperation  <http://www.w3.org/ns/VONA/INGV/DDSS-032/operation> .
 
 <f6d2d65b84a0ef68c8af77b3ceec6618>
-        rdf:type           epos:PropertyValue ;
+        rdf:type           schema:PropertyValue ;
         schema:propertyID  "ORCID" ;
         schema:value       "https://orcid.org/0000-0003-2744-0578" .
 
