@@ -1,0 +1,306 @@
+@prefix :      <https://www.epos-eu.org/epos-dcat-ap#> .
+@prefix schema: <http://schema.org/> .
+@prefix spdx:  <http://spdx.org/rdf/terms#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix gsp:   <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix hydra: <http://www.w3.org/ns/hydra/core#> .
+@prefix geo:   <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix oa:    <http://www.w3.org/ns/oa#> .
+@prefix dct:   <http://purl.org/dc/terms/> .
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix locn:  <http://www.w3.org/ns/locn#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix epos:  <https://www.epos-eu.org/epos-dcat-ap#> .
+@prefix adms:  <http://www.w3.org/ns/adms#> .
+@prefix org:   <http://www.w3.org/ns/org#> .
+@prefix cnt:   <http://www.w3.org/2011/content#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix http:  <http://www.w3.org/2006/http#> .
+@prefix dash:  <http://datashapes.org/dash#> .
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+
+<https://orcid.org/0000-0002-0915-3711>
+        rdf:type               schema:Person ;
+        schema:address         <http://www.w3.org/ns/7c80411071fdc0ac9a6ad1d3454bd119> ;
+        schema:affiliation     <PIC:999472675> ;
+        schema:contactPoint    "https://orcid.org/0000-0002-0915-3711/contactPoint" ;
+        schema:email           "danilo.reitano@ingv.it" ;
+        schema:familyName      "Reitano" ;
+        schema:givenName       "Danilo" ;
+        schema:identifier      <http://www.w3.org/ns/75ccf02fc7ccbea00119702522c6dc98> ;
+        schema:qualifications  "Technologist" ;
+        schema:telephone       "+00390957165800" ;
+        schema:url             "https://orcid.org/0000-0002-0915-3711"^^xsd:anyURI .
+
+<http://www.w3.org/ns/1b5919851d1540b6e0b9d3895b4d19b1>
+        rdf:type                schema:PostalAddress ;
+        schema:addressCountry   "Italy" ;
+        schema:addressLocality  "Catania" ;
+        schema:postalCode       "95125" ;
+        schema:streetAddress    "Piazza Roma, 2" .
+
+<http://www.w3.org/ns/288a97defc8513a0b7beeaca06e3aacf>
+        rdf:type                epos:PostalAddress ;
+        schema:addressCountry   "Italy" ;
+        schema:addressLocality  "Rome" ;
+        schema:postalCode       "00143" ;
+        schema:streetAddress    "Via di Vigna Murata 605" .
+
+<http://www.w3.org/ns/679ff08db0c1034afa12c5d4ed49817c>
+        rdf:type           schema:PropertyValue ;
+        schema:propertyID  "PIC" ;
+        schema:value       "999472675" .
+
+<PIC:999472675>  rdf:type    epos:Organization ;
+        schema:address       <http://www.w3.org/ns/4207708d2bf2b7efdb74f60a39603571> ;
+        schema:contactPoint  <https://orcid.org/0000-0003-0435-7763/scientificContact> , <https://orcid.org/0000-0002-8651-6387/financialContact> , <https://orcid.org/0000-0002-8651-6387/legalContact> ;
+        schema:identifier    <http://www.w3.org/ns/679ff08db0c1034afa12c5d4ed49817c> ;
+        schema:legalName     "National Institute of Geophysics and Volcanology" ;
+        schema:leiCode       "Legal Entity Identifier Search" ;
+        schema:logo          "http://roma2.rm.ingv.it/userfiles/file/Logo/INGV_Logo-abbr_colore.jpg"^^xsd:anyURI ;
+        schema:url           "http://www.ingv.it/"^^xsd:anyURI .
+
+<http://www.w3.org/ns/f9d5ed0e4adde36c81970b61333d917a>
+        rdf:type       dct:Location ;
+        locn:geometry  "POLYGON((14.7 37.6 , 15.7 37.6 , 15.7 39.6, 14.7 39.6 , 14.7 37.6))"^^gsp:wktLiteral .
+
+<https://orcid.org/0000-0003-1732-870X>
+        rdf:type               schema:Person ;
+        schema:address         <http://www.w3.org/ns/1b5919851d1540b6e0b9d3895b4d19b1> ;
+        schema:affiliation     <PIC:999472675> ;
+        schema:contactPoint    <https://orcid.org/0000-0003-1732-870X/contactPoint> ;
+        schema:email           "lucia.cacciola@ingv.it" ;
+        schema:familyName      "Lucia" ;
+        schema:givenName       "Cacciola" ;
+        schema:identifier      <http://www.w3.org/ns/cdc5c04c87b8d828dbf14c171d90552e> ;
+        schema:qualifications  "Research fellow" ;
+        schema:telephone       "+003909571658001" ;
+        schema:url             "https://orcid.org/0000-0003-1732-870X"^^xsd:anyURI .
+
+<https://orcid.org/0000-0003-1732-870X/contactPoint>
+        rdf:type                  schema:ContactPoint ;
+        schema:availableLanguage  "en" ;
+        schema:contactType        "contactPoint" ;
+        schema:email              "lucia.cacciola@ingv.it" .
+
+<http://www.w3.org/ns/7c80411071fdc0ac9a6ad1d3454bd119>
+        rdf:type                schema:PostalAddress ;
+        schema:addressCountry   "Italy" ;
+        schema:addressLocality  "Catania" ;
+        schema:postalCode       "95125" ;
+        schema:streetAddress    "Piazza Roma, 2" .
+
+<https://orcid.org/0000-0003-2744-0578/contactPoint>
+        rdf:type                  schema:ContactPoint ;
+        schema:availableLanguage  "en" ;
+        schema:contactType        "contactPoint" ;
+        schema:email              "salvatore.mangiagli@ingv.it" .
+
+<http://www.w3.org/ns/WP11/INGV/DDSS-032/WSDistribution>
+        rdf:type         dcat:Distribution ;
+        dct:conformsTo   <http://www.w3.org/ns/VONA/INGV/DDSS-032> ;
+        dct:description  "My Sponge Observation" ;
+        dct:format       "http://publications.europa.eu/resource/authority/file-type/JSON"^^xsd:anyURI ;
+        dct:identifier   "WP11/INGV/DDSS-032/WSDistribution" ;
+        dct:title        "Volcano Observatory Notice for Aviation Italy" ;
+        dct:type         "http://publications.europa.eu/resource/authority/distribution-type/WEB_SERVICE"^^xsd:anyURI ;
+        dcat:accessURL   <http://www.w3.org/ns/VONA/INGV/DDSS-032/operation> .
+
+<https://orcid.org/0000-0002-8651-6387>
+        rdf:type               schema:Person ;
+        schema:address         <http://www.w3.org/ns/288a97defc8513a0b7beeaca06e3aacf> ;
+        schema:affiliation     <PIC:999472675> ;
+        schema:email           "segreteria.presidenza@ingv.it" ;
+        schema:familyName      "Doglioni" ;
+        schema:givenName       "Carlo" ;
+        schema:identifier      <http://www.w3.org/ns/d6681454f2f12894c41031a791f8c37f> ;
+        schema:qualifications  "Professor" ;
+        schema:telephone       "+3906518601" ;
+        schema:url             "https://orcid.org/0000-0002-8651-6387"^^xsd:anyURI .
+
+<http://www.w3.org/ns/fbb71d795b6176ee43237921a5169ca9>
+        rdf:type             epos:IriTemplateMapping ;
+        rdfs:label           "Insert publication date in a standard format: (yyyy-mm-ddThh:mm:ssZ) " ;
+        rdfs:range           "xsd:dateTime" ;
+        schema:defaultValue  "2019-07-30T00:00:00Z" ;
+        schema:valuePattern  "YYYY-MM-DDThh:mm:ssZ" ;
+        hydra:required       false ;
+        hydra:variable       "publication_date" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Organization/f1551f33-fd61-48a9-95ae-b8855c5b6903>
+        rdf:type           schema:Organization ;
+        schema:identifier  <https://www.epos-eu.org/epos-dcat-ap#PropertyValue/5b4ba0b8-a111-401e-9434-a0de320c38e7> ;
+        schema:legalName   "Doge affiliation" ;
+        schema:leiCode     "Doge Code" ;
+        schema:logo        "https://www.google.com/url?sa=i&url=https%3A%2F%2Ffavpng.com%2Fpng_search%2Fdoge-logo&psig=AOvVaw1G7APtQCAXNx3qq8RodLUb&ust=1621063904314000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCPjon-PTyPACFQAAAAAdAAAAABAD"^^xsd:anyURI ;
+        schema:memberOf    <PIC:999472675> .
+
+<http://www.w3.org/ns/ff05d3cd4d35e42e87a15bf68b052e00>
+        rdf:type          dct:PeriodOfTime ;
+        schema:startDate  "2014-07-06T00:00:00Z"^^xsd:dateTime .
+
+<https://orcid.org/0000-0001-6137-8806>
+        rdf:type               schema:Person ;
+        schema:address         <http://www.w3.org/ns/7cddca5ec397f5d12eb4af2d7b4214de> ;
+        schema:affiliation     <PIC:999472675> ;
+        schema:email           "rosanna.corsaro@ingv.it" ;
+        schema:familyName      "Corsaro" ;
+        schema:givenName       "Rosa Anna" ;
+        schema:identifier      <http://www.w3.org/ns/5c384b9e81ae5972f80238bc1a5c8d7c> ;
+        schema:qualifications  "Volcanologist" ;
+        schema:telephone       "+00390957165800" ;
+        schema:url             "https://orcid.org/0000-0001-6137-8806"^^xsd:anyURI .
+
+<epos:VONA-Reports>  rdf:type  epos:Concept ;
+        skos:definition  "VONA Reports" ;
+        skos:prefLabel   "VONA Reports" .
+
+<https://orcid.org/0000-0003-0435-7763/scientificContact>
+        rdf:type                  epos:ContactPoint ;
+        schema:availableLanguage  "en" ;
+        schema:contactType        "scientificContact" ;
+        schema:email              "rosanna.corsaro@ingv.it" .
+
+<http://www.w3.org/ns/6a7b520f283c23874cbf348deaf51a29>
+        rdf:type                schema:PostalAddress ;
+        schema:addressCountry   "Italy" ;
+        schema:addressLocality  "Catania" ;
+        schema:postalCode       "95125" ;
+        schema:streetAddress    "Piazza Roma, 2" .
+
+<http://www.w3.org/ns/d6681454f2f12894c41031a791f8c37f>
+        rdf:type           epos:PropertyValue ;
+        schema:propertyID  "orcid" ;
+        schema:value       "https://orcid.org/0000-0002-8651-6387" .
+
+<http://www.w3.org/ns/cdc5c04c87b8d828dbf14c171d90552e>
+        rdf:type           schema:PropertyValue ;
+        schema:propertyID  "ORCID" ;
+        schema:value       "https://orcid.org/0000-0003-1732-870X" .
+
+<http://www.w3.org/ns/c5dcb1724ea99ad7e8fdff8ddd634abb>
+        rdf:type       dct:Location ;
+        locn:geometry  "POLYGON((14.7 37.6 , 15.7 37.6 , 15.7 39.6, 14.7 39.6 , 14.7 37.6))"^^gsp:wktLiteral .
+
+<http://www.w3.org/ns/5c384b9e81ae5972f80238bc1a5c8d7c>
+        rdf:type           schema:PropertyValue ;
+        schema:propertyID  "ORCID" ;
+        schema:value       "https://orcid.org/0000-0001-6137-8806" .
+
+<http://www.w3.org/ns/135c7ecf061fb9db76a905751dc1aca8>
+        rdf:type        hydra:IriTemplate ;
+        hydra:mapping   <http://www.w3.org/ns/da54e5284332aa1daec4599d10935ec5> , <http://www.w3.org/ns/fbb71d795b6176ee43237921a5169ca9> ;
+        hydra:template  "http://193.206.223.51/rest/vona/volcano_name={volcano_name}/publication_date={publication_date}" .
+
+<http://www.w3.org/ns/75ccf02fc7ccbea00119702522c6dc98>
+        rdf:type           schema:PropertyValue ;
+        schema:propertyID  "ORCID" ;
+        schema:value       "https://orcid.org/0000-0002-0915-3711" .
+
+<http://www.w3.org/ns/VONA/INGV/DDSS-032>
+        rdf:type                  epos:WebService ;
+        dct:spatial               <http://www.w3.org/ns/f9d5ed0e4adde36c81970b61333d917a> ;
+        schema:dateModified       "2021-02-01T00:00:00Z"^^xsd:dateTime ;
+        schema:datePublished      "2021-02-01T00:00:00Z"^^xsd:dateTime ;
+        schema:description        "Volcano Observatory Notice for Aviation (VONA)" ;
+        schema:identifier         "REST/INGV/DDSS-032" ;
+        schema:keywords           "Etna" , "Stromboli" , "VONA" , "Volcanology" , "Aviation color code" , "Report" , "Volcanic activity" ;
+        schema:name               "DailyReportDOGE" ;
+        schema:provider           <https://www.epos-eu.org/epos-dcat-ap#Organization/f1551f33-fd61-48a9-95ae-b8855c5b6903> ;
+        dcat:contactPoint         "https://orcid.org/0000-0002-0915-3711/contactPoint" ;
+        dcat:contactPoint         <https://orcid.org/0000-0003-2744-0578/contactPoint> , <https://orcid.org/0000-0003-1732-870X/contactPoint> ;
+        dcat:theme                <epos:VONA-Reports> ;
+        hydra:entrypoint          "http://vo-tcs.ct.ingv.it:8088/gateway/sezioniesterne/landingPage.php?ID=50"^^xsd:anyURI ;
+        hydra:supportedOperation  <http://www.w3.org/ns/VONA/INGV/DDSS-032/operation> .
+
+<http://www.w3.org/ns/WP11/INGV/DDSS-032>
+        rdf:type                dcat:Dataset ;
+        dct:accrualPeriodicity  "http://purl.org/cld/freq/irregular"^^xsd:anyURI ;
+        dct:created             "2021-02-01T00:00:00Z"^^xsd:dateTime ;
+        dct:description         "Volcano Observatory Notice for Aviation Italy" ;
+        dct:identifier          "WP11/INGV/DDSS-032" ;
+        dct:publisher           <PIC:999472675> ;
+        dct:spatial             <http://www.w3.org/ns/c5dcb1724ea99ad7e8fdff8ddd634abb> ;
+        dct:temporal            <http://www.w3.org/ns/ff05d3cd4d35e42e87a15bf68b052e00> ;
+        dct:title               "Volcano Observatory Notice for Aviation Italy" ;
+        dct:type                "http://purl.org/dc/dcmitype/Collection"^^xsd:anyURI ;
+        adms:identifier         <http://www.w3.org/ns/35d8fab45b78eb51d6d9f6e75f2ddc07> ;
+        dcat:contactPoint       "https://orcid.org/0000-0002-0915-3711/contactPoint" ;
+        dcat:contactPoint       <https://orcid.org/0000-0003-1732-870X/contactPoint> , <https://orcid.org/0000-0003-2744-0578/contactPoint> ;
+        dcat:distribution       <http://www.w3.org/ns/WP11/INGV/DDSS-032/WSDistribution> ;
+        dcat:keyword            "Volcanic activity" , "Aviation color code" , "Stromboli" , "Etna" , "VONA" , "Volcanology" , "Report" ;
+        dcat:theme              <epos:VONA-Reports> .
+
+<http://www.w3.org/ns/4207708d2bf2b7efdb74f60a39603571>
+        rdf:type                epos:PostalAddress ;
+        schema:addressCountry   "Italy" ;
+        schema:addressLocality  "Rome" ;
+        schema:postalCode       "00143" ;
+        schema:streetAddress    "Via di Vigna Murata, 605" .
+
+<http://www.w3.org/ns/VONA/INGV/DDSS-032/operation>
+        rdf:type        hydra:Operation ;
+        hydra:method    "GET" ;
+        hydra:property  <http://www.w3.org/ns/135c7ecf061fb9db76a905751dc1aca8> ;
+        hydra:returns   "application/json" .
+
+<http://www.w3.org/ns/35d8fab45b78eb51d6d9f6e75f2ddc07>
+        rdf:type           adms:Identifier ;
+        skos:notation      "WP11-DDSS-032" ;
+        adms:schemeAgency  "DDSS-ID" .
+
+<http://www.w3.org/ns/da54e5284332aa1daec4599d10935ec5>
+        rdf:type             hydra:IriTemplateMapping ;
+        rdfs:label           "Volcano name " ;
+        rdfs:range           "xsd:string" ;
+        schema:defaultValue  "Stromboli" ;
+        http:paramValue      "Etna" , "Stromboli" ;
+        hydra:required       false ;
+        hydra:variable       "volcano_name" .
+
+<https://orcid.org/0000-0002-8651-6387/financialContact>
+        rdf:type                  schema:ContactPoint ;
+        schema:availableLanguage  "en" ;
+        schema:contactType        "financialContact" ;
+        schema:email              "segreteria.presidenza@ingv.it" .
+
+<https://orcid.org/0000-0003-2744-0578>
+        rdf:type               schema:Person ;
+        schema:address         <http://www.w3.org/ns/6a7b520f283c23874cbf348deaf51a29> ;
+        schema:affiliation     <PIC:999472675> ;
+        schema:contactPoint    <https://orcid.org/0000-0003-2744-0578/contactPoint> ;
+        schema:email           "salvatore.mangiagli@ingv.it" ;
+        schema:familyName      "Salvatore" ;
+        schema:givenName       "Mangiagli" ;
+        schema:identifier      <http://www.w3.org/ns/f6d2d65b84a0ef68c8af77b3ceec6618> ;
+        schema:qualifications  "Technologist" ;
+        schema:telephone       "+00390957165800" ;
+        schema:url             "https://orcid.org/0000-0003-2744-0578"^^xsd:anyURI .
+
+<http://www.w3.org/ns/f6d2d65b84a0ef68c8af77b3ceec6618>
+        rdf:type           schema:PropertyValue ;
+        schema:propertyID  "ORCID" ;
+        schema:value       "https://orcid.org/0000-0003-2744-0578" .
+
+<http://www.w3.org/ns/7cddca5ec397f5d12eb4af2d7b4214de>
+        rdf:type                schema:PostalAddress ;
+        schema:addressCountry   "Italy" ;
+        schema:addressLocality  "Catania" ;
+        schema:postalCode       "95125" ;
+        schema:streetAddress    "Piazza Roma, 2" .
+
+<https://orcid.org/0000-0002-8651-6387/legalContact>
+        rdf:type                  epos:ContactPoint ;
+        schema:availableLanguage  "en" ;
+        schema:contactType        "legalContact" ;
+        schema:email              "segreteria.presidenza@ingv.it" .
+
+<https://www.epos-eu.org/epos-dcat-ap#PropertyValue/5b4ba0b8-a111-401e-9434-a0de320c38e7>
+        rdf:type           schema:PropertyValue ;
+        schema:propertyID  "PIC" ;
+        schema:value       "435287394729" .
