@@ -210,7 +210,6 @@
         schema:provider           <https://www.epos-eu.org/epos-dcat-ap#Organization/f1551f33-fd61-48a9-95ae-b8855c5b6903> ;
         dcat:contactPoint         "https://orcid.org/0000-0002-0915-3711/contactPoint" ;
         dcat:contactPoint         <https://orcid.org/0000-0003-2744-0578/contactPoint> , <https://orcid.org/0000-0003-1732-870X/contactPoint> ;
-        dcat:theme                <epos:VONA-Reports> ;
         hydra:entrypoint          "http://vo-tcs.ct.ingv.it:8088/gateway/sezioniesterne/landingPage.php?ID=50"^^xsd:anyURI ;
         hydra:supportedOperation  <http://www.w3.org/ns/VONA/INGV/DDSS-032/operation> .
 
@@ -229,8 +228,7 @@
         dcat:contactPoint       "https://orcid.org/0000-0002-0915-3711/contactPoint" ;
         dcat:contactPoint       <https://orcid.org/0000-0003-1732-870X/contactPoint> , <https://orcid.org/0000-0003-2744-0578/contactPoint> ;
         dcat:distribution       <http://www.w3.org/ns/WP11/INGV/DDSS-032/WSDistribution> ;
-        dcat:keyword            "Volcanic activity" , "Aviation color code" , "Stromboli" , "Etna" , "VONA" , "Volcanology" , "Report" ;
-        dcat:theme              <epos:VONA-Reports> .
+        dcat:keyword            "Volcanic activity" , "Aviation color code" , "Stromboli" , "Etna" , "VONA" , "Volcanology" , "Report" .
 
 <http://www.w3.org/ns/4207708d2bf2b7efdb74f60a39603571>
         rdf:type                epos:PostalAddress ;
