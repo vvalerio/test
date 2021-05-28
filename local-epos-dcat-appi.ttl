@@ -1,0 +1,249 @@
+@prefix :      <https://www.epos-eu.org/epos-dcat-ap#> .
+@prefix schema: <http://schema.org/> .
+@prefix spdx:  <http://spdx.org/rdf/terms#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix gsp:   <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix hydra: <http://www.w3.org/ns/hydra/core#> .
+@prefix geo:   <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix oa:    <http://www.w3.org/ns/oa#> .
+@prefix dct:   <http://purl.org/dc/terms/> .
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix locn:  <http://www.w3.org/ns/locn#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix epos:  <https://www.epos-eu.org/epos-dcat-ap#> .
+@prefix adms:  <http://www.w3.org/ns/adms#> .
+@prefix org:   <http://www.w3.org/ns/org#> .
+@prefix cnt:   <http://www.w3.org/2011/content#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix http:  <http://www.w3.org/2006/http#> .
+@prefix dash:  <http://datashapes.org/dash#> .
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+
+<6ca445fd4c81696fe73ebfd0cb99fa3d>
+        rdf:type          dct:PeriodOfTime ;
+        schema:startDate  "1988-01-01T00:00:00Z"^^xsd:dateTime .
+
+<582ad8b8a642aea10aa2d75e06e23c21>
+        rdf:type       dct:Location ;
+        locn:geometry  "POLYGON((180.0 -90.0 , -180.0 -90.0, -180.0 90.0 , 180.0 90.0,180.0 -90.0))"^^gsp:wktLiteral .
+
+<b8c8f54c20955cd223d787b8ae3ddd78>
+        rdf:type           adms:Identifier ;
+        skos:notation      "WP08-DDSS-001" ;
+        adms:schemeAgency  "DDSS-ID" .
+
+<https://www.epos-eu.org/epos-dcat-ap/Seismology/Dataset/001>
+        rdf:type                dcat:Dataset ;
+        dct:accrualPeriodicity  "http://purl.org/cld/freq/continuous"^^xsd:anyURI ;
+        dct:created             "2016-01-01T00:00:00Z"^^xsd:dateTime ;
+        dct:description         "Primary Seismic Waveform Data description" ;
+        dct:identifier          "https://www.epos-eu.org/epos-dcat-ap/Seismology/Dataset/001" ;
+        dct:issued              "2016-01-01T00:00:00Z"^^xsd:dateTime ;
+        dct:modified            "2016-01-01T00:00:00Z"^^xsd:dateTime ;
+        dct:publisher           <PIC:000518944> ;
+        dct:spatial             <582ad8b8a642aea10aa2d75e06e23c21> ;
+        dct:temporal            <6ca445fd4c81696fe73ebfd0cb99fa3d> ;
+        dct:title               "Primary Seismic Waveform Data" ;
+        dct:type                "http://purl.org/dc/dcmitype/Collection"^^xsd:anyURI ;
+        owl:versionInfo         "1.0.0" ;
+        adms:identifier         <b8c8f54c20955cd223d787b8ae3ddd78> ;
+        dcat:contactPoint       <http://orcid.org/0000-0002-6250-0000/contactPoint> ;
+        dcat:distribution       <https://www.epos-eu.org/epos-dcat-ap/Seismology/Dataset/001/Distribution/001> ;
+        dcat:keyword            "continuous waveform" , "mseed" , "seismic waveform"  .
+
+<PIC:000518944>  rdf:type    schema:Organization ;
+        schema:address       <2a28c8fe0ee4892b323aa7758b6f3b0f> ;
+        schema:contactPoint  <http://orcid.org/0000-0001-7750-0000/financialContact> , <http://orcid.org/0000-0001-7750-0000/scientificContact> , <http://orcid.org/0000-0001-7750-0000/legalContact> ;
+        schema:email         "test1_institute@email.it" ;
+        schema:identifier    <5c50dfa43f431231a80dc6666e7487ce> ;
+        schema:legalName     "Institute test1" ;
+        schema:leiCode       "Legal Entity Identifier Search" ;
+        schema:logo          "http://www.test.it/logo.png"^^xsd:anyURI ;
+        schema:memberOf      <PIC:007012076> ;
+        schema:telephone     "+0302206911" ;
+        schema:url           "http://www.test.it"^^xsd:anyURI .
+
+<ad87a245b120deab3e12a18d37ffc859>
+        rdf:type           schema:PropertyValue ;
+        schema:propertyID  "ScopusAuthorID" ;
+        schema:value       "5500056000" .
+
+<https://www.epos-eu.org/epos-dcat-ap/Seismology/Dataset/001/Distribution/001>
+        rdf:type         dcat:Distribution ;
+        dct:conformsTo   <https://www.epos-eu.org/epos-dcat-ap/Seismology/WebService/001> ;
+        dct:description  "Description of Seismic Waveform Distribution" ;
+        dct:format       "http://publications.europa.eu/resource/authority/file-type/BIN"^^xsd:anyURI ;
+        dct:identifier   "https://www.epos-eu.org/epos-dcat-ap/Seismology/Dataset/001/Distribution/001" ;
+        dct:issued       "2017-01-01T00:00:00Z"^^xsd:dateTime ;
+        dct:license      "http://creativecommons.org/licenses/by/4.0/"^^xsd:anyURI ;
+        dct:modified     "2017-01-01T00:00:00Z"^^xsd:dateTime ;
+        dct:title        "Title of Seismic Waveform Distribution" ;
+        dct:type         "http://publications.europa.eu/resource/authority/distribution-type/WEB_SERVICE"^^xsd:anyURI ;
+        dcat:accessURL   <https://www.epos-eu.org/epos-dcat-ap/Seismology/WebService/001/Operation/001> .
+
+<70fc23afba983729938681b2fc7d4542>
+        rdf:type                epos:PostalAddress ;
+        schema:addressCountry   "Italy" ;
+        schema:addressLocality  "Rome" ;
+        schema:postalCode       "00143" ;
+        schema:streetAddress    "address2, 2" .
+
+<eb5a88661c1f5ac3d014528f96843344>
+        rdf:type                epos:PostalAddress ;
+        schema:addressCountry   "Italy" ;
+        schema:addressLocality  "Rome" ;
+        schema:postalCode       "00143" ;
+        schema:streetAddress    "address, 1" .
+
+<25d824937e37077d910ac020f794d73f>
+        rdf:type           schema:PropertyValue ;
+        schema:propertyID  "orcid" ;
+        schema:value       "0000-0001-7750-0000" .
+
+<3cf59a60fa2a86adb28baad52f1bd92d>
+        rdf:type        epos:IriTemplate ;
+        hydra:mapping   <7242ccb95326415c37e22a0e110e60f7> , <6d8a3e995fb11c41a87e49fa2a441591> ;
+        hydra:template  "http://www.orfeus-eu.org/fdsnws/dataselect/1/query/{?starttime,endtime,network,quality}" .
+
+<PIC:007012076>  rdf:type    epos:Organization ;
+        schema:address       <fa0bb0ff98f1cfb0c15a1bc47c0ac8ac> ;
+        schema:contactPoint  <http://orcid.org/0000-0001-7750-0000/scientificContact> , <http://orcid.org/0000-0001-7750-0000/legalContact> , <http://orcid.org/0000-0001-7750-0000/financialContact> ;
+        schema:email         "test2_example@email.it" ;
+        schema:identifier    <052b46dcf7dbe3f89bbb70fe056b1524> ;
+        schema:legalName     "Institute test1" ;
+        schema:leiCode       "Legal Entity Identifier Search" ;
+        schema:telephone     "+0302206922" ;
+        schema:url           "http://www.test2.it/"^^xsd:anyURI .
+
+<http://orcid.org/0000-0001-7750-0000>
+        rdf:type               schema:Person ;
+        schema:address         <eb5a88661c1f5ac3d014528f96843344> ;
+        schema:affiliation     <PIC:000518944> ;
+        schema:contactPoint    <http://orcid.org/0000-0001-7750-0000/scientificContact> , <http://orcid.org/0000-0001-7750-0000/financialContact> , <http://orcid.org/0000-0001-7750-0000/legalContact> ;
+        schema:email           "test1@private.com" ;
+        schema:familyName      "Surname1" ;
+        schema:givenName       "Name1" ;
+        schema:identifier      <25d824937e37077d910ac020f794d73f> , <ad87a245b120deab3e12a18d37ffc859> ;
+        schema:qualifications  "Researcher" ;
+        schema:telephone       "+001002003004" ;
+        schema:url             "http://orcid.org/0000-0001-7750-0000"^^xsd:anyURI .
+
+<2a28c8fe0ee4892b323aa7758b6f3b0f>
+        rdf:type                schema:PostalAddress ;
+        schema:addressCountry   "Italy" ;
+        schema:addressLocality  "Rome" ;
+        schema:postalCode       "00143" ;
+        schema:streetAddress    "address, 002" .
+
+
+
+<https://www.epos-eu.org/epos-dcat-ap/Seismology/WebService/001/Operation/001>
+        rdf:type        hydra:Operation ;
+        hydra:method    "GET" ;
+        hydra:property  <3cf59a60fa2a86adb28baad52f1bd92d> ;
+        hydra:returns   "application/vnd.fdsn.mseed" .
+
+<5c50dfa43f431231a80dc6666e7487ce>
+        rdf:type           schema:PropertyValue ;
+        schema:propertyID  "PIC" ;
+        schema:value       "000518944" .
+
+<http://orcid.org/0000-0001-7750-0000/financialContact>
+        rdf:type                  schema:ContactPoint ;
+        schema:availableLanguage  "en" ;
+        schema:contactType        "financialContact" ;
+        schema:email              "test1@email.it " .
+
+<6d8a3e995fb11c41a87e49fa2a441591>
+        rdf:type             epos:IriTemplateMapping ;
+        rdfs:label           "End of the timespan" ;
+        rdfs:range           "xsd:dateTime" ;
+        schema:defaultValue  "2012-02-01T00:00:00" ;
+        schema:valuePattern  "YYYY-MM-DDThh:mm:ss" ;
+        hydra:property       "schema:endDate" ;
+        hydra:required       true ;
+        hydra:variable       "endtime" .
+
+<7242ccb95326415c37e22a0e110e60f7>
+        rdf:type             hydra:IriTemplateMapping ;
+        rdfs:label           "Start of the timespan" ;
+        rdfs:range           "xsd:dateTime" ;
+        schema:defaultValue  "2012-01-01T00:00:00" ;
+        schema:valuePattern  "YYYY-MM-DDThh:mm:ss" ;
+        hydra:property       "schema:startDate" ;
+        hydra:required       true ;
+        hydra:variable       "starttime" .
+
+<052b46dcf7dbe3f89bbb70fe056b1524>
+        rdf:type           schema:PropertyValue ;
+        schema:propertyID  "PIC" ;
+        schema:value       "007012076" .
+
+<http://orcid.org/0000-0001-7750-0000/scientificContact>
+        rdf:type                  schema:ContactPoint ;
+        schema:availableLanguage  "en" ;
+        schema:contactType        "scientificContact" ;
+        schema:email              "test1@email.it " .
+
+<https://www.epos-eu.org/epos-dcat-ap/Seismology/WebService/001/APIDocumentation>
+        rdf:type           hydra:ApiDocumentation ;
+        hydra:description  "some description of API Documentation" ;
+        hydra:entrypoint   "Testentrypoint"^^xsd:anyURI ;
+        hydra:title        "documentation title" .
+
+<fa0bb0ff98f1cfb0c15a1bc47c0ac8ac>
+        rdf:type                epos:PostalAddress ;
+        schema:addressCountry   "Italy" ;
+        schema:addressLocality  "Rome" ;
+        schema:postalCode       "00143" ;
+        schema:streetAddress    "address, 002" .
+
+<http://orcid.org/0000-0002-6250-0000>
+        rdf:type               schema:Person ;
+        schema:address         <70fc23afba983729938681b2fc7d4542> ;
+        schema:affiliation     <PIC:000518944> ;
+        schema:contactPoint    <http://orcid.org/0000-0002-6250-0000/contactPoint> ;
+        schema:email           "test2@email.it" ;
+        schema:familyName      "Surname2" ;
+        schema:givenName       "Name2" ;
+        schema:identifier      "http://orcid.org/0000-0002-6250-0000" ;
+        schema:qualifications  "IT" ;
+        schema:telephone       "+39001584663" ;
+        schema:url             "http://orcid.org/0000-0002-6250-0000"^^xsd:anyURI .
+
+<https://www.epos-eu.org/epos-dcat-ap/Seismology/WebService/001>
+        rdf:type                  epos:WebService ;
+        dct:conformsTo            <https://www.epos-eu.org/epos-dcat-ap/Seismology/WebService/001/APIDocumentation> ;
+        dct:license               "http://creativecommons.org/licenses/by/4.0/"^^xsd:anyURI ;
+        dct:temporal              <28549311cced4cc4516c70d96fc389a5> ;
+        schema:dateModified       "2016-01-01T00:00:00Z"^^xsd:dateTime ;
+        schema:datePublished      "2016-01-01T00:00:00Z"^^xsd:dateTime ;
+        schema:description        "FDSN Standard webservice at ODC to download waveform data" ;
+        schema:identifier         "https://www.epos-eu.org/epos-dcat-ap/Seismology/WebService/001" ;
+        schema:keywords           "ODC" , "EIDA" , "waveform" , "earthquake intensity" , "Seismic Waveform" , "waveform modeling" , "seismicity" , "seismology" , "FDSN-WS" , "macroseismic information" , "macroseismic" , "earthquakes" , "seismic hazard" , "earth structure" , "Dataselect" ;
+        schema:name               "FDSN Dataselect - ORFEUS Data Center (ODC)" ;
+        schema:provider           <PIC:000518944> ;
+        dcat:contactPoint         <http://orcid.org/0000-0002-6250-0000/contactPoint> ;
+        hydra:entrypoint          "http://www.orfeus-eu.org/fdsnws/dataselect/1/application.wadl"^^xsd:anyURI ;
+        hydra:supportedOperation  <https://www.epos-eu.org/epos-dcat-ap/Seismology/WebService/001/Operation/001> .
+
+<28549311cced4cc4516c70d96fc389a5>
+        rdf:type          epos:PeriodOfTime ;
+        schema:startDate  "1988-01-01T00:00:00Z"^^xsd:dateTime .
+
+<http://orcid.org/0000-0002-6250-0000/contactPoint>
+        rdf:type                  epos:ContactPoint ;
+        schema:availableLanguage  "en" ;
+        schema:contactType        "manager" ;
+        schema:email              "test2@knmi@nl" .
+
+<http://orcid.org/0000-0001-7750-0000/legalContact>
+        rdf:type                  epos:ContactPoint ;
+        schema:availableLanguage  "en" ;
+        schema:contactType        "legalContact" ;
+        schema:email              "test1@email.it " .
