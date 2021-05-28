@@ -54,14 +54,7 @@
         adms:identifier         <b8c8f54c20955cd223d787b8ae3ddd78> ;
         dcat:contactPoint       <http://orcid.org/0000-0002-6250-0000/contactPoint> ;
         dcat:distribution       <https://www.epos-eu.org/epos-dcat-ap/Seismology/Dataset/001/Distribution/001> ;
-        dcat:keyword            "continuous waveform" , "mseed" , "seismic waveform" ;
-        dcat:theme              <epos:SeismicWaveform> .
-
-<epos:SeismicWaveform>
-        rdf:type         skos:Concept ;
-        skos:definition  "Measurement of the dynamic displacement of the Earth" ;
-        skos:inScheme    <epos:Seismology> ;
-        skos:prefLabel   "Seismic waveform" .
+        dcat:keyword            "continuous waveform" , "mseed" , "seismic waveform"  .
 
 <PIC:000518944>  rdf:type    schema:Organization ;
         schema:address       <2a28c8fe0ee4892b323aa7758b6f3b0f> ;
@@ -147,11 +140,7 @@
         schema:postalCode       "00143" ;
         schema:streetAddress    "address, 002" .
 
-<epos:SeismicStation>
-        rdf:type         skos:Concept ;
-        skos:definition  "Station of a seismic network" ;
-        skos:inScheme    <epos:Seismology> ;
-        skos:prefLabel   "Seismic Station" .
+
 
 <https://www.epos-eu.org/epos-dcat-ap/Seismology/WebService/001/Operation/001>
         rdf:type        hydra:Operation ;
@@ -201,10 +190,6 @@
         schema:contactType        "scientificContact" ;
         schema:email              "test1@email.it " .
 
-<epos:Seismology>  rdf:type  epos:ConceptScheme ;
-        dct:description  "It contains the concepts of the Seismology domain" ;
-        dct:title        "Seismology" .
-
 <https://www.epos-eu.org/epos-dcat-ap/Seismology/WebService/001/APIDocumentation>
         rdf:type           hydra:ApiDocumentation ;
         hydra:description  "some description of API Documentation" ;
@@ -244,7 +229,6 @@
         schema:name               "FDSN Dataselect - ORFEUS Data Center (ODC)" ;
         schema:provider           <PIC:000518944> ;
         dcat:contactPoint         <http://orcid.org/0000-0002-6250-0000/contactPoint> ;
-        dcat:theme                <epos:SeismicWaveform> ;
         hydra:entrypoint          "http://www.orfeus-eu.org/fdsnws/dataselect/1/application.wadl"^^xsd:anyURI ;
         hydra:supportedOperation  <https://www.epos-eu.org/epos-dcat-ap/Seismology/WebService/001/Operation/001> .
 
